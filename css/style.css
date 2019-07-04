@@ -1,7 +1,7 @@
 .maintext {
     border-bottom: 1px solid #aaa; 
     margin-bottom: 10px; 
-    text-align: center;
+    align: center;
 }
 .justtext {
     color: #225533;
