@@ -1,6 +1,6 @@
 <!doctype html>
 <title>GTP StoRAGE</title>
-<html>
+<html ng-app='myApp'>
 <head>
 <meta charset="utf-8">
 <link rel="stylesheet" href="https://nordicmaster.github.io/css/style.css" />
@@ -15,5 +15,13 @@
   </ul>
 Also, will it be an SPA or several pages?  
 </div>
+<div ng-controller="gtpController">
+  <p ng-click="ChangeClass($event)"> This one </p>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script type="text/javascript">
+var myApp = angular.module('myApp', []);
+</script>
+<script src="https://nordicmaster.github.io/js/gtpController.js"></script>
 </body>
 </html>
