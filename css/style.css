@@ -28,10 +28,7 @@
     border-width: 2px;
     border-color: #000000;
 }
-body { 
-    width: 100%; 
-    text-align: center; 
-}
+
 #centerContainer { 
     width: 960px; 
     text-align: left;
