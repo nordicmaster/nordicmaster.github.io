@@ -31,5 +31,6 @@
 
 #bodycenter { 
     width: 960px; 
+    margin: auto;
     text-align: left;
 }
