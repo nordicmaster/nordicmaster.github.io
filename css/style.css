@@ -15,6 +15,7 @@
     align: center;
     border-style: solid;
     border-width: 2px;
+    border-color: #000000;
     margin: auto;
 }
 .justheadertable {
@@ -24,7 +25,7 @@
 .justrow {
     border-style: solid;
     border-width: 2px;
-    border-color: black;
+    border-color: #000000;
 }
 #body {
     background-color: #aaeeaa;
