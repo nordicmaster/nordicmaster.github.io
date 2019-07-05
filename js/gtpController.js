@@ -7,6 +7,11 @@ myApp.controller('gtpController', function($scope) {
         author: 'NM',
         date: '20/10/2019'
     };
+    $scope.textJson={
+        text: '',
+        author: 'NM',
+        date: '20/10/2019'
+    };
     $scope.changeClass = function (e) {         
         $scope.gtp.text = 'newtab';
     }
