@@ -18,7 +18,8 @@ Also, will it be an SPA or several pages?
 <div ng-controller="gtpController">
   <p ng-click="changeClass($event)"> Click this text (angularjs) </p>
   <p> {{gtp.text}} </p>
-  <a href="https://github.com/nordicmaster/guitarpros/raw/master/49.gp5" download>Скачать файл 49.gp5</a>
+  <a href="https://github.com/nordicmaster/guitarpros/raw/master/49.gp5" download>Скачать файл 49.gp5</a><br>
+  <a href="https://raw.githubusercontent.com/nordicmaster/guitarpros/master/a05.gp5" download>Скачать файл a05.gp5</a>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 <script type="text/javascript">
@@ -27,3 +28,5 @@ var myApp = angular.module('myApp', []);
 <script src="https://nordicmaster.github.io/js/gtpController.js"></script>
 </body>
 </html>
+<!-- для загрузки конкретного файла https://raw.githubusercontent.com/user/repository/branch/filename 
+как можно сделать, чтобы выводился список файлов?-->
