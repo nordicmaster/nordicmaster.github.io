@@ -5,14 +5,17 @@
     text-size: 24pt;
 }
 .justtext {
+    margin-top: 10px;
     color: #225533;
     align: left;
+    text-size: 20pt;
 }
 .justtable {
     text-align: center;
     align: center;
     border-style: solid;
     border-width: 2px;
+    margin: auto;
 }
 .justheadertable {
     background-color: #99aa89;
