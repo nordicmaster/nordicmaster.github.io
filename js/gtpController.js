@@ -10,4 +10,7 @@ myApp.controller('gtpController', function($scope) {
     $scope.changeClass = function (e) {         
         $scope.gtp.text = 'newtab';
     }
+    $scope.fetchJson = function (e) {
+        $scope.textJson.text = JSON.parse("https://nordicmaster.github.io/table_items.json");
+    }
 });
