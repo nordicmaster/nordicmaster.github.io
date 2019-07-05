@@ -2,13 +2,13 @@
     border-bottom: 1px solid #aaa; 
     margin-bottom: 10px; 
     text-align: center;
-    size: 24pt;
+    font-size: 24pt;
 }
 .justtext {
     margin-top: 10px;
     color: #225533;
     align: left;
-    size: 20pt;
+    font-size: 20pt;
 }
 .justtable {
     text-align: center;
