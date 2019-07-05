@@ -16,7 +16,8 @@ myApp.controller('gtpController', function($scope) {
         $scope.gtp.text = 'newtab';
     }
     $scope.fetchJson = function (e) {
-        $scope.textJson.text = '<a href="https://nordicmaster.github.io/table_items.json">json</a>';
+        $scope.textJson.text = '65';
+            //'<a href="https://nordicmaster.github.io/table_items.json">json</a>';
         //JSON.parse("https://nordicmaster.github.io/table_items.json");
     }
 });
