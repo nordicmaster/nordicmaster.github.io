@@ -8,6 +8,16 @@
     color: #225533;
     align: left;
 }
+.justtable {
+    text-align: center;
+    align: center;
+    border-style: solid;
+    border-width: 2px;
+}
+.justheadertable {
+    background-color: #99aa89;
+    color: #330032;
+}
 #body {
     background-color: #aaeeaa;
 }
