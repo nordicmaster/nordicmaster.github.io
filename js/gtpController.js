@@ -16,7 +16,16 @@ myApp.controller('gtpController', function($scope) {
         $scope.gtp.text = 'newtab';
     }
     $scope.fetchJson = function (e) {
-        $scope.textJson.text = JSON.parse("https://nordicmaster.github.io/table_items.json");
+        //$scope.textJson.text = JSON.parse("https://nordicmaster.github.io/table_items.json");
         //'<a href="https://nordicmaster.github.io/table_items.json">json</a>';
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            var myObj = JSON.parse(this.responseText);
+            $scope.textJson.text = myObj.name;
+          }
+        };
+        xmlhttp.open("GET", "https://nordicmaster.github.io/table_items.json", true);
+        xmlhttp.send();
     }
 });
