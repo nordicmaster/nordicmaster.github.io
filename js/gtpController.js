@@ -16,12 +16,13 @@ myApp.controller('gtpController', function($scope) {
         $scope.gtp.text = 'newtab';
     }
     function assignJson(obj) {
-        //console.log("assign " + obj[1]);
+        console.log("assign " + obj[1]);
         $scope.textJson = obj;
     }
     $scope.fetchJson = function () {
         //$scope.textJson.text = JSON.parse("https://nordicmaster.github.io/table_items.json");
         //'<a href="https://nordicmaster.github.io/table_items.json">json</a>';
+        console.log("a3");
         var xmlhttp = new XMLHttpRequest();
         var str = "";
         var myObj;
