@@ -28,6 +28,11 @@
     border-width: 2px;
     border-color: #000000;
 }
+.justrow td {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000000;
+}
 
 #bodycenter { 
     width: 960px; 
