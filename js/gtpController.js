@@ -16,7 +16,7 @@ myApp.controller('gtpController', function($scope) {
         $scope.gtp.text = 'newtab';
     }
     function assignJson(obj) {
-        console.log("assign " + obj[1]);
+        //console.log("assign " + obj[1]);
         $scope.textJson = obj;
     }
     $scope.fetchJson = function (e) {
@@ -35,8 +35,8 @@ myApp.controller('gtpController', function($scope) {
         };
         xmlhttp.open("GET", "https://nordicmaster.github.io/table_items.json", true);
         xmlhttp.send();
-        console.log("str = "+str);
-        console.log(myObj[0].name);
+        //console.log("str = "+str);
+        //console.log(myObj[0].name);
         //$scope.textJson = myObj;
     }
 });
