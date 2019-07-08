@@ -21,6 +21,7 @@ myApp.controller('gtpController', function($scope) {
         var xmlhttp = new XMLHttpRequest();
         xmlhttp.onreadystatechange = function() {
           if (this.readyState == 4 && this.status == 200) {
+            console.log(this.responseText);
             var myObj = JSON.parse(this.responseText);
             $scope.textJson.text = myObj.name;
           }
