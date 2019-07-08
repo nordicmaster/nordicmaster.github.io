@@ -30,7 +30,7 @@ myApp.controller('gtpController', function($scope) {
         };
         xmlhttp.open("GET", "https://nordicmaster.github.io/table_items.json", false);
         xmlhttp.send();
-        console.log(myObj.arr[0].name);
+        console.log(myObj.arr[1].name);
         console.log("str = "+str);
         $scope.textJson = myObj;
     }
