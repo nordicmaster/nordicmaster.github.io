@@ -30,4 +30,4 @@
           "length": "=2 sec * Tacts count * 120 / Tempo" 
         }
     ]
-};
+}
