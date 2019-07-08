@@ -19,7 +19,7 @@ myApp.controller('gtpController', function($scope) {
         //console.log("assign " + obj[1]);
         $scope.textJson = obj;
     }
-    $scope.fetchJson = function (e) {
+    $scope.fetchJson = function () {
         //$scope.textJson.text = JSON.parse("https://nordicmaster.github.io/table_items.json");
         //'<a href="https://nordicmaster.github.io/table_items.json">json</a>';
         var xmlhttp = new XMLHttpRequest();
@@ -41,7 +41,7 @@ myApp.controller('gtpController', function($scope) {
     }
     var init = function () {
         console.log("a1");
-        $scope.fetchJson($event);
+        $scope.fetchJson();
         console.log("a2");
     };
     // and fire it after definition
