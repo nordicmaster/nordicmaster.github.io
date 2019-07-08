@@ -15,6 +15,10 @@ myApp.controller('gtpController', function($scope) {
     $scope.changeClass = function (e) {         
         $scope.gtp.text = 'newtab';
     }
+    function assignJson(obj) {
+        console.log("assign " + obj);
+        $scope.textJson = obj;
+    }
     $scope.fetchJson = function (e) {
         //$scope.textJson.text = JSON.parse("https://nordicmaster.github.io/table_items.json");
         //'<a href="https://nordicmaster.github.io/table_items.json">json</a>';
@@ -26,7 +30,8 @@ myApp.controller('gtpController', function($scope) {
             console.log(this.responseText);
             myObj = JSON.parse(this.responseText);            
             str = myObj.arr[0].name;
-            $scope.textJson = myObj;
+            assignJson(myObj);
+            
           }
         };
         xmlhttp.open("GET", "https://nordicmaster.github.io/table_items.json", true);
