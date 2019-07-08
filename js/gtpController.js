@@ -41,7 +41,7 @@ myApp.controller('gtpController', function($scope) {
     }
     var init = function () {
         console.log("a1");
-        fetchJson($event);
+        $scope.fetchJson($event);
         console.log("a2");
     };
     // and fire it after definition
