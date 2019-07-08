@@ -16,7 +16,7 @@
   </ul>
 Also, will it be an SPA or several pages?  
 </div>
-<div ng-controller="gtpController">
+<div ng-controller="gtpController" ng-init="fetchJson($event)" >
   <p ng-click="changeClass($event)"> Click this text (angularjs) </p>
   <p> {{gtp.text}} </p>
   <a href="https://github.com/nordicmaster/guitarpros/raw/master/49.gp5" download>Скачать файл 49.gp5</a><br>
@@ -58,7 +58,7 @@ Also, will it be an SPA or several pages?
   <span ng-click="fetchJson($event)"> now </span></p>
   <!--<p> {{textJson[0].tacts}} </p>-->
 <!--<p ng-repeat="item in textJson"> {{item.tacts}} </p>-->
-  <table class="justtable" ng-init="fetchJson($event)" >
+  <table class="justtable">
    <tr class="justheadertable">
      <th>ID</th>
      <th>Song Name</th>
@@ -93,7 +93,6 @@ Also, will it be an SPA or several pages?
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 <script type="text/javascript">
 var myApp = angular.module('myApp', []);
-  fetchJson($event);
 </script>
 <script src="https://nordicmaster.github.io/js/gtpController.js"></script>
 </div>
