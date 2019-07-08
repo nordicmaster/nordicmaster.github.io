@@ -23,7 +23,7 @@ myApp.controller('gtpController', function($scope) {
           if (this.readyState == 4 && this.status == 200) {
             console.log(this.responseText);
             var myObj = JSON.parse(this.responseText);
-            $scope.textJson.text = myObj.name;
+            $scope.textJson.text = myObj.arr[0].name;
           }
         };
         xmlhttp.open("GET", "https://nordicmaster.github.io/table_items.json", true);
