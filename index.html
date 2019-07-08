@@ -94,7 +94,8 @@ Also, will it be an SPA or several pages?
 <script type="text/javascript">
 var myApp = angular.module('myApp', []);
   angular.element($document).ready(function () {
-    fetchJson($event);
+    console.log("ae");
+    $scope.fetchJson($event);
 });
 </script>
 <script src="https://nordicmaster.github.io/js/gtpController.js"></script>
