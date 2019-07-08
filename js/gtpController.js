@@ -28,9 +28,10 @@ myApp.controller('gtpController', function($scope) {
             str = myObj.arr[0].name;
           }
         };
-        xmlhttp.open("GET", "https://nordicmaster.github.io/table_items.json", true);
+        xmlhttp.open("GET", "https://nordicmaster.github.io/table_items.json", false);
         xmlhttp.send();
         console.log(myObj.arr[0].name);
+        console.log("str = "+str);
         $scope.textJson.text = myObj.arr[0];
     }
 });
