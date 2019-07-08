@@ -30,13 +30,13 @@ myApp.controller('gtpController', function($scope) {
             //console.log(this.responseText);
             myObj = JSON.parse(this.responseText);            
             str = myObj[0].name;
-            assignJson(myObj);
-            
+            assignJson(myObj);            
           }
         };
         xmlhttp.open("GET", "https://nordicmaster.github.io/table_items.json", true);
         xmlhttp.send();
         console.log("str = "+str);
+        console.log(myObj[0].name);
         //$scope.textJson = myObj;
     }
 });
