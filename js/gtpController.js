@@ -19,15 +19,17 @@ myApp.controller('gtpController', function($scope) {
         //$scope.textJson.text = JSON.parse("https://nordicmaster.github.io/table_items.json");
         //'<a href="https://nordicmaster.github.io/table_items.json">json</a>';
         var xmlhttp = new XMLHttpRequest();
+        var str = "";
         xmlhttp.onreadystatechange = function() {
           if (this.readyState == 4 && this.status == 200) {
             console.log(this.responseText);
             var myObj = JSON.parse(this.responseText);
             console.log(myObj.arr[0].name);
-            $scope.textJson.text = myObj.arr[0].name;
+            str = myObj.arr[0].name;
           }
         };
         xmlhttp.open("GET", "https://nordicmaster.github.io/table_items.json", true);
         xmlhttp.send();
+        $scope.textJson.text = str;
     }
 });
