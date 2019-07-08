@@ -57,8 +57,7 @@ Also, will it be an SPA or several pages?
 <p>TODO: fetch data from json
   <a href="" ng-click="fetchJson($event)"> now </a></p>
   <!--<p> {{textJson[0].tacts}} </p>-->
-<!--<p ng-repeat="item in textJson"> {{item.tacts}} </p>-->
-  <table class="justtable">
+<table class="justtable">
    <tr class="justheadertable">
      <th>ID</th>
      <th>Song Name</th>
@@ -85,7 +84,7 @@ Also, will it be an SPA or several pages?
      <td>{{item.tempo}}</td>
      <td>{{item.tonality}}</td>
      <td>{{item.signature}}</td>
-     <td ng-if="(item.tacts !== NaN) && (item.tempo !== NaN)">{{2 * item.tacts * 120 / item.tempo}} sec</td>
+     <td ng-if="item.tacts === 78">{{2 * item.tacts * 120 / item.tempo}} sec</td>
    </tr>
   </table>
 </div>
@@ -93,7 +92,6 @@ Also, will it be an SPA or several pages?
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 <script type="text/javascript">
 var myApp = angular.module('myApp', []);
-
 </script>
 <script src="https://nordicmaster.github.io/js/gtpController.js"></script>
 </div>
