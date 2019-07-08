@@ -39,4 +39,11 @@ myApp.controller('gtpController', function($scope) {
         //console.log(myObj[0].name);
         //$scope.textJson = myObj;
     }
+    var init = function () {
+        console.log("a1");
+        fetchJson($event);
+        console.log("a2");
+    };
+    // and fire it after definition
+    init();
 });
