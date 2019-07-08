@@ -23,6 +23,7 @@ myApp.controller('gtpController', function($scope) {
           if (this.readyState == 4 && this.status == 200) {
             console.log(this.responseText);
             var myObj = JSON.parse(this.responseText);
+            console.log(myObj.arr[0].name);
             $scope.textJson.text = myObj.arr[0].name;
           }
         };
