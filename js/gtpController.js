@@ -32,6 +32,6 @@ myApp.controller('gtpController', function($scope) {
         xmlhttp.send();
         console.log(myObj.arr[0].name);
         console.log("str = "+str);
-        $scope.textJson.text = myObj.arr[0];
+        $scope.textJson = myObj;
     }
 });
