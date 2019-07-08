@@ -2,7 +2,6 @@
 var myApp=angular.module('myApp');
 myApp.controller('gtpController', function($scope) {
     //$scope.sortparam='-rate';
-    fetchJson();
     $scope.gtp={
         text: 'tab1',
         author: 'NM',
@@ -20,7 +19,7 @@ myApp.controller('gtpController', function($scope) {
         //console.log("assign " + obj[1]);
         $scope.textJson = obj;
     }
-    $scope.fetchJson = function () {
+    $scope.fetchJson = function (e) {
         //$scope.textJson.text = JSON.parse("https://nordicmaster.github.io/table_items.json");
         //'<a href="https://nordicmaster.github.io/table_items.json">json</a>';
         var xmlhttp = new XMLHttpRequest();
