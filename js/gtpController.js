@@ -16,7 +16,7 @@ myApp.controller('gtpController', function($scope) {
         $scope.gtp.text = 'newtab';
     }
     function assignJson(obj) {
-        console.log("assign " + obj);
+        console.log("assign " + obj.arr[1]);
         $scope.textJson = obj;
     }
     $scope.fetchJson = function (e) {
