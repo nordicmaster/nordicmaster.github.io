@@ -22,7 +22,7 @@ myApp.controller('gtpController', function($scope) {
     $scope.fetchJson = function () {
         //$scope.textJson.text = JSON.parse("https://nordicmaster.github.io/table_items.json");
         //'<a href="https://nordicmaster.github.io/table_items.json">json</a>';
-        console.log("a3");
+        console.log("a2");
         var xmlhttp = new XMLHttpRequest();
         var str = "";
         var myObj;
@@ -36,14 +36,14 @@ myApp.controller('gtpController', function($scope) {
         };
         xmlhttp.open("GET", "https://nordicmaster.github.io/table_items.json", true);
         xmlhttp.send();
-        //console.log("str = "+str);
+        console.log("str = "+str);
         //console.log(myObj[0].name);
         //$scope.textJson = myObj;
     }
     var init = function () {
         console.log("a1");
         $scope.fetchJson();
-        console.log("a2");
+        console.log("a3");
     };
     // and fire it after definition
     init();
