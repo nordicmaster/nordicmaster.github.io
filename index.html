@@ -83,7 +83,7 @@ Also, will it be an SPA or several pages?
      <td>{{item.tempo}}</td>
      <td>{{item.tonality}}</td>
      <td>{{item.signature}}</td>
-     <td> <div ng-if="!(isNaN(item.tacts) || isNaN(item.tempo))">{{2 * item.tacts * 120 / item.tempo}} sec </div> </td>
+     <td> <div ng-if="!(isNaN(item.tacts) || isNaN(item.tempo))">{{2 * item.tacts * 120 / item.tempo | number : 2}} sec </div> </td>
    </tr>
   </table>
 </div>
