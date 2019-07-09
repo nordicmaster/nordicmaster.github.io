@@ -12,6 +12,9 @@ myApp.controller('gtpController', function($scope) {
         author: 'NM',
         date: '20/10/2019'
     };
+    $scope.$on('$viewContentLoaded', function() {
+        $scope.fetchJson();
+    });
     $scope.changeClass = function (e) {         
         $scope.gtp.text = 'newtab';
     }
