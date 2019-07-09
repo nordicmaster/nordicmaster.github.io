@@ -16,7 +16,7 @@
   </ul>
 Also, will it be an SPA or several pages?  
 </div>
-<div ng-controller="gtpController"> <!--ng-init="fetchJson($event)" -->
+<div ng-controller="gtpController" ng-init="fetchJson()">
   <p ng-click="changeClass($event)"> Click this text (angularjs) </p>
   <p> {{gtp.text}} </p>
   <a href="https://github.com/nordicmaster/guitarpros/raw/master/49.gp5" download>Скачать файл 49.gp5</a><br>
@@ -91,10 +91,6 @@ Also, will it be an SPA or several pages?
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 <script type="text/javascript">
 var myApp = angular.module('myApp', []);
-  console.log("isnan(tempo) = "+ isNaN("tempo"));
-  var tt = !(isNaN("Tacts Count") || isNaN("Tempo"));
-  console.log("cond = "+ tt);
-  console.log("isnan(32) = "+ isNaN(32));
 </script>
 <script src="https://nordicmaster.github.io/js/gtpController.js"></script>
 </div>
