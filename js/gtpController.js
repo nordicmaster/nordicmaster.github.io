@@ -13,6 +13,7 @@ myApp.controller('gtpController', function($scope) {
         date: '20/10/2019'
     };
     $scope.$on('$viewContentLoaded', function() {
+        console.log("view content loaded");
         $scope.fetchJson();
     });
     $scope.changeClass = function (e) {         
