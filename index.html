@@ -73,7 +73,7 @@ Also, will it be an SPA or several pages?
    </tr>
    <tr ng-repeat="item in textJson" class="justrow">
      <td>{{item.ID}}</td>
-     <td>{{item.name}}</td>
+     <td ng-bind="item.name"></td>
      <td>{{item.created_date}}</td>
      <td>{{item.last_modified_date}}</td>
      <td>{{item.version}}</td>
