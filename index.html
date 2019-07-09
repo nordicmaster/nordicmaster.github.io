@@ -83,7 +83,7 @@ Also, will it be an SPA or several pages?
      <td>{{item.tempo}}</td>
      <td>{{item.tonality}}</td>
      <td>{{item.signature}}</td>
-     <td> <div ng-if="!(isNaN(item.tacts) || isNaN(item.tempo))">{{2 * item.tacts * 120 / item.tempo}} sec </div> </td>
+     <td> <div ng-if="(isNaN(item.tacts) || isNaN(item.tempo))">{{2 * item.tacts * 120 / item.tempo}} sec </div> </td>
    </tr>
   </table>
 </div>
@@ -91,6 +91,10 @@ Also, will it be an SPA or several pages?
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 <script type="text/javascript">
 var myApp = angular.module('myApp', []);
+  console.log("isnan(tempo) = "+ isNaN("tempo"));
+  var tt = isNaN("ss") || isNaN("es");
+  console.log("isnan(ss) = "+ tt);
+  console.log("isnan(32) = "+ isNaN(32));
 </script>
 <script src="https://nordicmaster.github.io/js/gtpController.js"></script>
 </div>
