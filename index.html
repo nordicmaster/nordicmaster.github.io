@@ -92,8 +92,8 @@ Also, will it be an SPA or several pages?
 <script type="text/javascript">
 var myApp = angular.module('myApp', []);
   console.log("isnan(tempo) = "+ isNaN("tempo"));
-  var tt = isNaN("ss") || isNaN("es");
-  console.log("isnan(ss) = "+ tt);
+  var tt = !(isNaN("Tacts Count") || isNaN("Tempo"));
+  console.log("cond = "+ tt);
   console.log("isnan(32) = "+ isNaN(32));
 </script>
 <script src="https://nordicmaster.github.io/js/gtpController.js"></script>
