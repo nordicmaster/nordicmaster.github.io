@@ -26,7 +26,7 @@ myApp.controller('gtpController', function($scope) {
     $scope.fetchJson = function () {
         //$scope.textJson.text = JSON.parse("https://nordicmaster.github.io/table_items.json");
         //'<a href="https://nordicmaster.github.io/table_items.json">json</a>';
-        console.log("a2");
+        console.log("fetchJson");
         var xmlhttp = new XMLHttpRequest();
         var str = "";
         var myObj;
@@ -46,9 +46,8 @@ myApp.controller('gtpController', function($scope) {
         //$scope.textJson = myObj;
     }
     var init = function () {
-        console.log("a1");
+        console.log("init");
         $scope.fetchJson();
-        console.log("a3");
     };
     // and fire it after definition
     init();
