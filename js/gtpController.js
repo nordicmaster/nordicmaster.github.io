@@ -31,6 +31,7 @@ myApp.controller('gtpController', function($scope) {
             //console.log(this.responseText);
             myObj = JSON.parse(this.responseText);            
             str = myObj[0].name;
+            console.log("str now = "+ str);
             assignJson(myObj);            
           }
         };
