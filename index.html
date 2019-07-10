@@ -72,7 +72,7 @@ Also, will it be an SPA or several pages?
      <th>Length</th>
    </tr>
    <tr ng-repeat="item in textJson" class="justrow">
-     <td ng-bind="item.ID"></td>
+     <td><a href="https://raw.githubusercontent.com/nordicmaster/guitarpros/master/{{item.ID}}.gp5" download>{{item.ID}}</a></td>
      <td ng-bind="item.name"></td>
      <td>{{item.created_date}}</td>
      <td>{{item.last_modified_date}}</td>
