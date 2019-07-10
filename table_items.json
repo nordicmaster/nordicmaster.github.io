@@ -4,11 +4,11 @@
       "name": "CAFO",
       "created_date": "09.03.2010",	
       "last_modified_date": "09.08.2018",
-      "version": "4",
-      "instruments_count": "3",
-      "track_count": "11",
-      "tacts": "178",
-      "tempo": "110",
+      "version": 4,
+      "instruments_count": 3,
+      "track_count": 11,
+      "tacts": 178,
+      "tempo": 110,
       "tonality": "Chromatic",
       "signature": "19/18",
       "length": "Length"
@@ -38,6 +38,20 @@
       "tacts": 112,
       "tempo": 140,
       "tonality": "F major",
+      "signature": "4/4",
+      "length": "=2 sec * Tacts count * 120 / Tempo" 
+    },
+    {											
+      "ID":"a05",
+      "name": "Qwery",
+      "created_date": "03.03.2017",	
+      "last_modified_date": "14.10.2017",
+      "version": 2,
+      "instruments_count": 5,
+      "track_count": 6,
+      "tacts": 90,
+      "tempo": 150,
+      "tonality": "A major",
       "signature": "4/4",
       "length": "=2 sec * Tacts count * 120 / Tempo" 
     }
