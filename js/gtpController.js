@@ -1,7 +1,7 @@
 //AngularJS
 var myApp=angular.module('myApp');
 myApp.controller('gtpController', function($scope) {
-    $scope.sortparam='-ID';
+    $scope.sortparam='ID';
     $scope.gtp={
         text: 'tab1',
         author: 'NM',
@@ -35,18 +35,9 @@ myApp.controller('gtpController', function($scope) {
         xmlhttp.open("GET", "https://nordicmaster.github.io/table_items.json", true);
         xmlhttp.send();
     }
-    $scope.sendJson = function () {
-        console.log("sendJson");
-        var xmlhttp = new XMLHttpRequest();
-        var myObj;
-        var theJSON = JSON.stringify($scope.textJson);
-        xmlhttp.onreadystatechange = function() {
-          if (this.readyState == 4 && this.status == 200) {
-            console.log(this.responseText);
-          }
-        };
-        xmlhttp.open("POST", "https://nordicmaster.github.io/table_items.json", true);
-        xmlhttp.send();
+    $scope.changeParam = function (param) {
+        console.log("change param = "+ param);
+        $scope.sortparam=param;
     }
     init = function() {
         $scope.fetchJson();
