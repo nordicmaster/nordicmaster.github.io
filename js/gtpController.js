@@ -16,6 +16,10 @@ myApp.controller('gtpController', function($scope) {
         console.log("view content loaded");
         $scope.fetchJson();
     });
+    $scope.$on('$stateChangeSuccess', function () {
+        console.log("state change success");
+        $scope.fetchJson();
+    });
     $scope.changeClass = function (e) {         
         $scope.gtp.text = 'newtab';
     }
