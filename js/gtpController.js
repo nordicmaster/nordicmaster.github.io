@@ -35,4 +35,16 @@ myApp.controller('gtpController', function($scope) {
         xmlhttp.open("GET", "https://nordicmaster.github.io/table_items.json", true);
         xmlhttp.send();
     }
+    $scope.sendJson = function () {
+        console.log("sendJson");
+        var xmlhttp = new XMLHttpRequest();
+        var myObj;
+        xmlhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            console.log(this.responseText);
+          }
+        };
+        xmlhttp.open("POST", "https://nordicmaster.github.io/table_items.json", true);
+        xmlhttp.send();
+    }
 });
