@@ -1,7 +1,7 @@
 //AngularJS
 var myApp=angular.module('myApp');
 myApp.controller('gtpController', function($scope) {
-    //$scope.sortparam='-rate';
+    $scope.sortparam='-ID';
     $scope.gtp={
         text: 'tab1',
         author: 'NM',
