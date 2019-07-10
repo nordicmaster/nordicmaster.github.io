@@ -39,6 +39,7 @@ myApp.controller('gtpController', function($scope) {
         console.log("sendJson");
         var xmlhttp = new XMLHttpRequest();
         var myObj;
+        var theJSON = JSON.stringify($scope.textJson);
         xmlhttp.onreadystatechange = function() {
           if (this.readyState == 4 && this.status == 200) {
             console.log(this.responseText);
@@ -47,4 +48,8 @@ myApp.controller('gtpController', function($scope) {
         xmlhttp.open("POST", "https://nordicmaster.github.io/table_items.json", true);
         xmlhttp.send();
     }
+    init = function() {
+        $scope.fetchJson();
+    }
+    init();
 });
