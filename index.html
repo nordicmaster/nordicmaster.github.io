@@ -27,14 +27,14 @@ Also, will it be an SPA or several pages?
      <th ng-click="changeParam('ID');">ID</th>
      <th ng-click="changeParam('name');">Song Name</th>
      <th ng-click="changeParam('created_date');">Created Date</th>
-     <th>Last Modified Date</th>
-     <th>Version</th>
-     <th>Instruments Count</th>
-     <th>Track Count</th>
-     <th>Tacts Count</th>
-     <th>Tempo</th>
-     <th>Tonality</th>
-     <th>Time Signature</th>
+     <th ng-click="changeParam('last_modified_date');">Last Modified Date</th>
+     <th ng-click="changeParam('version');">Version</th>
+     <th ng-click="changeParam('instruments_count');">Instruments Count</th>
+     <th ng-click="changeParam('track_count');">Track Count</th>
+     <th ng-click="changeParam('tacts');">Tacts Count</th>
+     <th ng-click="changeParam('tempo');">Tempo</th>
+     <th ng-click="changeParam('tonality');">Tonality</th>
+     <th ng-click="changeParam('signature');">Time Signature</th>
      <th>Length</th>
    </tr>
    <tr ng-repeat="item in textJson | orderBy:sortparam" class="justrow">
