@@ -24,9 +24,9 @@ Also, will it be an SPA or several pages?
   <a href="" ng-click="fetchJson()"> now </a></p>
 <table class="justtable" onload="changeClass($event)">
    <tr class="justheadertable">
-     <th>ID</th>
-     <th>Song Name</th>
-     <th>Created Date</th>
+     <th ng-click="changeParam('ID');">ID</th>
+     <th ng-click="changeParam('name');">Song Name</th>
+     <th ng-click="changeParam('created_date');">Created Date</th>
      <th>Last Modified Date</th>
      <th>Version</th>
      <th>Instruments Count</th>
