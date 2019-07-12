@@ -43,6 +43,7 @@
     width: 960px; 
     margin: auto;
     text-align: left;
+    background-color: #ddedd2;
 }
 #gtpmenu nav ul {
   list-style-type: none;
