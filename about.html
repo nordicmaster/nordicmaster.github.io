@@ -1,0 +1,33 @@
+<!doctype html>
+<title>GTP StoRAGE</title>
+<html ng-app='myApp'>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://nordicmaster.github.io/css/style.css" />
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script type="text/javascript">
+var myApp = angular.module('myApp', []);
+</script>
+<script src="https://nordicmaster.github.io/js/gtpController.js"></script>
+<body>
+<div id="bodycenter">
+  <div id="gtpmenu">
+    <nav>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="about.html">Эбаут ас, Эбаут ми</a></li>
+      </ul>
+    </nav>
+  </div>
+    <p>
+    GTP Storage - средство для отображения гитарпро файлов и их данных, находящихся в репозитории nordicmaster/guitarpros.
+    Возможность изменять файлы и описания к ним есть у всех пользователей github.
+
+    </p>
+</div>
+</body>
+</html>
+<!-- для загрузки конкретного файла https://raw.githubusercontent.com/user/repository/branch/filename 
+или https://github.com/downloads/user/repository/filename
+как можно сделать, чтобы выводился список файлов?-->
