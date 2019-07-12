@@ -12,14 +12,8 @@ var myApp = angular.module('myApp', []);
 <script src="https://nordicmaster.github.io/js/gtpController.js"></script>
 <body>
 <div id="bodycenter">
-  <div id="gtpmenu">
-    <nav>
-      <ul>
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="about.html">Эбаут ас, Эбаут ми</a></li>
-      </ul>
-    </nav>
-  </div>
+    <ng-include src="part_menu.html">
+    </ng-include>
     <p>
     GTP Storage - средство для отображения гитарпро файлов и их данных, находящихся в репозитории nordicmaster/guitarpros.
     Возможность изменять файлы и описания к ним есть у всех пользователей github.
