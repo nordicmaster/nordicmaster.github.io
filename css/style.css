@@ -44,3 +44,23 @@
     margin: auto;
     text-align: left;
 }
+#gtpmenu nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+#gtpmenu nav ul li {
+  float: left;
+}
+#gtpmenu nav ul li a {
+  display: block;
+  padding: 8px;
+  color: white;
+  text-align: center;
+  background-color: #ccdda3;
+}
+#gtpmenu nav ul li a:hover {
+  background-color: #111;
+}
