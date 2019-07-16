@@ -44,3 +44,10 @@ myApp.controller('gtpController', function($scope) {
     }
     init();
 });
+myApp.controller('linkController', function($scope) {
+    $scope.linkJson={
+        text: 'link',
+        author: 'NM',
+        date: '20/10/2019'
+    };
+});
