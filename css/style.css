@@ -10,6 +10,18 @@
     align: left;
     font-size: 18pt;
 }
+.linktext {
+    margin-top: 5px;
+    border-bottom: 1px solid #666; 
+    align: left;
+    font-size: 18pt;
+}
+.linktext a {
+    color: #652986;
+}
+.linktext a:hover {
+    color: #457939;
+}
 .justtable {
     text-align: center;
     align: center;
