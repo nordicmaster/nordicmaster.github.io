@@ -27,6 +27,9 @@
     border-bottom: 1px solid #fff;
     background-color: #d2d4a3;
 }
+.linktext a:visited {
+    color: #652986;
+}
 .justtable {
     text-align: center;
     align: center;
