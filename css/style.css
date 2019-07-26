@@ -78,7 +78,7 @@
 }
 #gtpmenu nav ul li a, #gtpmenu nav ul li p {
   display: block;
-  padding: 7px;
+  padding: 0;
   color: white;
   text-align: center;
   background-color: #657063;
