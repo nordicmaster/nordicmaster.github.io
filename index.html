@@ -15,13 +15,14 @@ var myApp = angular.module('myApp', []);
     <ng-include src="'part_menu.html'">
     </ng-include>
 <div class="maintext">This will be a storage for GTP files with BD and other shit</div>
-<div class="justtext">TODO: 
+<div class="justtext"><!--TODO: 
   <ul>
     <li> find some free BD and filestore (e.g. github.com/nordicmaster/guitarpros) </li>
     <li> place here a table with information about gtps </li>
     <li> ability to add\edit\delete gtps </li>  
   </ul>
-Also, will it be an SPA or several pages?  
+Also, will it be an SPA or several pages?  -->
+    Collection of guitarpro files made by Nordic Master
 </div>
 <div ng-controller="gtpController"> 
 <!--  <p ng-click="changeClass($event)"> Click this text (angularjs) </p>
@@ -29,7 +30,7 @@ Also, will it be an SPA or several pages?
  
 <p>TODO: fetch data from json
   <a href="" ng-click="fetchJson();changeParam('ID');"> now </a></p>-->
-<div ng-hide="textJson">Загрузка...</div>
+<div ng-hide="textJson">Loading...</div>
 <table class="justtable" onload="changeClass($event)">
    <tr class="justheadertable">
      <th ng-click="changeParam('ID');">ID</th>
