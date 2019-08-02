@@ -26,6 +26,8 @@ var myApp = angular.module('myApp', []);
         </p>
         <div ng-hide="linkJson">Загрузка...</div>        
     </div>
+    <ng-include src="'part_footer.html'">
+    </ng-include>
     <!-- добавить карусель отсюда https://angular-ui.github.io/bootstrap/ -->
     <!--    <div ng-controller="CarouselDemoCtrl">
           <div style="height: 305px">
@@ -57,8 +59,7 @@ var myApp = angular.module('myApp', []);
           </div>
         </div>
     -->
-    <ng-include src="'part_footer.html'">
-    </ng-include>
+
 </div>
 </body>
 </html>
