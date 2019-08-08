@@ -5,10 +5,10 @@ angular.module('myApp').controller('CarouselDemoCtrl', function ($scope) {
   var slides = $scope.slides = [];
   var currIndex = 0;
 
-  $scope.addSlide = function() {
+  $scope.addSlide = function(ids) {
     var newWidth = 600 + slides.length + 1;
     slides.push({
-      image: '//unsplash.it/' + newWidth + '/300',
+      image: '/src/0' + ids + '.png',
       text: ['Nice image','Awesome photograph','That is so cool','I love that'][slides.length % 4],
       id: currIndex++
     });
@@ -20,7 +20,7 @@ angular.module('myApp').controller('CarouselDemoCtrl', function ($scope) {
   };
 
   for (var i = 0; i < 4; i++) {
-    $scope.addSlide();
+    $scope.addSlide(i);
   }
 
   // Randomize logic below
