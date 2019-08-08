@@ -1,5 +1,5 @@
 angular.module('myApp').controller('CarouselDemoCtrl', function ($scope) {
-  $scope.myInterval = 5000;
+  $scope.myInterval = 2000;
   $scope.noWrapSlides = false;
   $scope.active = 0;
   var slides = $scope.slides = [];
@@ -19,7 +19,7 @@ angular.module('myApp').controller('CarouselDemoCtrl', function ($scope) {
     assignNewIndexesToSlides(indexes);
   };
 
-  for (var i = 0; i < 4; i++) {
+  for (var i = 0; i < 3; i++) {
     $scope.addSlide(i);
   }
 
