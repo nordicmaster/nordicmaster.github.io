@@ -61,6 +61,7 @@
 }
 
 #bodycenter { 
+    font-family: "Times New Roman", Times, serif;
     width: 1080px; 
     margin: auto;
     text-align: left;
