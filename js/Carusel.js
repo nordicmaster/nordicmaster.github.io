@@ -16,6 +16,11 @@ aaa.controller('CarouselDemoCtrl', function ($scope) {
       text: ['Nice image','Awesome photograph','That is so cool','I love that'][slides.length % 4],
       id: currIndex++
     });
+    $scope.slides.push({
+      image: '/src/0' + ids + '.png',
+      text: ['Nice image','Awesome photograph','That is so cool','I love that'][slides.length % 4],
+      id: currIndex++
+    });
   };
 
   $scope.randomize = function() {
