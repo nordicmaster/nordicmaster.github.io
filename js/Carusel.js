@@ -2,14 +2,17 @@
 //angular.module('myApp').controller('CarouselDemoCtrl', function ($scope) {
 
 var aaa = angular.module('caruselApp', ['ngAnimate', 'ngSanitize', 'carusel']);
+  console.log("inside carusel js");
 aaa.controller('CarouselDemoCtrl', function ($scope) {
   $scope.myInterval = 2000;
   $scope.noWrapSlides = false;
   $scope.active = 0;
   var slides = $scope.slides = [];
   var currIndex = 0;
+  console.log("inside controller");
 
   $scope.addSlide = function(ids) {
+    console.log("inside addslide");
     var newWidth = 600 + slides.length + 1;
     slides.push({
       image: '/src/0' + ids + '.png',
