@@ -64,4 +64,4 @@ aaa.controller('CarouselDemoCtrl', function ($scope) {
     return array;
   }
 });
-angular.bootstrap(document.getElementById("carusel"), ['caruselApp']);
+
