@@ -31,7 +31,7 @@ aaa.controller('CarouselDemoCtrl', function ($scope) {
   for (var i = 0; i < 3; i++) {
     $scope.addSlide(i);
   }
-
+  console.log(slides);
   // Randomize logic below
 
   function assignNewIndexesToSlides(indexes) {
