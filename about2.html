@@ -26,7 +26,7 @@ var caruselApp = angular.module('caruselApp', []);
 
 <body>
 <div id="bodycenter">
-<div ng-app='myApp'>
+<div ng-app='myApp' ng-strict-di>
     <ng-include src="'part_menu.html'">
     </ng-include>
     <div ng-controller="linkController"> 
@@ -41,7 +41,7 @@ var caruselApp = angular.module('caruselApp', []);
     <ng-include src="'part_footer.html'">
     </ng-include>
 </div>
-<div id="carusel"> <!-- <div id="carusel" ng-app='caruselApp'> -->
+<div id="carusel" ng-strict-di> <!-- <div id="carusel" ng-app='caruselApp'> -->
     <!-- добавить карусель отсюда https://angular-ui.github.io/bootstrap/ -->
         <div ng-controller="CarouselDemoCtrl">
           <div style="height: 200px">
