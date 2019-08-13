@@ -49,9 +49,14 @@ Also, will it be an SPA or several pages?  -->
    </tr>
    <tr ng-repeat="item in textJson | orderBy:sortparam" class="justrow">
      <td><a href="https://raw.githubusercontent.com/nordicmaster/guitarpros/master/{{item.ID}}.gp5" download>{{item.ID}}</a></td>
-     <td>{{item.name}} --
-  {{item.text}}
-</td>
+     <td>
+         <div class="dropdown">
+  <span>{{item.name}}</span>
+  <div class="dropdown-content">
+    <p>{{item.text}}</p>
+  </div>
+</div>
+    </td>
      <td ng-bind="item.created_date"></td>
      <td ng-bind="item.last_modified_date"></td>
      <td>{{item.version}}</td>
