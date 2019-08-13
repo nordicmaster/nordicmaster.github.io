@@ -11,6 +11,7 @@
       "tempo": 110,
       "tonality": "Chromatic",
       "signature": "19/18",
+      "text": "instrumental",
       "length": "Length"
     },
     {
@@ -25,6 +26,7 @@
       "tempo": 100,
       "tonality": "C# minor",
       "signature": "4/4",
+      "text": "",
       "length": "Length"
     },
     {
@@ -39,6 +41,7 @@
       "tempo": 130,
       "tonality": "F major",
       "signature": "4/4",
+      "text": "",  
       "length": "Length"
     },
     {											
@@ -53,6 +56,7 @@
       "tempo": 150,
       "tonality": "G major",
       "signature": "4/4 triplets",
+      "text": "",
       "length": "=2 sec * Tacts count * 120 / Tempo" 
     },
     {											
@@ -67,6 +71,7 @@
       "tempo": 120,
       "tonality": "A major / E&#160;major",
       "signature": "4/4 triplets",
+      "text": "",
       "length": "=2 sec * Tacts count * 120 / Tempo" 
     },
     {											
@@ -81,6 +86,7 @@
       "tempo": 130,
       "tonality": "E major",
       "signature": "4/4",
+      "text": "",
       "length": "=2 sec * Tacts count * 120 / Tempo" 
     },
     {											
@@ -95,6 +101,7 @@
       "tempo": 130,
       "tonality": "A major / G&#160;major",
       "signature": "4/4 triplets",
+      "text": "",
       "length": "=2 sec * Tacts count * 120 / Tempo" 
     },
     {											
@@ -109,6 +116,7 @@
       "tempo": 130,
       "tonality": "A major",
       "signature": "4/4 triplets",
+      "text": "",
       "length": "=2 sec * Tacts count * 120 / Tempo" 
     },
     {											
@@ -123,6 +131,7 @@
       "tempo": 120,
       "tonality": "A major",
       "signature": "4/4",
+      "text": "",
       "length": "=2 sec * Tacts count * 120 / Tempo" 
     },
     {											
@@ -137,6 +146,7 @@
       "tempo": 120,
       "tonality": "A major / E major",
       "signature": "4/4 triplets",
+      "text": "",
       "length": "=2 sec * Tacts count * 120 / Tempo" 
     },
     {											
@@ -151,6 +161,7 @@
       "tempo": 100,
       "tonality": "A major",
       "signature": "3/4 triplets",
+      "text": "",
       "length": "=2 sec * Tacts count * 120 / Tempo" 
     },
     {											
@@ -165,6 +176,7 @@
       "tempo": 140,
       "tonality": "A major",
       "signature": "4/4 triplets",
+      "text": "",
       "length": "=2 sec * Tacts count * 120 / Tempo" 
     },
     {											
@@ -179,6 +191,7 @@
       "tempo": 130,
       "tonality": "A major",
       "signature": "4/4",
+      "text": "",
       "length": "=2 sec * Tacts count * 120 / Tempo" 
     },
     {											
@@ -193,6 +206,7 @@
       "tempo": 150,
       "tonality": "B major",
       "signature": "4/4 triplets",
+      "text": "",
       "length": "=2 sec * Tacts count * 120 / Tempo" 
     },
     {											
@@ -207,6 +221,7 @@
       "tempo": 134,
       "tonality": "A major",
       "signature": "4/4",
+      "text": "",
       "length": "=2 sec * Tacts count * 120 / Tempo" 
     },
     {											
@@ -221,6 +236,7 @@
       "tempo": 140,
       "tonality": "A major",
       "signature": "4/4",
+      "text": "",
       "length": "=2 sec * Tacts count * 120 / Tempo" 
     },
     {											
@@ -235,6 +251,7 @@
       "tempo": 150,
       "tonality": "G major",
       "signature": "4/4",
+      "text": "",
       "length": "=2 sec * Tacts count * 120 / Tempo" 
     },
     {											
@@ -249,6 +266,7 @@
       "tempo": 110,
       "tonality": "A major / D major",
       "signature": "4/4",
+      "text": "",
       "length": "=2 sec * Tacts count * 120 / Tempo" 
     },
     {											
@@ -263,6 +281,7 @@
       "tempo": 130,
       "tonality": "A major",
       "signature": "4/4",
+      "text": "",
       "length": "=2 sec * Tacts count * 120 / Tempo" 
     },
     {											
@@ -277,6 +296,7 @@
       "tempo": 145,
       "tonality": "D major",
       "signature": "4/4 triplets",
+      "text": "",
       "length": "=2 sec * Tacts count * 120 / Tempo" 
     },
     {											
@@ -291,6 +311,7 @@
       "tempo": 135,
       "tonality": "E major",
       "signature": "4/4",
+      "text": "instrumental",
       "length": "=2 sec * Tacts count * 120 / Tempo" 
     }
 ]
