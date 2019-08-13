@@ -69,7 +69,7 @@
       "track_count": 8,
       "tacts": 215,
       "tempo": 120,
-      "tonality": "A major / E&#160;major",
+      "tonality": "A major / E&nbsp;major",
       "signature": "4/4 triplets",
       "text": "",
       "length": "=2 sec * Tacts count * 120 / Tempo" 
@@ -99,7 +99,7 @@
       "track_count": 5,
       "tacts": 215,
       "tempo": 130,
-      "tonality": "A major / G&#160;major",
+      "tonality": "A major / G&nbsp;major",
       "signature": "4/4 triplets",
       "text": "",
       "length": "=2 sec * Tacts count * 120 / Tempo" 
