@@ -4,64 +4,6 @@
 <head>
 <meta charset="utf-8">
 <link rel="stylesheet" href="https://nordicmaster.github.io/css/style.css" />
-    <style>
-        /* Popup container - can be anything you want */
-        .popup {
-          position: relative;
-          display: inline-block;
-          cursor: pointer;
-          -webkit-user-select: none;
-          -moz-user-select: none;
-          -ms-user-select: none;
-          user-select: none;
-        }
-
-        /* The actual popup */
-        .popup .popuptext {
-          visibility: hidden;
-          width: 160px;
-          background-color: #555;
-          color: #fff;
-          text-align: center;
-          border-radius: 6px;
-          padding: 8px 0;
-          position: absolute;
-          z-index: 1;
-          bottom: 125%;
-          left: 50%;
-          margin-left: -80px;
-        }
-
-        /* Popup arrow */
-        .popup .popuptext::after {
-          content: "";
-          position: absolute;
-          top: 100%;
-          left: 50%;
-          margin-left: -5px;
-          border-width: 5px;
-          border-style: solid;
-          border-color: #555 transparent transparent transparent;
-        }
-
-        /* Toggle this class - hide and show the popup */
-        .popup .show {
-          visibility: visible;
-          -webkit-animation: fadeIn 1s;
-          animation: fadeIn 1s;
-        }
-
-        /* Add animation (fade in the popup) */
-        @-webkit-keyframes fadeIn {
-          from {opacity: 0;} 
-          to {opacity: 1;}
-        }
-
-        @keyframes fadeIn {
-          from {opacity: 0;}
-          to {opacity:1 ;}
-        }
-     </style>
 </head>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 <script type="text/javascript">
@@ -107,9 +49,9 @@ Also, will it be an SPA or several pages?  -->
    </tr>
    <tr ng-repeat="item in textJson | orderBy:sortparam" class="justrow">
      <td><a href="https://raw.githubusercontent.com/nordicmaster/guitarpros/master/{{item.ID}}.gp5" download>{{item.ID}}</a></td>
-     <td><div class="popup" onclick="myFunction()">{{item.name}}
-  <span class="popuptext" id="myPopup">{{item.text}}</span>
-</div></td>
+     <td>{{item.name}} --
+  {{item.text}}
+</td>
      <td ng-bind="item.created_date"></td>
      <td ng-bind="item.last_modified_date"></td>
      <td>{{item.version}}</td>
@@ -131,17 +73,6 @@ Also, will it be an SPA or several pages?  -->
     <a href="https://nordicmaster.bandcamp.com/track/dark-land-dwellers">Dark Land Dwellers</a><br>
   </p>
 </div>
-
-    <div class="popup" onclick="myFunction()">Click me to toggle the popup!
-  <span class="popuptext" id="myPopup">A Simple Popup!</span>
-</div>
-    <script>
-// When the user clicks on div, open the popup
-function myFunction() {
-  var popup = document.getElementById("myPopup");
-  popup.classList.toggle("show");
-}
-</script>
     
     <ng-include src="'part_footer.html'">
     </ng-include>
