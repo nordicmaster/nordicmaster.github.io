@@ -18,19 +18,18 @@ myApp.controller('gtpController', function($scope) {
     function assignJson(obj) {
         console.log("assign " + obj[1]);
         $scope.textJson = obj;
+        $scope.textJson.forEach(addtext);
+    }
+    function addtext(item, index) {
         var xmlhttp2 = new XMLHttpRequest();
-        var txe;
-        foreach (item in obj)
-        {
-            xmlhttp2.onreadystatechange = function() {
-                if (this.readyState == 4 && this.status == 200) {
-                    console.log(this.responseText);
-                    item.text =JSON.parse(this.responseText);                    
-                }
+        xmlhttp2.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                console.log(this.responseText);
+                item.text =JSON.parse(this.responseText);                    
             }
-            xmlhttp2.open("GET", "https://nordicmaster.github.io/src/"+ item.ID+ ".txt", true);
-            xmlhttp2.send();
         }
+        xmlhttp2.open("GET", "https://nordicmaster.github.io/src/"+ item.ID+ ".txt", true);
+        xmlhttp2.send();
     }
     $scope.fetchJson = function () {
         //$scope.textJson.text = JSON.parse("https://nordicmaster.github.io/table_items.json");
