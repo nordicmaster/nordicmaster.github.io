@@ -23,6 +23,7 @@ myApp.controller('gtpController', function($scope) {
         $scope.textJson.forEach((item,index)=>{console.log("after "+item.ID+" "+item.text)});
     }
     function addtext(item, index) {
+        console.log("add Text");
         /*var xmlhttp2 = new XMLHttpRequest();
         xmlhttp2.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
@@ -42,6 +43,7 @@ myApp.controller('gtpController', function($scope) {
           });
     }
     function ajax(url) {
+        console.log("aja X");
       return new Promise(function(resolve, reject) {
         var xhr = new XMLHttpRequest();
         xhr.onreadystatechange = function() {
