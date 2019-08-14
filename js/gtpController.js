@@ -23,7 +23,7 @@ myApp.controller('gtpController', function($scope) {
         $scope.textJson.forEach((item,index)=>{console.log("after "+item.ID+" "+item.text)});
     }
     function addtext(item, index) {
-        var xmlhttp2 = new XMLHttpRequest();
+        /*var xmlhttp2 = new XMLHttpRequest();
         xmlhttp2.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
                 item.text =this.responseText; 
@@ -31,8 +31,28 @@ myApp.controller('gtpController', function($scope) {
             }
         }
         xmlhttp2.open("GET", "https://nordicmaster.github.io/src/"+ item.ID+ ".txt", true);
-        xmlhttp2.send();
+        xmlhttp2.send();*/
+        ajax("https://nordicmaster.github.io/src/"+ item.ID+ ".txt")
+          .then(function(result) {
+            console.log(result);
+            item.text=result;
+          })
+          .catch(function() {
+            console.log("rerror");
+          });
     }
+    function ajax(url) {
+      return new Promise(function(resolve, reject) {
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function() {
+          resolve(this.responseText);
+        };
+        xhr.onerror = reject;
+        xhr.open('GET', url);
+        xhr.send();
+      });
+    }
+
     $scope.fetchJson = function () {
         //$scope.textJson.text = JSON.parse("https://nordicmaster.github.io/table_items.json");
         //'<a href="https://nordicmaster.github.io/table_items.json">json</a>';
