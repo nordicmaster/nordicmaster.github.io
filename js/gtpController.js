@@ -26,9 +26,8 @@ myApp.controller('gtpController', function($scope) {
         var xmlhttp2 = new XMLHttpRequest();
         xmlhttp2.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
-                console.log(this.status);
-                console.log(this);
-                item.text =this.responseText;                    
+                item.text =this.responseText; 
+                console.log(item.text);
             }
         }
         xmlhttp2.open("GET", "https://nordicmaster.github.io/src/"+ item.ID+ ".txt", true);
