@@ -95,6 +95,7 @@
 
 .dropdown-content {
   display: none;
+  font-size: 12pt;
   position: absolute;
   background-color: #c9d9d0;
   min-width: 120px;
