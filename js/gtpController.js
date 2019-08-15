@@ -16,7 +16,7 @@ myApp.controller('gtpController', function($scope) {
         $scope.gtp.text = 'newtab';
     }
     function assignJson(obj) {
-        console.log("assign " + obj[1]);
+        //console.log("assign " + obj[1]);
         $scope.textJson = obj;
         //$scope.textJson.forEach((item,index)=>{console.log("before "+item.ID+" "+item.text)});
         $scope.textJson.forEach(addtext);
@@ -35,7 +35,7 @@ myApp.controller('gtpController', function($scope) {
         xmlhttp2.send();*/
         ajax("https://nordicmaster.github.io/src/"+ item.ID+ ".txt")
           .then(function(result) {
-            console.log(result);
+            console.log(JSON.stringify(result));
             item.text=result;
           })
           .catch(function() {
