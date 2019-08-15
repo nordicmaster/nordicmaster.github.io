@@ -20,7 +20,7 @@ myApp.controller('gtpController', function($scope) {
         $scope.textJson = obj;
         //$scope.textJson.forEach((item,index)=>{console.log("before "+item.ID+" "+item.text)});
         $scope.textJson.forEach(addtext);
-        //$scope.textJson.forEach((item,index)=>{console.log("after "+item.ID+" "+item.text)});
+        $scope.textJson.forEach((item,index)=>{console.log("after "+item.ID+" "+item.text)});
     }
     function addtext(item, index) {
         //console.log("add Text");
@@ -35,8 +35,9 @@ myApp.controller('gtpController', function($scope) {
         xmlhttp2.send();*/
         ajax("https://nordicmaster.github.io/src/"+ item.ID+ ".txt")
           .then(function(result) {
-            console.log(JSON.stringify(result));
-            item.text=JSON.stringify(result).trim();
+            //console.log(JSON.stringify(result));
+            item.text=JSON.stringify(result);
+            item.text=item.text.trim();
           })
           .catch(function() {
             console.log("rerror");
