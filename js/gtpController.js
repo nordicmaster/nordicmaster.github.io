@@ -47,7 +47,9 @@ myApp.controller('gtpController', function($scope) {
       return new Promise(function(resolve, reject) {
         var xhr = new XMLHttpRequest();
         xhr.onreadystatechange = function() {
-          resolve(this.responseText);
+            if (this.readyState == 4 && this.status == 200) {
+                resolve(this.responseText);
+            }
         };
         xhr.onerror = reject;
         xhr.open('GET', url);
