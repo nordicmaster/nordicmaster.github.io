@@ -36,7 +36,7 @@ myApp.controller('gtpController', function($scope) {
         ajax("https://nordicmaster.github.io/src/"+ item.ID+ ".txt")
           .then(function(result) {
             console.log(JSON.stringify(result));
-            item.text=result;
+            item.text=JSON.stringify(result).trim();
           })
           .catch(function() {
             console.log("rerror");
