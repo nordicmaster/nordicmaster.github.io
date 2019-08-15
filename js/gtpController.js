@@ -8,9 +8,10 @@ myApp.controller('gtpController', function($scope) {
         date: '20/10/2019'
     };
     $scope.textJson={
-        text: '',
+        /*text: '',
         author: 'NM',
-        date: '20/10/2019'
+        date: '20/10/2019'*/
+        []
     };
     $scope.changeClass = function (e) {         
         $scope.gtp.text = 'newtab';
