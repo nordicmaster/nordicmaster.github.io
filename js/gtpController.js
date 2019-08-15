@@ -20,7 +20,7 @@ myApp.controller('gtpController', function($scope) {
         $scope.textJson = obj;
         //$scope.textJson.forEach((item,index)=>{console.log("before "+item.ID+" "+item.text)});
         $scope.textJson.forEach(addtext);
-        $scope.textJson.forEach((item,index)=>{console.log("after "+item.ID+" "+item.text)});
+        //$scope.textJson.forEach((item,index)=>{console.log("after "+item.ID+" "+item.text)}); //async shit 
     }
     function addtext(item, index) {
         //console.log("add Text");
@@ -37,7 +37,9 @@ myApp.controller('gtpController', function($scope) {
           .then(function(result) {
             //console.log(JSON.stringify(result));
             item.text=JSON.stringify(result);
+            console.log("1: "+item.text);
             item.text=item.text.trim();
+            console.log("2: "+item.text);
           })
           .catch(function() {
             console.log("rerror");
