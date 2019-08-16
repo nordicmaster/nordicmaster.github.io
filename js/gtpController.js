@@ -40,8 +40,18 @@ myApp.controller('gtpController', function($scope) {
             console.log("1: "+item.text);
             item.text=item.text.trim();
             var str = item.text.replace(/\n/g," ");
+            var i = 0;
+            var newstr = "";
+            var len = str.length;
+            while (i < len)
+            {
+                var c = str[i];
+                if (c == '\n')
+                    c = ' ';
+                newstr = newstr.concat(c);                    
+            }
             console.log("str: "+str);
-            item.text=str;
+            item.text=newstr;
             console.log("2: "+item.text);
           })
           .catch(function() {
