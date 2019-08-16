@@ -46,11 +46,12 @@ myApp.controller('gtpController', function($scope) {
             while (i < len)
             {
                 var c = str[i];
-                if (i < 4)
+                if (i < 5)
                     console.log(c);
-                if (c == '\n'){
+                if (c == '\'){
                     console.log("zahodit")
                     c = ' ';
+                    i=i+1;
                 }
                 newstr = newstr.concat(c); 
                 i=i+1;
