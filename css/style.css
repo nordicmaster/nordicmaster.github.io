@@ -98,7 +98,7 @@
   font-size: 12pt;
   position: absolute;
   background-color: #c9d9d0;
-  min-width: 120px;
+  min-width: 180px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
