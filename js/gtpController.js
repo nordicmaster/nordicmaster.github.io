@@ -48,7 +48,7 @@ myApp.controller('gtpController', function($scope) {
                 var c = str[i];
                 if (i < 5)
                     console.log(c);
-                if (c == '\'){
+                if (c == '\\'){
                     console.log("zahodit")
                     c = ' ';
                     i=i+1;
