@@ -39,7 +39,7 @@ myApp.controller('gtpController', function($scope) {
             item.text=JSON.stringify(result);
             console.log("1: "+item.text);
             item.text=item.text.trim();
-            var str = item.text.replace("\n"," ");
+            var str = item.text.replace("e"," ");
             console.log("str: "+str);
             item.text=str;
             console.log("2: "+item.text);
