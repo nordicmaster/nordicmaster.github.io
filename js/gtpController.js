@@ -54,7 +54,6 @@ myApp.controller('gtpController', function($scope) {
                 newstr = newstr.concat(c); 
                 i=i+1;
             }
-            console.log("str: "+str);
             item.text=newstr;
             console.log("2: "+item.text);
           })
