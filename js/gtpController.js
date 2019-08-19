@@ -46,10 +46,8 @@ myApp.controller('gtpController', function($scope) {
             while (i < len)
             {
                 var c = str[i];
-                if (i < 5)
-                    console.log(c);
                 if (c == '\\'){
-                    console.log("zahodit")
+                    //console.log("zahodit")
                     c = ' ';
                     i=i+1;
                 }
