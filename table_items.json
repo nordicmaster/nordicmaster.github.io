@@ -30,6 +30,21 @@
       "length": "Length"
     },
     {
+      "ID":"34",
+      "name": "Siege",
+      "created_date": "02.10.2010",	
+      "last_modified_date": "04.02.2012",
+      "version": 2,
+      "instruments_count": 4,
+      "track_count": 5,
+      "tacts": 85,
+      "tempo": 120,
+      "tonality": "C# minor",
+      "signature": "4/4",
+      "text": "",
+      "length": "Length"
+    },
+    {
       "ID":"49",
       "name": "yyyy",
       "created_date": "03.03.2010",	
@@ -70,6 +85,21 @@
       "tacts": 215,
       "tempo": 120,
       "tonality": "A major / E major",
+      "signature": "4/4 triplets",
+      "text": "",
+      "length": "=2 sec * Tacts count * 120 / Tempo" 
+    },
+    {											
+      "ID":"77",
+      "name": "Commander Of Fleet",
+      "created_date": "03.01.2013",	
+      "last_modified_date": "01.03.2017",
+      "version": 2,
+      "instruments_count": 6,
+      "track_count": 8,
+      "tacts": 163,
+      "tempo": 120,
+      "tonality": "??",
       "signature": "4/4 triplets",
       "text": "",
       "length": "=2 sec * Tacts count * 120 / Tempo" 
