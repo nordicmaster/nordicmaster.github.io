@@ -56,7 +56,7 @@ Also, will it be an SPA or several pages?  -->
   <span>{{item.name}}</span>
   <div class="dropdown-content">
     <p>{{item.text}}</p>     <!-- сделать перенос по строкам. вместо \n должен отображаться перенос -->
-      <a href="" onclick='pdfeah()'>Download text</a>
+      <a href="" onclick='pdfeah(item)'>Download text</a>
   </div>
 </div>
     </td>
@@ -93,51 +93,52 @@ Also, will it be an SPA or several pages?  -->
 как можно сделать, чтобы выводился список файлов?-->
 
 <script>
-    var docInfo = {
- 
- info: {
-  title:'Тестовый документ PDF',
-  author:'Viktor',
-  subject:'Theme',
-  keywords:'Ключевые слова'
- },
- 
- pageSize:'A4',
- pageOrientation:'landscape',//'portrait'
- pageMargins:[50,50,30,60],
- 
- header:function(currentPage,pageCount) {
-  return {
- text: currentPage.toString() + 'из' + pageCount,
- alignment:'right',
- margin:[0,30,10,50]
-  }
- },
- 
- footer:[
-  {
- text:'нижний колонтитул',
- alignment:'center',//left  right
-  }
- ],
- 
- content: [
- 
-  {
- text:'Текст определенного параграфа',
- fontSize:20,
- margin:[150,80, 30,0]
- //pageBreak:'after'
-  },
- 
-  {
- text:'Текст определенного параграфа № 2',
- style:'header'
- //pageBreak:'before'
-  }
- ]
-}
-function pdfeah() {              
+
+function pdfeah(item) {
+        console.log("item = "+item);
+        var docInfo = { 
+         info: {
+          title:'Тестовый документ PDF',
+          author:'Viktor',
+          subject:'Theme',
+          keywords:'Ключевые слова'
+         },
+
+         pageSize:'A4',
+         pageOrientation:'landscape',//'portrait'
+         pageMargins:[50,50,30,60],
+
+         header:function(currentPage,pageCount) {
+          return {
+         text: currentPage.toString() + 'из' + pageCount,
+         alignment:'right',
+         margin:[0,30,10,50]
+          }
+         },
+
+         footer:[
+          {
+         text:'нижний колонтитул',
+         alignment:'center',//left  right
+          }
+         ],
+
+         content: [
+
+          {
+         text:'Текст определенного параграфа',
+         fontSize:20,
+         margin:[150,80, 30,0]
+         //pageBreak:'after'
+          },
+
+          {
+         text:'Текст определенного параграфа № 2',
+         style:'header'
+         //pageBreak:'before'
+          }
+         ]
+        }
     pdfMake.createPdf(docInfo).download('name.pdf');
 }
 </script>
