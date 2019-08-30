@@ -1,3 +1,5 @@
+<script src="https://nordicmaster.github.io/js/pdfmake.js"></script>
+<script src="https://nordicmaster.github.io/js/pdffonts.js"></script>
 //AngularJS
 var myApp=angular.module('myApp');
 myApp.controller('gtpController', function($scope) {
@@ -96,6 +98,58 @@ myApp.controller('gtpController', function($scope) {
         console.log("change param = "+ param);
         $scope.sortparam=param;
     }
+    
+
+    $scope.pdfeah=function(item) {
+        console.log("pdf item = "+item);
+        var docInfo = { 
+         info: {
+          title:'Тестовый документ PDF',
+          author:'Viktor',
+          subject:'Theme',
+          keywords:'Ключевые слова'
+         },
+
+         pageSize:'A4',
+         pageOrientation:'landscape',//'portrait'
+         pageMargins:[50,50,30,60],
+
+         header:function(currentPage,pageCount) {
+          return {
+         text: currentPage.toString() + 'из' + pageCount,
+         alignment:'right',
+         margin:[0,30,10,50]
+          }
+         },
+
+         footer:[
+          {
+         text:'нижний колонтитул',
+         alignment:'center',//left  right
+          }
+         ],
+
+         content: [
+
+          {
+         text:'Текст определенного параграфа',
+         fontSize:20,
+         margin:[150,80, 30,0]
+         //pageBreak:'after'
+          },
+
+          {
+         text:'Текст определенного параграфа № 2',
+         style:'header'
+         //pageBreak:'before'
+          }
+         ]
+        }
+    pdfMake.createPdf(docInfo).download('name.pdf');
+}
+
+    
+    
     init = function() {
         $scope.fetchJson();
     }
