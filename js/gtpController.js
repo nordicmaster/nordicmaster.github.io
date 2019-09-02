@@ -101,7 +101,7 @@ myApp.controller('gtpController', function($scope) {
     
 
     $scope.pdfeah=function(item) {
-        console.log("pdf item = "+item);
+        console.log("pdf item = "+item.ID);
         var docInfo = { 
          info: {
           title:'Text',
@@ -131,14 +131,14 @@ myApp.controller('gtpController', function($scope) {
 
          content: [
           {
-         text:'Текст определенного параграфа',
+         text:'text 1',
          fontSize:20,
          margin:[150,80, 30,0]
          //pageBreak:'after'
           },
 
           {
-         text:'Текст определенного параграфа № 2',
+         text:'text2',
          style:'header'
          //pageBreak:'before'
           }
