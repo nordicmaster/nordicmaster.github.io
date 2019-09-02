@@ -1,5 +1,5 @@
-<script src="https://nordicmaster.github.io/js/pdfmake.js"></script>
-<script src="https://nordicmaster.github.io/js/pdffonts.js"></script>
+//<script src="https://nordicmaster.github.io/js/pdfmake.js"></script>
+//<script src="https://nordicmaster.github.io/js/pdffonts.js"></script>
 //AngularJS
 var myApp=angular.module('myApp');
 myApp.controller('gtpController', function($scope) {
