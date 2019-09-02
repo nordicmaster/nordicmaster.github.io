@@ -43,7 +43,7 @@ myApp.controller('gtpController', function($scope) {
             var i = 0;
             var newstr = "";
             var len = str.length;
-            while (i < len)
+            /*while (i < len)
             {
                 var c = str[i];
                 if (c == '\\'){
@@ -54,7 +54,7 @@ myApp.controller('gtpController', function($scope) {
                 newstr = newstr.concat(c); 
                 i=i+1;
             }
-            item.text=newstr;
+            item.text=newstr;*/
             console.log("2: "+item.text);
           })
           .catch(function() {
