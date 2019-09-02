@@ -104,7 +104,7 @@ myApp.controller('gtpController', function($scope) {
         console.log("pdf item = "+item.ID);
         var docInfo = { 
          info: {
-          title:'Text',
+          title:item.name+' Text',
           author:'Master',
           subject:'Theme',
           keywords:'Ключевые слова'
@@ -131,7 +131,7 @@ myApp.controller('gtpController', function($scope) {
 
          content: [
           {
-         text:'text 1',
+         text:item.text,
          fontSize:20,
          margin:[150,80, 30,0]
          //pageBreak:'after'
@@ -144,7 +144,7 @@ myApp.controller('gtpController', function($scope) {
           }
          ]
         };
-    pdfMake.createPdf(docInfo).download('name.pdf');
+    pdfMake.createPdf(docInfo).download(item.name+'.pdf');
 }
 
     
