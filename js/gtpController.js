@@ -39,7 +39,7 @@ myApp.controller('gtpController', function($scope) {
             item.text=JSON.stringify(result);
             console.log("1: "+item.text);
             item.text=item.text.trim();
-            var str = item.text.replace(/\n+/g,"\\n");
+            var str = item.text.replace(/\n+/g,"\n");
             var i = 0;
             var newstr = "";
             var len = str.length;
@@ -99,7 +99,7 @@ myApp.controller('gtpController', function($scope) {
     
 
     $scope.pdfeah=function(item) {
-        console.log("pdf item = "+item.ID);
+        //console.log("pdf item = "+item.ID);
         var docInfo = { 
          info: {
           title:item.name+' Text',
@@ -116,7 +116,7 @@ myApp.controller('gtpController', function($scope) {
           return {
          text: currentPage.toString() + 'of' + pageCount,
          alignment:'right',
-         margin:[0,30,10,50]
+         margin:[10,30,20,50]
           }
          },
 
@@ -130,7 +130,7 @@ myApp.controller('gtpController', function($scope) {
          content: [
           {
          text:item.text,
-         fontSize:20,
+         fontSize:18,
          margin:[50,80, 30,50]
          //pageBreak:'after'
           }
