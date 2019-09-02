@@ -104,8 +104,8 @@ myApp.controller('gtpController', function($scope) {
         console.log("pdf item = "+item);
         var docInfo = { 
          info: {
-          title:'Тестовый документ PDF',
-          author:'Viktor',
+          title:'Text',
+          author:'Master',
           subject:'Theme',
           keywords:'Ключевые слова'
          },
@@ -116,7 +116,7 @@ myApp.controller('gtpController', function($scope) {
 
          header:function(currentPage,pageCount) {
           return {
-         text: currentPage.toString() + 'из' + pageCount,
+         text: currentPage.toString() + 'of' + pageCount,
          alignment:'right',
          margin:[0,30,10,50]
           }
@@ -124,13 +124,12 @@ myApp.controller('gtpController', function($scope) {
 
          footer:[
           {
-         text:'нижний колонтитул',
+         text:'NM production',
          alignment:'center',//left  right
           }
          ],
 
          content: [
-
           {
          text:'Текст определенного параграфа',
          fontSize:20,
@@ -144,7 +143,7 @@ myApp.controller('gtpController', function($scope) {
          //pageBreak:'before'
           }
          ]
-        }
+        };
     pdfMake.createPdf(docInfo).download('name.pdf');
 }
 
