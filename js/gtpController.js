@@ -102,7 +102,7 @@ myApp.controller('gtpController', function($scope) {
           return {
          text: currentPage.toString() + ' of ' + pageCount,
          alignment:'right',
-         margin:[10,30,20,50]
+         margin:[10,20,20,30]
           }
          },
 
@@ -116,15 +116,15 @@ myApp.controller('gtpController', function($scope) {
          content: [
          {
              text:item.name,
-             fontSize:24,
+             fontSize:22,
              alignment:'center',
              margin:[10,10, 10,10]
              //pageBreak:'after'
           },
           {
              text:item.text,
-             fontSize:18,
-             margin:[30,60, 30,50]
+             fontSize:16,
+             margin:[20,40, 20,40]
              //pageBreak:'after'
           }
          ]
