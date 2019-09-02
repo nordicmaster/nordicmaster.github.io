@@ -1,5 +1,3 @@
-//<script src="https://nordicmaster.github.io/js/pdfmake.js"></script>
-//<script src="https://nordicmaster.github.io/js/pdffonts.js"></script>
 //AngularJS
 var myApp=angular.module('myApp');
 myApp.controller('gtpController', function($scope) {
@@ -111,7 +109,7 @@ myApp.controller('gtpController', function($scope) {
          },
 
          pageSize:'A4',
-         pageOrientation:'landscape',//'portrait'
+         pageOrientation:'portrait',//'landscape',//'portrait'
          pageMargins:[50,50,30,60],
 
          header:function(currentPage,pageCount) {
@@ -133,14 +131,8 @@ myApp.controller('gtpController', function($scope) {
           {
          text:item.text,
          fontSize:20,
-         margin:[150,80, 30,0]
+         margin:[50,80, 30,50]
          //pageBreak:'after'
-          },
-
-          {
-         text:'text2',
-         style:'header'
-         //pageBreak:'before'
           }
          ]
         };
