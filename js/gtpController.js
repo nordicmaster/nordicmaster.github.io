@@ -86,6 +86,7 @@ myApp.controller('gtpController', function($scope) {
 
     $scope.pdfeah=function(item) {
         //console.log("pdf item = "+item.ID);
+        var textlen = item.text.length;
         var docInfo = { 
          info: {
           title:item.name+' Text',
@@ -122,7 +123,7 @@ myApp.controller('gtpController', function($scope) {
              //pageBreak:'after'
           },
           {
-             text:item.text,
+             text:item.text.substring(1,textlen-1),
              fontSize:16,
              margin:[20,40, 20,40]
              //pageBreak:'after'
