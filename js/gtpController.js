@@ -39,7 +39,7 @@ myApp.controller('gtpController', function($scope) {
             item.text=JSON.stringify(result);
             console.log("1: "+item.text);
             item.text=item.text.trim();
-            var str = item.text.replace(/\n+/g,"\n");
+            var str = item.text.replace(/\n+/g,"\\n");
             var i = 0;
             var newstr = "";
             var len = str.length;
