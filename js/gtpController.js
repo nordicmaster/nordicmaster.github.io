@@ -53,8 +53,8 @@ myApp.controller('gtpController', function($scope) {
                 }
                 newstr = newstr.concat(c); 
                 i=i+1;
-            }
-            item.text=newstr;*/
+            }*/
+            item.text=str.replace(/\\n/g, '\n'));
             console.log("2: "+item.text);
           })
           .catch(function() {
