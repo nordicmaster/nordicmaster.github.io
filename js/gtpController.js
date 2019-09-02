@@ -40,21 +40,7 @@ myApp.controller('gtpController', function($scope) {
             console.log("1: "+item.text);
             item.text=item.text.trim();
             var str = item.text.replace(/\\n+/g,"\n");
-            var i = 0;
-            var newstr = "";
-            var len = str.length;
-            /*while (i < len)
-            {
-                var c = str[i];
-                if (c == '\\'){
-                    //console.log("zahodit")
-                    c = ' ';
-                    i=i+1;
-                }
-                newstr = newstr.concat(c); 
-                i=i+1;
-            }*/
-            item.text=str;//.replace(/\n+/g, "\n"));
+            item.text=str;
             console.log("2: "+item.text);
           })
           .catch(function() {
@@ -128,11 +114,18 @@ myApp.controller('gtpController', function($scope) {
          ],
 
          content: [
+         {
+             text:item.name,
+             fontSize:24,
+             alignment:'center',
+             margin:[10,10, 10,10]
+             //pageBreak:'after'
+          },
           {
-         text:item.text,
-         fontSize:18,
-         margin:[50,80, 30,50]
-         //pageBreak:'after'
+             text:item.text,
+             fontSize:18,
+             margin:[50,80, 30,50]
+             //pageBreak:'after'
           }
          ]
         };
