@@ -100,7 +100,7 @@ myApp.controller('gtpController', function($scope) {
 
          header:function(currentPage,pageCount) {
           return {
-         text: currentPage.toString() + 'of' + pageCount,
+         text: currentPage.toString() + ' of ' + pageCount,
          alignment:'right',
          margin:[10,30,20,50]
           }
@@ -124,7 +124,7 @@ myApp.controller('gtpController', function($scope) {
           {
              text:item.text,
              fontSize:18,
-             margin:[50,80, 30,50]
+             margin:[30,60, 30,50]
              //pageBreak:'after'
           }
          ]
