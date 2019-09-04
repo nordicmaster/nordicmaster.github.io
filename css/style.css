@@ -14,7 +14,6 @@
     margin-top: 5px;
     margin-bottom: 5px;
     border-bottom: 1px solid #666; 
-    align: left;
     font-size: 18pt;
 }
 .linktext a {
@@ -85,6 +84,7 @@
   color: white;
   margin: 0;
   text-align: center;
+  font-size: 15pt;
   background-color: #657063;
 }
 #gtpmenu nav ul li a:hover, #gtpmenu nav ul li p:hover {
