@@ -76,11 +76,13 @@
 }
 #gtpmenu nav ul li {
   float: left;
+  margin: 0;
 }
 #gtpmenu nav ul li a, #gtpmenu nav ul li p {
   display: block;
   padding: 7px;
   color: white;
+  margin: 0;
   text-align: center;
   background-color: #657063;
 }
