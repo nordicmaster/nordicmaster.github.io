@@ -12,6 +12,7 @@
 }
 .linktext {
     margin-top: 5px;
+    margin-bottom: 5px;
     border-bottom: 1px solid #666; 
     align: left;
     font-size: 18pt;
