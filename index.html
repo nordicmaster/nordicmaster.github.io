@@ -35,7 +35,7 @@ Also, will it be an SPA or several pages?  -->
   <a href="" ng-click="fetchJson();changeParam('ID');"> now </a></p>-->
 <div ng-hide="textJson">Loading...</div>
 <table class="justtable" onload="changeParam('ID');">
-   <tr class="justheadertable" style='position: sticky; top: 0;'>
+   <tr class="justheadertable" style='position: sticky; top: 0;'><!-- sticky don`t work -->
      <th ng-click="changeParam('ID');">ID</th>
      <th ng-click="changeParam('name');">Song Name</th>
      <th ng-click="changeParam('created_date');">Created Date</th>
