@@ -43,6 +43,9 @@
 .justheadertable {
     background-color: #758073;
     color: #330032;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 .justrow {
     border-style: solid;
