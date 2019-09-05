@@ -58,6 +58,9 @@
     border-style: solid;
     border-width: 2px;
     border-color: #002200;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
 #bodycenter { 
