@@ -1,6 +1,6 @@
 <!doctype html>
 <title>GTP StoRAGE</title>
-<html >
+<html ng-app='caruselApp'>
 <head>
 <meta charset="utf-8">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
@@ -23,7 +23,6 @@ var caruselApp = angular.module('caruselApp', []);
 
 <body>
 <div id="bodycenter">
-<div ng-app='caruselApp'>
     <ng-include src="'part_menu.html'">
     </ng-include>
    
@@ -60,6 +59,5 @@ var caruselApp = angular.module('caruselApp', []);
     </ng-include>
 </div>
 
-</div>
 </body>
 </html>
