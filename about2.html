@@ -36,6 +36,14 @@ var caruselApp = angular.module('caruselApp', []);
         Возможность изменять файлы и описания к ним есть у всех пользователей github. Но только после Pull request
 
         </p>
+        
+        <form action="/action_page.php">
+          First name:<br>
+          <input type="text" name="firstname" value="Mickey">
+          <br>
+          <input type="submit" value="Submit">
+        </form> 
+        
         <div ng-hide="linkJson">Загрузка...</div>        
     </div>
     <ng-include src="'part_footer.html'">
