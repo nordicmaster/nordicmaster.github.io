@@ -37,12 +37,13 @@ var caruselApp = angular.module('caruselApp', []);
 
         </p>
         
-        <form action="/action_page.php">
+        <form action='addd()'>
           First name:<br>
-          <input type="text" name="firstname" value="Mickey">
+          <input type="text" name="addtofile" >
           <br>
           <input type="submit" value="Submit">
         </form> 
+        <p id="demo"></p>
         
         <div ng-hide="linkJson">Загрузка...</div>        
     </div>
@@ -85,4 +86,9 @@ var caruselApp = angular.module('caruselApp', []);
 </div>
 </div>
 </body>
+<script type="text/javascript">
+function addd() {
+  document.getElementById("demo").innerHTML = document.getElementById("addtofile").innerHTML;
+}
+</script>
 </html>
