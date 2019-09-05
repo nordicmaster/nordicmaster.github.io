@@ -31,17 +31,15 @@ var caruselApp = angular.module('caruselApp', []);
     </ng-include>
     <div ng-controller="linkController"> 
         <p class="justtext">
-
         GTP Storage - средство для отображения гитарпро файлов и их данных, находящихся в репозитории nordicmaster/guitarpros.
         Возможность изменять файлы и описания к ним есть у всех пользователей github. Но только после Pull request
-
         </p>
         
-        <form action='addd()'>
+        <form>
           First name:<br>
           <input type="text" name="addtofile" >
           <br>
-          <input type="submit" value="Submit">
+          <input type="submit" value="Submit" onclick="addd()">
         </form> 
         <p id="demo"></p>
         
