@@ -3,7 +3,9 @@
 
 var aaa = angular.module('caruselApp', ['ngAnimate', 'ngSanitize', 'carusel']);
   console.log("inside carusel js");
+  debugger;
 aaa.controller('CarouselDemoCtrl', function ($scope) {
+  debugger;
   $scope.myInterval = 2000;
   $scope.noWrapSlides = false;
   $scope.active = 0;
