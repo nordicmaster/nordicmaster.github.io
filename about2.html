@@ -54,7 +54,7 @@ var caruselApp = angular.module('caruselApp', []);
           <div style="height: 200px">
             <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
               <div uib-slide ng-repeat="slide in slides" index="slide.id">
-                <img ng-src="{{slide.image}}">
+                <img ng-src="slide.image">
                 <div> <!-- <div class="carousel-caption"> -->
                   <h4>Slide {{slide.id}}</h4>
                   <p>{{slide.text}}</p>
@@ -86,6 +86,7 @@ var caruselApp = angular.module('caruselApp', []);
 </body>
 <script type="text/javascript">
 function addd() {
+    var 
   document.getElementById("demo").innerHTML = document.getElementById("addtofile").value;
 }
 </script>
