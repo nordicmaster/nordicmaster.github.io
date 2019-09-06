@@ -13,10 +13,9 @@ angular.module('caruselApp').controller('CarouselDemoCtrl', function ($scope) {
 
   $scope.addSlide = function(ids) {
     console.log("inside addslide");
-    var newWidth = 600 + slides.length + 1;
     slides.push({
       image: '/src/0' + ids + '.png',
-      text: ['Nice image','Awesome photograph','That is so cool','I love that'][slides.length % 4],
+      text: ['Rehearsal demo','Cover art','Backstage','Merch sample'][slides.length % 4],
       id: currIndex++
     });
   };
@@ -46,7 +45,6 @@ angular.module('caruselApp').controller('CarouselDemoCtrl', function ($scope) {
     return shuffle(indexes);
   }
 
-  // http://stackoverflow.com/questions/962802#962890
   function shuffle(array) {
     var tmp, current, top = array.length;
 
@@ -62,4 +60,3 @@ angular.module('caruselApp').controller('CarouselDemoCtrl', function ($scope) {
     return array;
   }
 });
-
