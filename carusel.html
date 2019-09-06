@@ -31,7 +31,7 @@ var caruselApp = angular.module('caruselApp', []);
             <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
               <div uib-slide ng-repeat="slide in slides" index="slide.id">
                 <img ng-src="{{slide.image}}" style="max-width: 100%; height: 580px;object-position: 50% 50%;object-fit: scale-down;">
-                <div class="carousel-caption" style="padding-top:120px;">
+                <div class="carousel-caption" style="color:#120000;">
                   <h4>Slide {{slide.id}}</h4>
                   <p>{{slide.text}}</p>
                 </div>
