@@ -23,9 +23,8 @@ var caruselApp = angular.module('caruselApp', []);
     <div ng-controller="CarouselDemoCtrl">
     <ng-include src="'part_menu.html'">
     </ng-include>
-   
-        
-          <div style="height: 200px">
+           
+          <div style="height: 300px; max-height: 500px">
             <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
               <div uib-slide ng-repeat="slide in slides" index="slide.id">
                 <img ng-src="{{slide.image}}">
