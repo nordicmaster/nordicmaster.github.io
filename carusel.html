@@ -23,9 +23,9 @@ var caruselApp = angular.module('caruselApp', []);
     <div ng-controller="CarouselDemoCtrl">
     <ng-include src="'part_menu.html'">
     </ng-include>
-        <h2 class="justtext">
-            NM Gallery
-        </h2>
+    <h2 class="justtext">
+        NM Gallery
+    </h2>
         
           <div style="height: 800px; max-height: 800px">
             <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
@@ -39,7 +39,7 @@ var caruselApp = angular.module('caruselApp', []);
             </div>
           </div>
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-3">
               <button type="button" class="btn btn-info" ng-click="addSlide()">Add Slide</button>
               <button type="button" class="btn btn-info" ng-click="randomize()">Randomize slides</button>
               <div class="checkbox">
@@ -49,12 +49,13 @@ var caruselApp = angular.module('caruselApp', []);
                 </label>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-3">
               Interval, in milliseconds: <input type="number" class="form-control" ng-model="myInterval">
               <br />Enter a negative number or 0 to stop the interval.
             </div>
           </div>
-        </div>
+        
+    </div>
     
     <ng-include src="'part_footer.html'">
     </ng-include>
