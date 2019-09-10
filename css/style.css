@@ -94,6 +94,7 @@ body {
   color: white;
   margin: 0;
   text-align: center;
+  text-decoration: underline;  
   font-size: 15pt;
   background-color: #657063;
 }
