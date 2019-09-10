@@ -78,6 +78,10 @@ body {
     text-align: left;
     background-color: #cfefe2;
 }
+
+#gtpmenu {
+    line-height:1;
+}
 #gtpmenu nav ul {
   list-style-type: none;
   margin: 0;
