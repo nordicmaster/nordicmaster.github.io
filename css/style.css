@@ -11,12 +11,12 @@ body {
 }
 
 .itempart1 {
-    margin-left:5%;
+    margin-left:1%;
     display:inline-block;
     max-width: 150px;
 }
 .itempart2 {
-    margin-left:5%;
+    margin-left:2%;
     display:inline-block;
     max-width: 120px;
 }
