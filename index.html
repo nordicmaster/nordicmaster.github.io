@@ -34,6 +34,22 @@ Also, will it be an SPA or several pages?  -->
 <p>TODO: fetch data from json
   <a href="" ng-click="fetchJson();changeParam('ID');"> now </a></p>-->
 <div ng-hide="textJson">Loading...</div>
+    <!-- ORDER BY-->
+    Sort by:
+    <select id="sortsel">
+      <option value="ID">ID</option>
+      <option value="name">name</option>
+      <option value="created_date">created_date</option>
+      <option value="last_modified_date">last_modified_date</option>
+      <option value="version">version</option>
+      <option value="instruments_count">instruments_count</option>
+      <option value="track_count">track_count</option>
+      <option value="tacts">tacts</option>
+      <option value="tempo">tempo</option>
+      <option value="tonality">tonality</option>
+      <option value="signature">signature</option>
+    </select>
+    <button ng-click="changeParam(document.getElementById('sortsel').value)">Download text</button>
 
    <div ng-repeat="item in textJson | orderBy:sortparam" class="justrow">
          <span>
@@ -41,14 +57,17 @@ Also, will it be an SPA or several pages?  -->
              </a>
          </span>
          <span>
-             <div class="dropdown">
+             <!--<div class="dropdown">
                 <span>{{item.name}}</span>
                 <div class="dropdown-content">
-                <p>{{item.text}}</p>     <!-- сделать перенос по строкам. вместо \n должен отображаться перенос -->
-                <a href="" ng-click='pdfeah(item)'>Download text</a>
+                <p>{{item.text}}</p>    
+                
                 </div>
-             </div>
+             </div>-->
+             <div><button ng-click='pdfeah(item)'>Show text</button></div>
+             <div><button ng-click='pdfeah(item)'>Download text</button></div>
          </span>
+         Info: 
          <span ng-bind="item.created_date"></span>
          <span ng-bind="item.last_modified_date"></span>
          <span>{{item.version}}</span>
