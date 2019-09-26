@@ -49,12 +49,12 @@ Also, will it be an SPA or several pages?  -->
       <option value="tonality">tonality</option>
       <option value="signature">signature</option>
     </select>
-    <br>
+    <br><br>
 
    <div ng-repeat="item in textJson | orderBy:sortparam" class="justrow">
          <div class="itempart1">
-             <a href="https://raw.githubusercontent.com/nordicmaster/guitarpros/master/{{item.ID}}.gp5" download="{{item.ID}} ({{item.name}}).gp5">{{item.ID}}
-             </a>&nbsp;{{item.name}}
+             <a href="https://raw.githubusercontent.com/nordicmaster/guitarpros/master/{{item.ID}}.gp5" 
+                download="{{item.ID}} ({{item.name}}).gp5">{{item.ID}}</a>&nbsp;{{item.name}}
          </div>
          <div class="itempart2">
              <!--<div class="dropdown">
@@ -79,8 +79,7 @@ Also, will it be an SPA or several pages?  -->
              <span>{{item.tonality}}</span>
              <span>{{item.signature}}</span>
              <span> 
-                 <div ng-if="!(isNaN(item.tacts) || isNaN(item.tempo))">{{2 * item.tacts * 120 / item.tempo | number : 2}} sec 
-                 </div>
+                 <div ng-if="!(isNaN(item.tacts) || isNaN(item.tempo))">{{2 * item.tacts * 120 / item.tempo | number : 2}} sec</div>
              </span>
          </div>
    </div>
