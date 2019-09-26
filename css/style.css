@@ -11,11 +11,13 @@ body {
 }
 
 .itempart1 {
-    margin:5%;
+    margin-left:5%;
+    display:inline;
     max-width: 150px;
 }
 .itempart2 {
-    margin:5%;
+    margin-left:5%;
+    display:inline;
     max-width: 120px;
 }
 .maintext {
