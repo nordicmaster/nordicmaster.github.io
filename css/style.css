@@ -13,12 +13,12 @@ body {
 .itempart1 {
     margin-left:1%;
     display:inline-block;
-    max-width: 150px;
+    max-width: 250px;
 }
 .itempart2 {
     margin-left:2%;
     display:inline-block;
-    max-width: 120px;
+    max-width: 150px;
 }
 .maintext {
     border-bottom: 1px solid #aaa; 
