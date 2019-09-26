@@ -34,44 +34,33 @@ Also, will it be an SPA or several pages?  -->
 <p>TODO: fetch data from json
   <a href="" ng-click="fetchJson();changeParam('ID');"> now </a></p>-->
 <div ng-hide="textJson">Loading...</div>
-<table class="justtable" onload="changeParam('ID');">
-   <tr class="justheadertable" style='position: sticky; top: 0;'><!-- sticky don`t work -->
-     <th ng-click="changeParam('ID');">ID</th>
-     <th ng-click="changeParam('name');">Song Name</th>
-     <th ng-click="changeParam('created_date');">Created Date</th>
-     <th ng-click="changeParam('last_modified_date');">Last Modified Date</th>
-     <th ng-click="changeParam('version');">Version</th>
-     <th ng-click="changeParam('instruments_count');">Instruments Count</th>
-     <th ng-click="changeParam('track_count');">Track Count</th>
-     <th ng-click="changeParam('tacts');">Tacts Count</th>
-     <th ng-click="changeParam('tempo');">Tempo</th>
-     <th ng-click="changeParam('tonality');">Tonality</th>
-     <th ng-click="changeParam('signature');">Time Signature</th>
-     <th>Length</th>
-   </tr>
-   <tr ng-repeat="item in textJson | orderBy:sortparam" class="justrow">
-     <td><a href="https://raw.githubusercontent.com/nordicmaster/guitarpros/master/{{item.ID}}.gp5" download="{{item.ID}} ({{item.name}}).gp5">{{item.ID}}</a></td>
-     <td>
-         <div class="dropdown">
-  <span>{{item.name}}</span>
-  <div class="dropdown-content">
-    <p>{{item.text}}</p>     <!-- сделать перенос по строкам. вместо \n должен отображаться перенос -->
-      <a href="" ng-click='pdfeah(item)'>Download text</a>
-  </div>
-</div>
-    </td>
-     <td ng-bind="item.created_date"></td>
-     <td ng-bind="item.last_modified_date"></td>
-     <td>{{item.version}}</td>
-     <td>{{item.instruments_count}}</td>
-     <td>{{item.track_count}}</td>
-     <td>{{item.tacts}}</td>
-     <td>{{item.tempo}}</td>
-     <td>{{item.tonality}}</td>
-     <td>{{item.signature}}</td>
-     <td> <div ng-if="!(isNaN(item.tacts) || isNaN(item.tempo))">{{2 * item.tacts * 120 / item.tempo | number : 2}} sec </div> </td>
-   </tr>
-  </table>
+
+   <div ng-repeat="item in textJson | orderBy:sortparam" class="justrow">
+         <span>
+             <a href="https://raw.githubusercontent.com/nordicmaster/guitarpros/master/{{item.ID}}.gp5" download="{{item.ID}} ({{item.name}}).gp5">{{item.ID}}
+             </a>
+         </span>
+         <span>
+             <div class="dropdown">
+                <span>{{item.name}}</span>
+                <div class="dropdown-content">
+                <p>{{item.text}}</p>     <!-- сделать перенос по строкам. вместо \n должен отображаться перенос -->
+                <a href="" ng-click='pdfeah(item)'>Download text</a>
+                </div>
+             </div>
+         </span>
+         <span ng-bind="item.created_date"></span>
+         <span ng-bind="item.last_modified_date"></span>
+         <span>{{item.version}}</span>
+         <span>{{item.instruments_count}}</span>
+         <span>{{item.track_count}}</span>
+         <span>{{item.tacts}}</span>
+         <span>{{item.tempo}}</span>
+         <span>{{item.tonality}}</span>
+         <span>{{item.signature}}</span>
+         <span> <div ng-if="!(isNaN(item.tacts) || isNaN(item.tempo))">{{2 * item.tacts * 120 / item.tempo | number : 2}} sec </div> </span>
+   </div>
+
   <p class="linktext"> Soundcloud pages: <br>
     <a href="https://soundcloud.com/user-912533495-638345693/viking-song">Viking song</a><br>
     <a href="https://soundcloud.com/user-912533495-638345693/dream-of-better-life">Dream Of Better Life</a><br>
