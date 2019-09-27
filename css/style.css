@@ -15,7 +15,7 @@ body {
 .itempart1 {
     margin-left:1%;
     display:inline-block;
-    max-width: 250px;
+    width: 250px;
 }
 .itempart2 {
     margin-left:2%;
