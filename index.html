@@ -69,16 +69,16 @@ Also, will it be an SPA or several pages?  -->
          </div>
          <div class="itempart3">
              Info: 
-             <span>Created: {{item.created_date}}</span>
-             <span>Modified: {{item.last_modified_date}}</span>
-             <span>Version: {{item.version}}</span>
-             <span>Instruments: {{item.instruments_count}}</span>
-             <span>Tracks: {{item.track_count}}</span>
-             <span>Tacts: {{item.tacts}}</span>
-             <span>Tempo: {{item.tempo}}</span>
-             <span>Tonality: {{item.tonality}}</span>
-             <span>Signature: {{item.signature}}</span>
-             <span>Length: <span ng-if="!(isNaN(item.tacts) || isNaN(item.tempo))">{{2 * item.tacts * 120 / item.tempo | number : 2}} sec</span>
+             <span>Created:&nbsp;{{item.created_date}}</span>
+             <span>Modified:&nbsp;{{item.last_modified_date}}</span>
+             <span>Version:&nbsp;{{item.version}}</span>
+             <span>Instruments:&nbsp;{{item.instruments_count}}</span>
+             <span>Tracks:&nbsp;{{item.track_count}}</span>
+             <span>Tacts:&nbsp;{{item.tacts}}</span>
+             <span>Tempo:&nbsp;{{item.tempo}}</span>
+             <span>Tonality:&nbsp;{{item.tonality}}</span>
+             <span>Signature:&nbsp;{{item.signature}}</span>
+             <span>Length:&nbsp;<span ng-if="!(isNaN(item.tacts) || isNaN(item.tempo))">{{2 * item.tacts * 120 / item.tempo | number : 2}} sec</span>
              </span>
          </div>
    </div>
