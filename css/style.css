@@ -9,7 +9,9 @@ body {
     margin: 0;
     line-height:1;
 }
-
+.itempart1 .itempart2 .itempart3 {
+    vertical-align: top;
+}
 .itempart1 {
     margin-left:1%;
     display:inline-block;
