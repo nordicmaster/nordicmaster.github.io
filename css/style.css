@@ -29,6 +29,9 @@ body {
     margin-left:1%;
     display:inline-block;
 }
+.itempart3 span {
+    font-size:80%;
+}
 .maintext {
     border-bottom: 1px solid #aaa; 
     margin-bottom: 10px; 
