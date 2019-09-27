@@ -78,7 +78,7 @@ Also, will it be an SPA or several pages?  -->
              <span>Tempo: {{item.tempo}}</span>
              <span>Tonality: {{item.tonality}}</span>
              <span>Signature: {{item.signature}}</span>
-             <span> Length: <span ng-if="!(isNaN(item.tacts) || isNaN(item.tempo))">{{2 * item.tacts * 120 / item.tempo | number : 2}} sec</span>
+             <span>Length: <span ng-if="!(isNaN(item.tacts) || isNaN(item.tempo))">{{2 * item.tacts * 120 / item.tempo | number : 2}} sec</span>
              </span>
          </div>
    </div>
