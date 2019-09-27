@@ -28,6 +28,7 @@ body {
 .itempart3 {
     margin-left:1%;
     display:inline-block;
+    width: 650px;
 }
 .itempart3 span {
     font-size:80%;
