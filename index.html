@@ -56,7 +56,7 @@ Also, will it be an SPA or several pages?  -->
              <a href="https://raw.githubusercontent.com/nordicmaster/guitarpros/master/{{item.ID}}.gp5" 
                 download="{{item.ID}} ({{item.name}}).gp5">{{item.ID}}</a>&nbsp;{{item.name}}
          </div>
-         <span class="itempart2">
+         <div class="itempart2">
              <!--<div class="dropdown">
                 <span>{{item.name}}</span>
                 <div class="dropdown-content">
@@ -66,22 +66,21 @@ Also, will it be an SPA or several pages?  -->
              </div>-->
              <div><button ng-click='pdfeah(item)'>Show text</button></div>
              <div><button ng-click='pdfeah(item)'>Download text</button></div>
-         </span>
-         <span class="itempart3">
+         </div>
+         <div class="itempart3">
              Info: 
-             <span ng-bind="item.created_date"></span>
-             <span ng-bind="item.last_modified_date"></span>
-             <span>{{item.version}}</span>
-             <span>{{item.instruments_count}}</span>
-             <span>{{item.track_count}}</span>
-             <span>{{item.tacts}}</span>
-             <span>{{item.tempo}}</span>
-             <span>{{item.tonality}}</span>
-             <span>{{item.signature}}</span>
-             <span> 
-                 <div ng-if="!(isNaN(item.tacts) || isNaN(item.tempo))">{{2 * item.tacts * 120 / item.tempo | number : 2}} sec</div>
+             <span>Created: {{item.created_date}}</span>
+             <span>Modified: {{item.last_modified_date}}</span>
+             <span>Version: {{item.version}}</span>
+             <span>Instruments: {{item.instruments_count}}</span>
+             <span>Tracks: {{item.track_count}}</span>
+             <span>Tacts: {{item.tacts}}</span>
+             <span>Tempo: {{item.tempo}}</span>
+             <span>Tonality: {{item.tonality}}</span>
+             <span>Signature: {{item.signature}}</span>
+             <span> Length: <span ng-if="!(isNaN(item.tacts) || isNaN(item.tempo))">{{2 * item.tacts * 120 / item.tempo | number : 2}} sec</span>
              </span>
-         </span>
+         </div>
    </div>
 
   <p class="linktext"> Soundcloud pages: <br>
