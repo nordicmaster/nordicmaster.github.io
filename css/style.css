@@ -25,6 +25,10 @@ body {
 .itempart2 div button {
     width: 100%;
 }
+.itempart3 {
+    margin-left:1%;
+    display:inline-block;
+}
 .maintext {
     border-bottom: 1px solid #aaa; 
     margin-bottom: 10px; 
