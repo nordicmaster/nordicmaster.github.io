@@ -20,6 +20,9 @@ body {
     display:inline-block;
     max-width: 150px;
 }
+.itempart2 div button {
+    width: 100%;
+}
 .maintext {
     border-bottom: 1px solid #aaa; 
     margin-bottom: 10px; 
