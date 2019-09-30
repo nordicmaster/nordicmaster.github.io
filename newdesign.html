@@ -17,7 +17,7 @@ var myApp = angular.module('myApp', []);
   <div id="blackside" class="blackside" onclick='blackit()'>
     Nordic&nbsp;
   </div>
-  <div id="whiteside" class="whiteside">
+  <div id="whiteside" class="whiteside" onclick='whiteit()'>
     Master
   </div>
   
@@ -25,6 +25,11 @@ var myApp = angular.module('myApp', []);
 </html>
 <script>
   function blackit() {
+    console.log("blackit");
     document.getElementById("blackside").width = '100%';
+  }
+  function whiteit() {
+    console.log("whiteit");
+    document.getElementById("whiteside").width = '100%';
   }
 </script>
