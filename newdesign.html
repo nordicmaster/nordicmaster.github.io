@@ -37,8 +37,9 @@ var myApp = angular.module('myApp', []);
     document.getElementById("back").style.display='block';
   }
   function restore() {
+    console.log('restore');
     document.getElementById("whiteside").style.width = '49%';
     document.getElementById("blackside").style.width = '50%';
-    document.getElementById("back").style.display='hidden';
+    document.getElementById("back").style.display='none';
   }
 </script>
