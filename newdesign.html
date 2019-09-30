@@ -15,10 +15,12 @@ var myApp = angular.module('myApp', []);
 <body>
 
   <div id="blackside" class="blackside" onclick='blackit()'>
-    Nordic&nbsp;
+    Nordic&nbsp;<br>
+    <button id="back" onclick="restore()">back</button>
   </div>
   <div id="whiteside" class="whiteside" onclick='whiteit()'>
-    Master
+    Master<br>
+    <button id="back" onclick="restore()">back</button>
   </div>
   
 </body>
@@ -27,9 +29,16 @@ var myApp = angular.module('myApp', []);
   function blackit() {
     document.getElementById("blackside").style.width = '100%';
     document.getElementById("whiteside").style.width = '0%';
+    document.getElementById("back").style.display='block';
   }
   function whiteit() {
     document.getElementById("whiteside").style.width = '100%';
     document.getElementById("blackside").style.width = '0%';
+    document.getElementById("back").style.display='block';
+  }
+  function restore() {
+    document.getElementById("whiteside").style.width = '49%';
+    document.getElementById("blackside").style.width = '50%';
+    document.getElementById("back").style.display='hidden';
   }
 </script>
