@@ -14,8 +14,8 @@ var myApp = angular.module('myApp', []);
 <script src="https://nordicmaster.github.io/js/pdffonts.js"></script>
 <body>
 
-  <div class="blackside">
-    Nordic
+  <div class="blackside" onclick='blackit()'>
+    Nordic&nbsp;
   </div>
   <div class="whiteside">
     Master
@@ -23,3 +23,8 @@ var myApp = angular.module('myApp', []);
   
 </body>
 </html>
+<script>
+  function blackit() {
+    document.getElementById("blackside").width = '100%';
+  }
+</script>
