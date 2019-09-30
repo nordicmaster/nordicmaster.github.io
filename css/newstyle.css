@@ -10,6 +10,15 @@ body {
     line-height:1;
 }
 
+.blackside {
+  background-color: black;
+  color:white;
+}
+.whiteside {
+  background-color: white;
+  color:black;
+}
+
 .dropdown {
   position: relative;
   display: inline-block;
