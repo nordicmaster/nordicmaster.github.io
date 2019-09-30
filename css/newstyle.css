@@ -23,6 +23,9 @@ body {
   display:inline-block;
   width: 49%;
 }
+.back {
+  display:none;
+}
 
 .dropdown {
   position: relative;
