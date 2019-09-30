@@ -27,11 +27,13 @@ var myApp = angular.module('myApp', []);
 </html>
 <script>
   function blackit() {
+    console.log('blackit');
     document.getElementById("blackside").style.width = '100%';
     document.getElementById("whiteside").style.width = '0%';
     document.getElementById("back1").style.display='block';
   }
   function whiteit() {
+    console.log('whiteit');
     document.getElementById("whiteside").style.width = '100%';
     document.getElementById("blackside").style.width = '0%';
     document.getElementById("back2").style.display='block';
