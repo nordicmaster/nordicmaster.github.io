@@ -14,11 +14,11 @@ var myApp = angular.module('myApp', []);
 <script src="https://nordicmaster.github.io/js/pdffonts.js"></script>
 <body>
 
-  <div id="blackside" class="blackside" onclick='blackit()'>
+  <div id="blackside"  ng-controller="gtpController" class="blackside" onclick='blackit()'>
     Nordic&nbsp;<br>
     <button id="back1" class="back" onclick="restore(event)">back</button>
     <br>
-    <div ng-repeat="item in textJson | orderBy:sortparam" class="justrow">
+    <div id="contentblack" style="display:none;" ng-repeat="item in textJson | orderBy:sortparam" class="justrow">
          <div class="itempart1">
              <a href="https://raw.githubusercontent.com/nordicmaster/guitarpros/master/{{item.ID}}.gp5" 
                 download="{{item.ID}} ({{item.name}}).gp5">{{item.ID}}</a>&nbsp;{{item.name}}
@@ -57,6 +57,7 @@ var myApp = angular.module('myApp', []);
     document.getElementById("blackside").style.width = '100%';
     document.getElementById("whiteside").style.width = '0%';
     document.getElementById("back1").style.display='block';
+    document.getElementById("contentblack").style.display='block';
   }
   function whiteit() {
     console.log('whiteit');
@@ -70,6 +71,7 @@ var myApp = angular.module('myApp', []);
     document.getElementById("blackside").style.width = '50%';
     document.getElementById("back1").style.display='none';
     document.getElementById("back2").style.display='none';
+    document.getElementById("contentblack").style.display='none';
     e.stopPropagation();
   }
 </script>
