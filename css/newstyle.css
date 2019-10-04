@@ -16,6 +16,8 @@ body {
   display:inline-block;
   width: 50%;
   text-align:right;
+}
+.blackside > *{
   float: right;
 }
 .whiteside {
