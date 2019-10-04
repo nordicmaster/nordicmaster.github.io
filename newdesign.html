@@ -38,11 +38,12 @@ var myApp = angular.module('myApp', []);
     document.getElementById("blackside").style.width = '0%';
     document.getElementById("back2").style.display='block';
   }
-  function restore() {
+  function restore(e) {
     console.log('restore');
     document.getElementById("whiteside").style.width = '49%';
     document.getElementById("blackside").style.width = '50%';
     document.getElementById("back1").style.display='none';
     document.getElementById("back2").style.display='none';
+    e.stopPropagation();
   }
 </script>
