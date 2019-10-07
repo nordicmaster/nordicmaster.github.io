@@ -67,11 +67,11 @@ var myApp = angular.module('myApp', []);
   }
   function restore(e) {
     console.log('restore');
+    e.stopPropagation();
     document.getElementById("whiteside").style.width = '49%';
     document.getElementById("blackside").style.width = '50%';
     document.getElementById("back1").style.display='none';
     document.getElementById("back2").style.display='none';
-    document.getElementById("contentblack").style.display='none';
-    e.stopPropagation();
+    document.getElementById("contentblack").style.display='none';    
   }
 </script>
