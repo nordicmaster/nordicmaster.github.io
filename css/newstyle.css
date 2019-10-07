@@ -20,6 +20,10 @@ body {
 .blackside > *{
   float: right;
 }
+.contentblack {
+  visibility:hidden;
+}
+
 .whiteside {
   background-color: white;
   color:black;
