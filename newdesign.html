@@ -19,6 +19,7 @@ var myApp = angular.module('myApp', []);
       <button id="back1" class="back" onclick="restore(event)">back</button>
       <br>
       <div id="contentblack" class="contentblack">
+          Content Black
         <div ng-repeat="item in textJson | orderBy:sortparam" class="justrow">
            <div class="itempart1">
                <a href="https://raw.githubusercontent.com/nordicmaster/guitarpros/master/{{item.ID}}.gp5" 
@@ -48,6 +49,10 @@ var myApp = angular.module('myApp', []);
   <div id="whiteside" class="whiteside" onclick='whiteit()'>
     Master<br>
     <button id="back2" class="back" onclick="restore(event)">back</button>
+      <br>
+      <div id="contentwhite" class="contentwhite">
+          Content White
+      </div>
   </div>
   
 </body>
@@ -65,6 +70,7 @@ var myApp = angular.module('myApp', []);
     document.getElementById("whiteside").style.width = '100%';
     document.getElementById("blackside").style.width = '0%';
     document.getElementById("back2").style.display='block';
+    document.getElementById("contentwhite").style.visibility='visible';
   }
   function restore(e) {
     console.log('restore');
@@ -74,5 +80,6 @@ var myApp = angular.module('myApp', []);
     document.getElementById("back1").style.display='none';
     document.getElementById("back2").style.display='none';
     document.getElementById("contentblack").style.visibility='hidden';    
+    document.getElementById("contentwhite").style.visibility='hidden';  
   }
 </script>
