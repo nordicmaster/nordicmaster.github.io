@@ -18,7 +18,7 @@ var myApp = angular.module('myApp', []);
     Nordic&nbsp;<br>
     <button id="back1" class="back" onclick="restore(event)">back</button>
     <br>
-    <div id="contentblack" style="display:none;" ng-repeat="item in textJson | orderBy:sortparam" class="justrow">
+    <div id="contentblack" class="contentblack" ng-repeat="item in textJson | orderBy:sortparam" class="justrow">
          <div class="itempart1">
              <a href="https://raw.githubusercontent.com/nordicmaster/guitarpros/master/{{item.ID}}.gp5" 
                 download="{{item.ID}} ({{item.name}}).gp5">{{item.ID}}</a>&nbsp;{{item.name}}
@@ -57,7 +57,7 @@ var myApp = angular.module('myApp', []);
     document.getElementById("blackside").style.width = '100%';
     document.getElementById("whiteside").style.width = '0%';
     document.getElementById("back1").style.display='block';
-    document.getElementById("contentblack").style.display='block';
+    document.getElementById("contentblack").style.visibility='visible';
   }
   function whiteit() {
     console.log('whiteit');
@@ -72,6 +72,6 @@ var myApp = angular.module('myApp', []);
     document.getElementById("blackside").style.width = '50%';
     document.getElementById("back1").style.display='none';
     document.getElementById("back2").style.display='none';
-    document.getElementById("contentblack").style.display='none';    
+    document.getElementById("contentblack").style.visibility='hidden';    
   }
 </script>
