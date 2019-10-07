@@ -20,7 +20,7 @@ body {
 .blackside > *{
   float: right;
 }
-.contentblack {
+.contentblack, .contentwhite {
   visibility:hidden;
 }
 
