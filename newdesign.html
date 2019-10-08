@@ -56,6 +56,7 @@ var myApp = angular.module('myApp', []);
     console.log('blackit');
     document.getElementById("blackside").style.width = '100%';
     document.getElementById("whiteside").style.width = '0%';
+    document.getElementById("whiteside").style.display='none';
     document.getElementById("back1").style.display='block';
     document.getElementById("contentblack").style.visibility='visible';
   }
@@ -63,6 +64,7 @@ var myApp = angular.module('myApp', []);
     console.log('whiteit');
     document.getElementById("whiteside").style.width = '100%';
     document.getElementById("blackside").style.width = '0%';
+    document.getElementById("blackide").style.display='none';
     document.getElementById("back2").style.display='block';
     document.getElementById("contentwhite").style.visibility='visible';
   }
@@ -71,6 +73,8 @@ var myApp = angular.module('myApp', []);
     e.stopPropagation();
     document.getElementById("whiteside").style.width = '49%';
     document.getElementById("blackside").style.width = '50%';
+    document.getElementById("whiteside").style.display='inline-block';
+    document.getElementById("blackside").style.display='inline-block';
     document.getElementById("back1").style.display='none';
     document.getElementById("back2").style.display='none';
     document.getElementById("contentblack").style.visibility='hidden';    
