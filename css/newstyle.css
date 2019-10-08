@@ -16,6 +16,7 @@ body {
   display:inline-block;
   width: 50%;
   text-align:right;
+  vertical-align: top;
 }
 .blackside > *{
   float: right;
@@ -29,6 +30,7 @@ body {
   color:black;
   display:inline-block;
   width: 49%;
+  vertical-align: top;
 }
 .back {
   display:none;
