@@ -35,7 +35,30 @@ body {
 .back {
   display:none;
 }
-
+.itempart1, .itempart2, .itempart3 {
+    vertical-align: top;
+}
+.itempart1 {
+    margin-left:1%;
+    display:inline-block;
+    width: 250px;
+}
+.itempart2 {
+    margin-left:2%;
+    display:inline-block;
+    max-width: 150px;
+}
+.itempart2 div button {
+    width: 100%;
+}
+.itempart3 {
+    margin-left:1%;
+    display:inline-block;
+    width: 650px;
+}
+.itempart3 span {
+    font-size:80%;
+}
 .dropdown {
   position: relative;
   display: inline-block;
