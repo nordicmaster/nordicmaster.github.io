@@ -19,7 +19,23 @@ var myApp = angular.module('myApp', []);
       <button id="back1" class="back" onclick="restore(event)">back</button>
       <br>
       <div id="contentblack" class="contentblack">
-          Content Black
+          Content Black <br>
+              <!-- ORDER BY-->
+            Sort by:
+            <select class="sortsel" ng-model="sortparam">
+              <option value="ID">ID</option>
+              <option value="name">name</option>
+              <option value="created_date">created_date</option>
+              <option value="last_modified_date">last_modified_date</option>
+              <option value="version">version</option>
+              <option value="instruments_count">instruments_count</option>
+              <option value="track_count">track_count</option>
+              <option value="tacts">tacts</option>
+              <option value="tempo">tempo</option>
+              <option value="tonality">tonality</option>
+              <option value="signature">signature</option>
+            </select>
+            <br><br>
         <div ng-repeat="item in textJson | orderBy:sortparam" class="justrow">
            <div class="itempart1">
                <a href="https://raw.githubusercontent.com/nordicmaster/guitarpros/master/{{item.ID}}.gp5" 
