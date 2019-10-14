@@ -19,7 +19,7 @@ body {
   vertical-align: top;
 }
 .blackside > *{
-  float: right;
+  /*float: right;*/
 }
 .contentblack, .contentwhite {
   visibility:hidden;
@@ -79,6 +79,6 @@ body {
   display: block;
 }
 #pack {
-    width: 1320px;
+    width: 100%;
     margin: auto;
 }
