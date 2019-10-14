@@ -23,6 +23,7 @@ body {
 }
 .contentblack, .contentwhite {
   visibility:hidden;
+  margin:auto;
 }
 
 .whiteside {
