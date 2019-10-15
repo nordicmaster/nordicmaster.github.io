@@ -11,7 +11,8 @@ body {
 }
 button {
   padding: 0;
-  border: none;
+   border: solid 1px transparent;
+   border-radius: 4px;
   font: inherit;
   color: #ffffff;
   background-color: #9555af;
