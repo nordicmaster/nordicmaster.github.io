@@ -11,11 +11,12 @@ body {
 }
 button {
   padding: 2px;
+  margin: 2px;
    border: solid 1px transparent;
-   border-radius: 4px;
+   border-radius: 10px;
   font: inherit;
   color: #ffffff;
-  background-color: #13955f;
+  background-color: #617365;
   cursor: pointer;
 }
 .itempart1, .itempart2, .itempart3 {
