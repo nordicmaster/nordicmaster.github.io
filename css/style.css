@@ -10,12 +10,12 @@ body {
     line-height:1;
 }
 button {
-  padding: 0;
+  padding: 2px;
    border: solid 1px transparent;
    border-radius: 4px;
   font: inherit;
   color: #ffffff;
-  background-color: #9555af;
+  background-color: #13955f;
   cursor: pointer;
 }
 .itempart1, .itempart2, .itempart3 {
