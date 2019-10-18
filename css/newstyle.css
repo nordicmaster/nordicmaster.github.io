@@ -64,12 +64,12 @@ select {
 .itempart1 {
     margin-left:1%;
     display:inline-block;
-    width: 250px;
+    width: 350px;
 }
 .itempart2 {
     margin-left:2%;
     display:inline-block;
-    max-width: 150px;
+    max-width: 250px;
 }
 .itempart2 div button {
     width: 100%;
