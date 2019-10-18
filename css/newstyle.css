@@ -37,6 +37,7 @@ select {
   width: 50%;
   text-align:right;
   vertical-align: top;
+  font-size: 2em;
 }
 .blackside > *{
   /*float: right;*/
@@ -52,6 +53,7 @@ select {
   display:inline-block;
   width: 49%;
   vertical-align: top;
+    font-size: 2em;
 }
 .back {
   display:none;
