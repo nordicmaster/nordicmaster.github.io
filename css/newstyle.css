@@ -9,6 +9,26 @@ body {
     margin: 0;
     line-height:1;
 }
+button {
+  padding: 2px;
+  margin: 2px;
+  border: solid 1px transparent;
+  border-radius: 10px;
+  font: inherit;
+  color: #ffffff;
+  background-color: #314335;
+  cursor: pointer;
+}
+select {
+  padding: 2px;
+  margin: 2px;
+  border: solid 1px transparent;
+  border-radius: 3px;
+  font: inherit;
+  color: #ffffff;
+  background-color: #314335;
+  cursor: pointer;
+}
 
 .blackside {
   background-color: black;
