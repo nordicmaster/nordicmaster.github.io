@@ -8,6 +8,8 @@ body {
     font-size:150%;
     margin: 0;
     line-height:1;
+    background-image: url("src/back.jpg");
+    background-position: center;
 }
 button {
   padding: 2px;
