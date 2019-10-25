@@ -11,7 +11,7 @@ body {
     background-image: url("../src/back.jpg");
     background-position: top center;
     background-repeat: no-repeat;
-    background-attachment: fixed
+    background-attachment: fixed;
     background-size: auto;
 }
 button {
