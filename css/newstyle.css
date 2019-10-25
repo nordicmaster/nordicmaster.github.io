@@ -1,6 +1,7 @@
-@media screen and (max-width: 800px) {
+@media screen and (orientation: landscape) {
   body {
     background-color: lightblue;
+    background-size: 100% auto;
   }
 }
 
