@@ -46,8 +46,11 @@ select {
   vertical-align: top;
   font-size: 2em;
 }
-.blackside > *{
-  /*float: right;*/
+.blackside span {
+  color:rgba(255,255,255,0.5);
+}
+.whiteside span {
+  color:rgba(0,0,0,0.5);
 }
 .contentblack, .contentwhite {
   visibility:hidden;
