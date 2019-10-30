@@ -270,6 +270,21 @@
       "length": "=2 sec * Tacts count * 120 / Tempo" 
     },
     {											
+      "ID":"a04",
+      "name": "~wind",
+      "created_date": "06.04.2017",	
+      "last_modified_date": "11.11.2017",
+      "version": 2,
+      "instruments_count": 3,
+      "track_count": 4,
+      "tacts": 0,
+      "tempo": 0,
+      "tonality": "5# ?",
+      "signature": "4/4",
+      "text": "",
+      "length": "=2 sec * Tacts count * 120 / Tempo" 
+    },
+    {											
       "ID":"a05",
       "name": "a05",
       "created_date": "03.03.2017",	
