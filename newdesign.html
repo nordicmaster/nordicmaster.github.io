@@ -39,7 +39,7 @@ var myApp = angular.module('myApp', []);
         <div ng-repeat="item in textJson | orderBy:sortparam" class="justrow">
            <div class="itempart1">
                <a href="https://raw.githubusercontent.com/nordicmaster/guitarpros/master/{{item.ID}}.gp5" 
-                  download="{{item.ID}} ({{item.name}}).gp5">{{item.ID}}</a>&nbsp;{{item.name}}
+                  download="{{item.ID}} ({{item.name}}).gp5">{{item.ID}}&nbsp;{{item.name}}</a>
            </div>
            <div class="itempart2">
                <div><button ng-click='pdfeah(item)'>Show text</button></div>
