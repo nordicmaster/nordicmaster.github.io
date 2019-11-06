@@ -45,7 +45,7 @@ select {
   text-align:right;
   vertical-align: top;
   font-size: 2em;
-  margin: 10px;
+  padding: 10px;
 }
 .blackside span {
   color:rgba(255,255,255,0.5);
@@ -65,7 +65,7 @@ select {
   width: 49%;
   vertical-align: top;
   font-size: 2em;
-  margin: 10px;
+  padding: 10px;
 }
 .whiteside a {
   color: #138734;
