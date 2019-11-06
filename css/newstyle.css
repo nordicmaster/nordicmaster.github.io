@@ -55,7 +55,7 @@ select {
 .contentblack, .contentwhite {
   visibility:hidden;
   margin:auto;
-  padding: 10px;
+  padding: 20px;
 }
 
 .whiteside {
