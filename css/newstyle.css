@@ -38,7 +38,7 @@ select {
 }
 
 .blackside {
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0,0,0,0.4);
   color:white;
   display:inline-block;
   width: 50%;
@@ -47,10 +47,10 @@ select {
   font-size: 2em;  
 }
 .blackside span {
-  color:rgba(255,255,255,0.5);
+  color:rgba(255,255,255,0.7);
 }
 .whiteside span {
-  color:rgba(0,0,0,0.5);
+  color:rgba(0,0,0,0.7);
 }
 .contentblack, .contentwhite {
   visibility:hidden;
@@ -59,7 +59,7 @@ select {
 }
 
 .whiteside {
-  background-color: rgba(255,255,255,0.2);
+  background-color: rgba(255,255,255,0.4);
   color:black;
   display:inline-block;
   width: 49%;
@@ -67,7 +67,7 @@ select {
   font-size: 2em;
 }
 .whiteside a {
-  color: #138734;
+  color: #239944;
 }
 .back {
   display:none;
