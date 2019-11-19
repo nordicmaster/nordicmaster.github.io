@@ -1,6 +1,7 @@
 @media screen and (max-width: 1080px) {
   body {
     background-color: lightblue;
+    font-size:250%;
   }
 }
 
