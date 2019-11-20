@@ -29,12 +29,13 @@ button {
 .itempart1 {
     margin-left:1%;
     display:inline-block;
-    width: 250px;
+    width: 25%;
 }
 .itempart2 {
     margin-left:2%;
     display:inline-block;
     max-width: 150px;
+    width:25%;
 }
 .itempart2 div button {
     width: 100%;
@@ -42,7 +43,7 @@ button {
 .itempart3 {
     margin-left:1%;
     display:inline-block;
-    width: 550px;
+    width: 50%;
 }
 .itempart3 span {
     font-size:80%;
@@ -117,7 +118,8 @@ button {
 
 #bodycenter { 
     font-family: "Times New Roman", Times, serif;
-    width: 1070px; 
+    max-width: 1070px; 
+    width: 100%;
     margin: auto;
     text-align: left;
     background-color: #cfefe2;
