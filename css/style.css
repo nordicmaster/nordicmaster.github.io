@@ -13,6 +13,12 @@ button {
   background-color: #617365;
   cursor: pointer;
 }
+.sortsel {
+  padding: 2px;
+  margin: 2px;
+  font: inherit;
+  background-color: #c1d8d5;
+}
 .itempart1, .itempart2, .itempart3 {
     vertical-align: top;
 }
