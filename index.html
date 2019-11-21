@@ -20,13 +20,7 @@ var myApp = angular.module('myApp', []);
     </ng-include>
     <br>
 <div class="maintext">Nordic Master github page</div>
-<div class="justtext"><!--TODO: 
-  <ul>
-    <li> find some free BD and filestore (e.g. github.com/nordicmaster/guitarpros) </li>
-    <li> place here a table with information about gtps </li>
-    <li> ability to add\edit\delete gtps </li>  
-  </ul>
-Also, will it be an SPA or several pages?  -->
+<div class="justtext">
     Collection of guitarpro files made by Nordic Master
 </div>
 <div ng-controller="gtpController"> 
@@ -37,6 +31,7 @@ Also, will it be an SPA or several pages?  -->
   <a href="" ng-click="fetchJson();changeParam('ID');"> now </a></p>-->
 <div ng-hide="textJson">Loading...</div>
     <!-- ORDER BY-->
+    <br><br>
     Sort by:
     <select class="sortsel" ng-model="sortparam">
       <option value="ID">ID</option>
