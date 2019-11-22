@@ -21,15 +21,13 @@ button {
 }
 .itempart1, .itempart2, .itempart3 {
     vertical-align: top;
-}
-.itempart1 {
     margin-left:1%;
     display:inline-block;
+}
+.itempart1 {    
     width: 19%;
 }
 .itempart2 {
-    margin-left:1%;
-    display:inline-block;
     max-width: 160px;
     width:24%;
 }
@@ -37,8 +35,6 @@ button {
     width: 100%;
 }
 .itempart3 {
-    margin-left:1%;
-    display:inline-block;
     width: 54%;
 }
 .itempart3 span {
