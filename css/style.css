@@ -26,17 +26,17 @@ button {
     word-wrap: break-word;
 }
 .itempart1 {    
-    width: 19%;
+    width: 24%;
 }
 .itempart2 {
-    max-width: 160px;
+    max-width: 170px;
     width:24%;
 }
 .itempart2 div button {
     width: 100%;
 }
 .itempart3 {
-    width: 54%;
+    width: 49%;
 }
 .itempart3 span {
     font-size:80%;
