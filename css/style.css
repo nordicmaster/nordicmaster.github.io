@@ -23,6 +23,7 @@ button {
     vertical-align: top;
     margin-left:1%;
     display:inline-block;
+    word-wrap: break-word;
 }
 .itempart1 {    
     width: 19%;
@@ -166,7 +167,7 @@ button {
 @media screen and (max-width: 1090px) {
   body {
     background-color: lightblue;
-    font-size:250%;
+    font-size:210%;
   }
   #bodycenter { 
     width: device-width;
