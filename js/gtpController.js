@@ -7,6 +7,9 @@ myApp.controller('gtpController', function($scope) {
         author: 'NM',
         date: '20/10/2019'
     };
+    $scope.totalgtp=0;
+    $scope.totaltext=0;
+    $scope.totalrec=0;
     $scope.textJson=[];
         /*text: '',
         author: 'NM',
@@ -20,7 +23,16 @@ myApp.controller('gtpController', function($scope) {
         $scope.textJson = obj;
         //$scope.textJson.forEach((item,index)=>{console.log("before "+item.ID+" "+item.text)});
         $scope.textJson.forEach(addtext);
+        $scope.textJson.forEach(totalcount);
         //$scope.textJson.forEach((item,index)=>{console.log("after "+item.ID+" "+item.text)}); //async shit 
+    }
+    function totalcount(item,index) {
+        if (item.finished==true)
+            $scope.totalgtp++;
+        if (item.lyric_finished==true)
+            $scope.totaltext++;
+        if (item.recorded==true)
+            $scope.totalrec++;
     }
     function addtext(item, index) {
         //console.log("add Text");
