@@ -45,6 +45,9 @@ var myApp = angular.module('myApp', []);
       <option value="tempo">tempo</option>
       <option value="tonality">tonality</option>
       <option value="signature">signature</option>
+      <option value="finished">GTP finished</option>
+      <option value="lyric_finished">text finished</option>
+      <option value="recorded">recorded</option>
     </select>
     <br><br>
 
@@ -77,6 +80,9 @@ var myApp = angular.module('myApp', []);
              <span>Signature:&nbsp;{{item.signature}}</span>
              <span>Length:&nbsp;<span ng-if="!(isNaN(item.tacts) || isNaN(item.tempo))">{{2 * item.tacts * 120 / item.tempo | number : 2}}&nbsp;sec</span>
              </span>
+             <span>GTP finished:&nbsp;{{item.finished}}</span>
+             <span>Text finished:&nbsp;{{item.lyric_finished}}</span>
+             <span>Recorded:&nbsp;{{item.recorded}}</span>
          </div>
    </div>
 
