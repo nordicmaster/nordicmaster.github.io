@@ -37,11 +37,11 @@ myApp.controller('gtpController', function($scope) {
           .then(function(result) {
             //console.log(JSON.stringify(result));
             item.text=JSON.stringify(result);
-            console.log("1: "+item.text);
+            //console.log("1: "+item.text);
             item.text=item.text.trim();
             var str = item.text.replace(/\\n+/g,"\n");
             item.text=str;
-            console.log("2: "+item.text);
+            //console.log("2: "+item.text);
           })
           .catch(function() {
             console.log("rerror");
@@ -65,7 +65,7 @@ myApp.controller('gtpController', function($scope) {
     $scope.fetchJson = function () {
         //$scope.textJson.text = JSON.parse("https://nordicmaster.github.io/table_items.json");
         //'<a href="https://nordicmaster.github.io/table_items.json">json</a>';
-        console.log("fetchJson");
+        //console.log("fetchJson");
         var xmlhttp = new XMLHttpRequest();
         var myObj;
         xmlhttp.onreadystatechange = function() {
@@ -79,7 +79,7 @@ myApp.controller('gtpController', function($scope) {
         xmlhttp.send();
     }
     $scope.changeParam = function (param) {
-        console.log("change param = "+ param);
+        //console.log("change param = "+ param);
         $scope.sortparam=param;
     }
     
