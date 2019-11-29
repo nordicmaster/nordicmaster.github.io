@@ -1,23 +1,5 @@
 [
     {
-      "ID":"tosin",
-      "name": "CAFO",
-      "created_date": "09.03.2010",	
-      "last_modified_date": "09.08.2018",
-      "version": 4,
-      "instruments_count": 3,
-      "track_count": 11,
-      "tacts": 178,
-      "tempo": 110,
-      "tonality": "Chromatic",
-      "signature": "19/18",
-      "text": "instrumental",
-      "length": "Length",
-      "finished": true,
-      "lyric_finished":false,
-      "recorded":false
-    },
-    {
       "ID":"76",
       "name": "Viking Song",
       "created_date": "02.10.2010",	
