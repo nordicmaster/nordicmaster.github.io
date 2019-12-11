@@ -108,7 +108,7 @@ button {
     top: 0;*/
 }
 
-#bodycenter { 
+.bodycenter { 
     font-family: "Times New Roman", Times, serif;
     max-width: 1070px; 
     width: 100%;
