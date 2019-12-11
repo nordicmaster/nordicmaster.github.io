@@ -24,85 +24,83 @@
         Collection of guitarpro files made by Nordic Master
     </div>
     <div ng-controller="gtpController"> 
-    <!--  <p ng-click="changeClass($event)"> Click this text (angularjs) </p>
-      <p> {{gtp.text}} </p>
 
+    <!--
     <p>TODO: fetch data from json
       <a href="" ng-click="fetchJson();changeParam('ID');"> now </a></p>-->
-    <div ng-hide="textJson">Loading...</div>
-        <!-- ORDER BY-->
-        <br>
-        Sort by:
-        <select class="sortsel" ng-model="sortparam">
-          <option value="ID">ID</option>
-          <option value="name">name</option>
-          <option value="created_date">created_date</option>
-          <option value="last_modified_date">last_modified_date</option>
-          <option value="version">version</option>
-          <option value="instruments_count">instruments_count</option>
-          <option value="track_count">track_count</option>
-          <option value="tacts">tacts</option>
-          <option value="tempo">tempo</option>
-          <option value="tonality">tonality</option>
-          <option value="signature">signature</option>
-          <option value="finished">GTP finished</option>
-          <option value="lyric_finished">text finished</option>
-          <option value="recorded">recorded</option>
-        </select>
-        <br><br>
+        <div ng-hide="textJson">Loading...</div>
+            <!-- ORDER BY-->
+            <br>
+            Sort by:
+            <select class="sortsel" ng-model="sortparam">
+              <option value="ID">ID</option>
+              <option value="name">name</option>
+              <option value="created_date">created_date</option>
+              <!--<option value="last_modified_date">last_modified_date</option>-->
+              <option value="version">version</option>
+              <option value="instruments_count">instruments_count</option>
+              <option value="track_count">track_count</option>
+              <option value="tacts">tacts</option>
+              <option value="tempo">tempo</option>
+              <option value="tonality">tonality</option>
+              <option value="signature">signature</option>
+              <option value="finished">GTP finished</option>
+              <option value="lyric_finished">text finished</option>
+              <option value="recorded">recorded</option>
+            </select>
+            <br><br>
 
-       <div ng-repeat="item in textJson | orderBy:sortparam" class="justrow">
-             <div class="itempart1">
-                 <a href="https://raw.githubusercontent.com/nordicmaster/guitarpros/master/{{item.ID}}.gp5" 
-                    download="{{item.ID}} ({{item.name}}).gp5">{{item.ID}}</a>&nbsp;{{item.name}}
-             </div>
-             <div class="itempart2">
-                 <!--<div class="dropdown">
-                    <span>{{item.name}}</span>
-                    <div class="dropdown-content">
-                    <p>{{item.text}}</p>    
+           <div ng-repeat="item in textJson | orderBy:sortparam" class="justrow">
+                 <div class="itempart1">
+                     <a href="https://raw.githubusercontent.com/nordicmaster/guitarpros/master/{{item.ID}}.gp5" 
+                        download="{{item.ID}} ({{item.name}}).gp5">{{item.ID}}</a>&nbsp;{{item.name}}
+                 </div>
+                 <div class="itempart2">
+                     <!--<div class="dropdown">
+                        <span>{{item.name}}</span>
+                        <div class="dropdown-content">
+                        <p>{{item.text}}</p>    
 
-                    </div>
-                 </div>-->
-                 <div><button ng-click='pdfeah(item)'>Show text</button></div>
-                 <div><button ng-click='pdfeah(item)'>Download text</button></div>
-             </div>
-             <div class="itempart3">
-                 Info: 
-                 <span>Created:&nbsp;{{item.created_date}}</span>
-                 <!--<span>Modified:&nbsp;{{item.last_modified_date}}</span>-->
-                 <span>Version:&nbsp;{{item.version}}</span>
-                 <span>Instruments:&nbsp;{{item.instruments_count}}</span>
-                 <span>Tracks:&nbsp;{{item.track_count}}</span>
-                 <span>Tacts:&nbsp;{{item.tacts}}</span>
-                 <span>Tempo:&nbsp;{{item.tempo}}</span>
-                 <span>Tonality:&nbsp;{{item.tonality}}</span>
-                 <span>Signature:&nbsp;{{item.signature}}</span>
-                 <span>Length:&nbsp;<span ng-if="!(isNaN(item.tacts) || isNaN(item.tempo))">{{2 * item.tacts * 120 / item.tempo | number : 2}}&nbsp;sec</span>
-                 </span>
-                 <span>GTP finished:&nbsp;{{item.finished}}</span>
-                 <span>Text finished:&nbsp;{{item.lyric_finished}}</span>
-                 <span>Recorded:&nbsp;{{item.recorded}}</span>
-             </div>
-       </div>
-       <p>Total GTP finised: {{totalgtp}} </p>
-        <p>Total Text finised: {{totaltext}} </p>
-        <p>Total Recorded: {{totalrec}} </p>
+                        </div>
+                     </div>-->
+                     <div><button ng-click='pdfeah(item)'>Show text</button></div>
+                     <div><button ng-click='pdfeah(item)'>Download text</button></div>
+                 </div>
+                 <div class="itempart3">
+                     Info: 
+                     <span>Created:&nbsp;{{item.created_date}}</span>
+                     <!--<span>Modified:&nbsp;{{item.last_modified_date}}</span>-->
+                     <span>Version:&nbsp;{{item.version}}</span>
+                     <span>Instruments:&nbsp;{{item.instruments_count}}</span>
+                     <span>Tracks:&nbsp;{{item.track_count}}</span>
+                     <span>Tacts:&nbsp;{{item.tacts}}</span>
+                     <span>Tempo:&nbsp;{{item.tempo}}</span>
+                     <span>Tonality:&nbsp;{{item.tonality}}</span>
+                     <span>Signature:&nbsp;{{item.signature}}</span>
+                     <span>Length:&nbsp;<span ng-if="!(isNaN(item.tacts) || isNaN(item.tempo))">{{2 * item.tacts * 120 / item.tempo | number : 2}}&nbsp;sec</span>
+                     </span>
+                     <span>GTP finished:&nbsp;{{item.finished}}</span>
+                     <span>Text finished:&nbsp;{{item.lyric_finished}}</span>
+                     <span>Recorded:&nbsp;{{item.recorded}}</span>
+                 </div>
+           </div>
+           <p>Total GTP finised: {{totalgtp}} </p>
+           <p>Total Text finised: {{totaltext}} </p>
+           <p>Total Recorded: {{totalrec}} </p>
 
-      <p class="linktext"> Soundcloud pages: <br>
-        <a href="https://soundcloud.com/user-912533495-638345693/viking-song">Viking song</a><br>
-        <a href="https://soundcloud.com/user-912533495-638345693/dream-of-better-life">Dream Of Better Life</a><br>
-          Bandcamp pages: <br>
-        <a href="https://nordicmaster.bandcamp.com/track/viking-song">Viking song</a><br>
-        <a href="https://nordicmaster.bandcamp.com/track/fortune">Fortune</a><br>
-        <a href="https://nordicmaster.bandcamp.com/track/unexpected-rescue">Unexpected Rescue</a><br>
-        <a href="https://nordicmaster.bandcamp.com/track/dark-land-dwellers">Dark Land Dwellers</a><br>
-      </p>
-    </div>
-
+           <p class="linktext"> Soundcloud pages: <br>
+            <a href="https://soundcloud.com/user-912533495-638345693/viking-song">Viking song</a><br>
+            <a href="https://soundcloud.com/user-912533495-638345693/dream-of-better-life">Dream Of Better Life</a><br>
+              Bandcamp pages: <br>
+            <a href="https://nordicmaster.bandcamp.com/track/viking-song">Viking song</a><br>
+            <a href="https://nordicmaster.bandcamp.com/track/fortune">Fortune</a><br>
+            <a href="https://nordicmaster.bandcamp.com/track/unexpected-rescue">Unexpected Rescue</a><br>
+            <a href="https://nordicmaster.bandcamp.com/track/dark-land-dwellers">Dark Land Dwellers</a><br>
+          </p>
+        </div><!-- controller-->
         <ng-include src="'part_footer.html'">
         </ng-include>
-    </div>
+    </div><!--bodycenter-->
 </body>
 </html>
 <!-- для загрузки конкретного файла https://raw.githubusercontent.com/user/repository/branch/filename 
