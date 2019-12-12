@@ -95,7 +95,7 @@ myApp.controller('gtpController', function($scope) {
         $scope.sortparam=param;
     }
     
-
+    $scope.renew=function(item) {}
     $scope.pdfeah=function(item) {
         //console.log("pdf item = "+item.ID);
         var textlen = item.text.length;
