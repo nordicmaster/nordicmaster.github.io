@@ -56,13 +56,6 @@
                         download="{{item.ID}} ({{item.name}}).gp5">{{item.ID}}</a>&nbsp;{{item.name}}
                  </div>
                  <div class="itempart2">
-                     <!--<div class="dropdown">
-                        <span>{{item.name}}</span>
-                        <div class="dropdown-content">
-                        <p>{{item.text}}</p>    
-
-                        </div>
-                     </div>-->
                      <div><details>
                          <summary ng-click='renew(item)'>Show text</summary>                     
                          <p><div ng-hide="item.text">Loading...</div>{{item.text}}</p>
