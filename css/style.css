@@ -167,6 +167,16 @@ button {
 details summary::-webkit-details-marker {
   display:none;
 }
+details summary {
+  padding: 2px;
+  margin: 2px;
+   border: solid 1px transparent;
+   border-radius: 10px;
+  font: inherit;
+  color: #ffffff;
+  background-color: #617365;
+  cursor: pointer;
+}
 
 
 @media screen and (max-width: 1090px) {
