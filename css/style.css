@@ -173,7 +173,7 @@ details summary {
    border: solid 1px transparent;
    border-radius: 10px;
   font: inherit;
-  align: center;
+  text-align: center;
   color: #ffffff;
   background-color: #617365;
   cursor: pointer;
