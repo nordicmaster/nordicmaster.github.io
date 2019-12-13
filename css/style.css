@@ -154,13 +154,14 @@ details summary {
    border: solid 1px transparent;
    border-radius: 10px;
   font: inherit;
-  font-size:80%;
   text-align: center;
   color: #ffffff;
   background-color: #617365;
   cursor: pointer;
 }
-
+details p {
+  font-size:80%;
+}
 
 @media screen and (max-width: 1090px) {
   body {
