@@ -45,7 +45,7 @@ button {
     border-bottom: 1px solid #aaa; 
     margin-bottom: 10px; 
     text-align: center;
-    font-size: 22pt;
+    font-size: 120%;
 }
 .justtext {
     margin-top: 10px;
@@ -137,8 +137,7 @@ button {
   color: white;
   margin: 0;
   text-align: center;
-  text-decoration: underline;  
-  /*font-size: 15pt;*/
+  text-decoration: underline;
   background-color: #657063;
 }
 .gtpmenu nav ul li a:hover, .gtpmenu nav ul li p:hover {
