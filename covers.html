@@ -23,13 +23,12 @@
     </div>
     <div ng-controller="gtpController"> 
 
-        <div ng-hide="textJson">Loading...</div>
+        <div ng-hide="coversJson">Loading...</div>
 
 
-           <div ng-repeat="item in textJson | orderBy:sortparam" class="justrow">
+           <div ng-repeat="item in coversJson | orderBy:sortparam" class="justrow">
                  <div class="itempart1">
-                     <a href="https://raw.githubusercontent.com/nordicmaster/guitarpros/master/{{item.ID}}.gp5" 
-                        download="{{item.ID}} ({{item.name}}).gp5">{{item.ID}}</a>&nbsp;{{item.name}}
+                     <p>{{item.name}}</p>
                  </div>
                  <div class="itempart2">
                      <div><details>
@@ -41,35 +40,14 @@
                  </div>
                  <div class="itempart3">
                      Info: 
-                     <span>Created:&nbsp;{{item.created_date}}</span>
-                     <!--<span>Modified:&nbsp;{{item.last_modified_date}}</span>-->
-                     <span>Version:&nbsp;{{item.version}}</span>
-                     <span>Instruments:&nbsp;{{item.instruments_count}}</span>
-                     <span>Tracks:&nbsp;{{item.track_count}}</span>
-                     <span>Tacts:&nbsp;{{item.tacts}}</span>
-                     <span>Tempo:&nbsp;{{item.tempo}}</span>
-                     <span>Tonality:&nbsp;{{item.tonality}}</span>
-                     <span>Signature:&nbsp;{{item.signature}}</span>
-                     <span>Length:&nbsp;<span ng-if="!(isNaN(item.tacts) || isNaN(item.tempo))">{{2 * item.tacts * 120 / item.tempo | number : 2}}&nbsp;sec</span>
-                     </span>
                      <span>GTP finished:&nbsp;{{item.finished}}</span>
                      <span>Text finished:&nbsp;{{item.lyric_finished}}</span>
                      <span>Recorded:&nbsp;{{item.recorded}}</span>
                  </div>
            </div>
-           <p>Total GTP finised: {{totalgtp}} </p>
-           <p>Total Text finised: {{totaltext}} </p>
-           <p>Total Recorded: {{totalrec}} </p>
+           <p>Total covers played: {{totalplayed}} </p>
+           <p>Total covers recorded: {{totalrecorded}} </p>
 
-           <p class="linktext"> Soundcloud pages: <br>
-            <a href="https://soundcloud.com/user-912533495-638345693/viking-song">Viking song</a><br>
-            <a href="https://soundcloud.com/user-912533495-638345693/dream-of-better-life">Dream Of Better Life</a><br>
-              Bandcamp pages: <br>
-            <a href="https://nordicmaster.bandcamp.com/track/viking-song">Viking song</a><br>
-            <a href="https://nordicmaster.bandcamp.com/track/fortune">Fortune</a><br>
-            <a href="https://nordicmaster.bandcamp.com/track/unexpected-rescue">Unexpected Rescue</a><br>
-            <a href="https://nordicmaster.bandcamp.com/track/dark-land-dwellers">Dark Land Dwellers</a><br>
-          </p>
         </div><!-- controller-->
         <ng-include src="'part_footer.html'">
         </ng-include>
