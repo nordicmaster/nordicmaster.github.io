@@ -1,0 +1,62 @@
+[
+    {
+      "author":"Amon Amarth",
+      "name": "Death In Fire",
+      "text": "",
+      "recorded":true
+    },
+    {
+      "author":"Amon Amarth",
+      "name": "Pursuit Of Vikings",
+      "text": "",
+      "recorded":false
+    },
+	{
+      "author":"Amon Amarth",
+      "name": "Twilight Of The Thunder God",
+      "text": "",
+      "recorded":true
+    },
+    {
+      "author":"Amon Amarth",
+      "name": "Vs the World",
+      "text": "",
+      "recorded":false
+    },
+    {
+      "author":"Amon Amarth",
+      "name": "Runes To My Memory",
+      "text": "",
+      "recorded":false
+    },
+    {
+      "author":"Amon Amarth",
+      "name": "Asator",
+      "text": "",
+      "recorded":false
+    },
+    {
+      "author":"Amon Amarth",
+      "name": "Thousand Years Of Oppression",
+      "text": "",
+      "recorded":false
+    },
+	{
+      "author":"HIM",
+      "name": "Your Sweet 666",
+      "text": "",
+      "recorded":true
+    },
+	{
+      "author":"HIM",
+      "name": "Rip Out The Wings Of A Butterfly",
+      "text": "",
+      "recorded":true
+    },
+	{
+      "author":"HIM",
+      "name": "Wicked Game",
+      "text": "",
+      "recorded":true
+    }
+]
