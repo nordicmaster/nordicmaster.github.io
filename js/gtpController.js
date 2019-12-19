@@ -174,6 +174,7 @@ myApp.controller('gtpController', function($scope) {
     
     init = function() {
         $scope.fetchJson();
+        $scope.fetchcoversJson();
     }
     init();
 });
