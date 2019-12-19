@@ -25,10 +25,9 @@
 
         <div ng-hide="coversJson">Loading...</div>
 
-
            <div ng-repeat="item in coversJson | orderBy:sortparam" class="justrow">
                  <div class="itempart1">
-                     <p>{{item.name}}</p>
+                     <p>{{item.author}} - {{item.name}}</p>
                  </div>
                  <div class="itempart2">
                      <div><details>
@@ -40,8 +39,6 @@
                  </div>
                  <div class="itempart3">
                      Info: 
-                     <span>GTP finished:&nbsp;{{item.finished}}</span>
-                     <span>Text finished:&nbsp;{{item.lyric_finished}}</span>
                      <span>Recorded:&nbsp;{{item.recorded}}</span>
                  </div>
            </div>
