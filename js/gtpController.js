@@ -10,7 +10,10 @@ myApp.controller('gtpController', function($scope) {
     $scope.totalgtp=0;
     $scope.totaltext=0;
     $scope.totalrec=0;
+    $scope.totalplayed=0;
+    $scope.totalrecorded=0;
     $scope.textJson=[];
+    $scope.coversJson=[];
         /*text: '',
         author: 'NM',
         date: '20/10/2019'        
@@ -33,6 +36,11 @@ myApp.controller('gtpController', function($scope) {
             $scope.totaltext++;
         if (item.recorded==true)
             $scope.totalrec++;
+    }
+    function totalcovercount(item,index) {
+        $scope.totalplayed++;
+        if (item.recorded==true)
+            $scope.totalrecorded++;
     }
     function addtext(item, index) {
         //console.log("add Text");
@@ -88,6 +96,23 @@ myApp.controller('gtpController', function($scope) {
           }
         };
         xmlhttp.open("GET", "https://nordicmaster.github.io/table_items.json", true);
+        xmlhttp.send();
+    }
+    $scope.fetchcoversJson = function () {
+        //$scope.textJson.text = JSON.parse("https://nordicmaster.github.io/table_items.json");
+        //'<a href="https://nordicmaster.github.io/table_items.json">json</a>';
+        //console.log("fetchJson");
+        var xmlhttp = new XMLHttpRequest();
+        var myObj;
+        xmlhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            //console.log(this.responseText);
+            myObj = JSON.parse(this.responseText);            
+            $scope.coversJson=myObj;    
+            $scope.coversJson.forEach(totalcovercount);
+          }
+        };
+        xmlhttp.open("GET", "https://nordicmaster.github.io/covers.json", true);
         xmlhttp.send();
     }
     $scope.changeParam = function (param) {
