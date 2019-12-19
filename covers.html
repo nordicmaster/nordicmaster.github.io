@@ -25,7 +25,7 @@
 
         <div ng-hide="coversJson">Loading...</div>
 
-           <div ng-repeat="item in coversJson | orderBy:sortparam" class="justrow">
+           <div ng-repeat="item in coversJson" class="justrow">
                  <div class="itempart1">
                      <p>{{item.author}} - {{item.name}}</p>
                  </div>
