@@ -144,6 +144,9 @@ button {
   background-color: #111;
 }
 
+details {
+    display:inline-block;
+}
 details summary::-webkit-details-marker {
   display:none;
 }
