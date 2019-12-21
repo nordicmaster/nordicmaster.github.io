@@ -34,12 +34,12 @@
                      <span>Recorded:&nbsp;{{item.recorded}}</span>
                  </div>
                  <div class="itempart3">
+                     <span><button ng-click='pdfeah(item)'>Download text</button></span>
                      <span><details>
                          <summary ng-click='renew(item)'>Show text</summary>                     
                          <div ng-hide="item.text">Loading...</div><p>{{item.text}}</p>
                         </details>
-                     </span>
-                     <span><button ng-click='pdfeah(item)'>Download text</button></span>
+                     </span>                     
                  </div>
            </div>
            <p>Total covers played: {{totalplayed}} </p>
