@@ -35,6 +35,9 @@ button {
 .itempart2 div button {
     width: 100%;
 }
+.itempart2 > details {
+    width: 100%;
+}
 .itempart3 {
     width: 49%;
 }
