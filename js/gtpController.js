@@ -67,6 +67,19 @@ myApp.controller('gtpController', function($scope) {
             console.log("rerror");
           });
     }
+    function addtext2(item, index) {
+        ajax("https://nordicmaster.github.io/src/txt"+ item.name+ ".txt")
+          .then(function(result) {
+            item.text=JSON.stringify(result);
+            item.text=item.text.trim();
+            var str = item.text.replace(/\\n+/g,"\n");
+            item.text=str;
+          })
+          .catch(function() {
+            console.log("rerro2r");
+          });
+    }
+    
     function ajax(url) {
         //console.log("aja X");
       return new Promise(function(resolve, reject) {
@@ -110,6 +123,7 @@ myApp.controller('gtpController', function($scope) {
             myObj = JSON.parse(this.responseText);            
             $scope.coversJson=myObj;    
             $scope.coversJson.forEach(totalcovercount);
+            $scope.coversJson.forEach(addtext2);
           }
         };
         xmlhttp.open("GET", "https://nordicmaster.github.io/covers.json", true);
