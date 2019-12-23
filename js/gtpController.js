@@ -68,7 +68,7 @@ myApp.controller('gtpController', function($scope) {
           });
     }
     function addtext2(item, index) {
-        ajax("https://nordicmaster.github.io/src/txt"+ item.name+ ".txt")
+        ajax("https://nordicmaster.github.io/src/txt/"+ item.name+ ".txt")
           .then(function(result) {
             item.text=JSON.stringify(result);
             item.text=item.text.trim();
