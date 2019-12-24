@@ -41,22 +41,82 @@
       "text": "",
       "recorded":false
     },
-	{
+    {
       "author":"HIM",
       "name": "Your Sweet 666",
       "text": "",
       "recorded":true
     },
-	{
+    {
       "author":"HIM",
       "name": "Rip Out The Wings Of A Butterfly",
       "text": "",
       "recorded":true
     },
-	{
+    {
       "author":"HIM",
       "name": "Wicked Game",
       "text": "",
       "recorded":true
+    },
+    {
+      "author":"Satyricon",
+      "name": "Wolfpack",
+      "text": "",
+      "recorded":true
+    },
+    {
+      "author":"Skyclad",
+      "name": "One Piece Puzzle",
+      "text": "",
+      "recorded":true
+    },
+    {
+      "author":"Blind Guardian",
+      "name": "Another Holy War",
+      "text": "",
+      "recorded":true
+    },
+    {
+      "author":"Porcupine Tree",
+      "name": "The Incident",
+      "text": "",
+      "recorded":false
+    },
+    {
+      "author":"Suidakra",
+      "name": "IXth Legion",
+      "text": "",
+      "recorded":true
+    },
+    {
+      "author":"Rammstein",
+      "name": "Keine Lust",
+      "text": "",
+      "recorded":false
+    },
+    {
+      "author":"Asesino",
+      "name": "Misas Negras",
+      "text": "",
+      "recorded":false
+    },
+    {
+      "author":"Нейромонах Феофан",
+      "name": "Лапти Разбить Об Пол",
+      "text": "",
+      "recorded":false
+    },
+    {
+      "author":"Нейромонах Феофан",
+      "name": "Камыш",
+      "text": "",
+      "recorded":false
+    },
+    {
+      "author":"Нейромонах Феофан",
+      "name": "Холодно В Лесу",
+      "text": "",
+      "recorded":false
     }
 ]
