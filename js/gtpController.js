@@ -189,6 +189,11 @@ myApp.controller('gtpController', function($scope) {
     init = function() {
         $scope.fetchJson();
         $scope.fetchcoversJson();
+        console.log("----fetch test----");
+        const response = await fetch('http://example.com/movies.json');
+        const myJson = await response.json();
+        console.log(JSON.stringify(myJson));
+        console.log("---fetch test end---");
     }
     init();
 });
