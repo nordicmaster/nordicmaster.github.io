@@ -189,6 +189,8 @@ myApp.controller('gtpController', function($scope) {
     init = function() {
         $scope.fetchJson();
         $scope.fetchcoversJson();
+    }
+    async function init2() {
         console.log("----fetch test----");
         const response = await fetch('https://nordicmaster.github.io/table_items.json');
         const myJson = await response.json();
@@ -196,6 +198,7 @@ myApp.controller('gtpController', function($scope) {
         console.log("---fetch test end---");
     }
     init();
+    init2();
 });
 myApp.controller('linkController', function($scope) {
     $scope.linkJson={
