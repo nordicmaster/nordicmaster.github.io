@@ -190,7 +190,7 @@ myApp.controller('gtpController', function($scope) {
         $scope.fetchJson();
         $scope.fetchcoversJson();
         console.log("----fetch test----");
-        const response = await fetch('http://example.com/movies.json');
+        const response = await fetch('https://nordicmaster.github.io/table_items.json');
         const myJson = await response.json();
         console.log(JSON.stringify(myJson));
         console.log("---fetch test end---");
