@@ -26,14 +26,14 @@
         <div ng-hide="coversJson">Loading...</div>
 
            <div ng-repeat="item in coversJson" class="justrow">
-                 <div class="itempart1" style="width:45%;">
+                 <div class="itempart1" style="width:44%;">
                      <b>{{item.author}}</b> - {{item.name}}
                  </div>
-                 <div class="itempart2" style="width:20%;">
+                 <div class="itempart2" style="width:19%;">
                      Info: 
                      <span style="font-size:80%;">Recorded:&nbsp;{{item.recorded}}</span>
                  </div>
-                 <div class="itempart3" style="width:35%;">
+                 <div class="itempart3" style="width:33%;">
                      <span style="vertical-align:top;"><button ng-click='pdfeah(item)'>Download text</button></span>
                      <span><details>
                          <summary ng-click='renew(item)'>Show text</summary>                     
