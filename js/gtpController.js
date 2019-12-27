@@ -7,12 +7,12 @@ myApp.controller('gtpController', function($scope) {
         author: 'NM',
         date: '20/10/2019'
     };
-    $scope.totalgtp=0;
-    $scope.totaltext=0;
-    $scope.totalrec=0;
-    $scope.totalplayed=0;
-    $scope.totalrecorded=0;
-    $scope.textJson=[];
+    $scope.totalgtp=0
+    $scope.totaltext=0
+    $scope.totalrec=0
+    $scope.totalplayed=0
+    $scope.totalrecorded=0
+    $scope.textJson=[]
     $scope.coversJson=[];
         /*text: '',
         author: 'NM',
