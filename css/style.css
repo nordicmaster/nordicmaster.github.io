@@ -6,8 +6,8 @@ body {
 button {
   padding: 2px;
   margin: 2px;
-   border: solid 1px transparent;
-   border-radius: 10px;
+  border: solid 1px transparent;
+  border-radius: 10px;
   font: inherit;
   color: #ffffff;
   background-color: #617365;
@@ -54,13 +54,11 @@ button {
 .justtext {
     margin-top: 10px;
     color: #124533;
-    /*font-size: 18pt;*/
 }
 .linktext {
     margin-top: 5px;
     margin-bottom: 5px;
-    border-bottom: 1px solid #666; 
-    /*font-size: 18pt;*/
+    border-bottom: 1px solid #666;
 }
 .linktext a {
     margin-left: 10px;
@@ -84,7 +82,6 @@ button {
     border-width: 1px;
     border-color: #000000;
     margin: auto;
-    /*font-size: 14pt;*/
 }
 .justheadertable {
     background-color: #758073;
@@ -147,7 +144,6 @@ button {
 .gtpmenu nav ul li a:hover, .gtpmenu nav ul li p:hover {
   background-color: #111;
 }
-
 details {
     display:inline-block;
 }
@@ -157,8 +153,8 @@ details summary::-webkit-details-marker {
 details summary {
   padding: 2px;
   margin: 2px;
-   border: solid 1px transparent;
-   border-radius: 10px;
+  border: solid 1px transparent;
+  border-radius: 10px;
   font: inherit;
   text-align: center;
   color: #ffffff;
