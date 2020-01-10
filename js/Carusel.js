@@ -1,6 +1,3 @@
-// angular.module('myApp', ['ngAnimate', 'ngSanitize', 'ui.bootstrap']);
-//angular.module('myApp').controller('CarouselDemoCtrl', function ($scope) {
-
 angular.module('caruselApp', ['ngAnimate', 'ngSanitize', 'ui.bootstrap']);
   console.log("inside carusel js");
 angular.module('caruselApp').controller('CarouselDemoCtrl', function ($scope) {
