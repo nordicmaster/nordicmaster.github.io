@@ -21,42 +21,41 @@ var caruselApp = angular.module('caruselApp', []);
 <body>
 <div class="bodycenter">
     <div ng-controller="CarouselDemoCtrl">
-    <ng-include src="'part_menu.html'">
-    </ng-include>
-    <h2 class="justtext">
+        <ng-include src="'part_menu.html'">
+        </ng-include>
+        <h2 class="justtext">
         NM Gallery
-    </h2>
+        </h2>
         
-          <div style="height: 600px; max-height: 600px">
-            <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
-              <div uib-slide ng-repeat="slide in slides" index="slide.id">
-                <img ng-src="{{slide.image}}" style="max-width: 100%; height: 580px;object-position: 50% 50%;object-fit: scale-down;">
-                <div class="carousel-caption" style="color:#120000;text-shadow:none;">
-                  <h4>Slide {{slide.id}}</h4>
-                  <p>{{slide.text}}</p>
-                </div>
+        <div style="height: 600px; max-height: 600px">
+          <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+            <div uib-slide ng-repeat="slide in slides" index="slide.id">
+              <img ng-src="{{slide.image}}" style="max-width: 100%; height: 580px;object-position: 50% 50%;object-fit: scale-down;">
+              <div class="carousel-caption" style="color:#120000;text-shadow:none;">
+                <h4>Slide {{slide.id}}</h4>
+                <p>{{slide.text}}</p>
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-xs-5 col-md-4 col-xs-offset-1 col-md-offset-1" style="padding:15px;font-size:150%;">
-              <button type="button" class="btn btn-info" ng-click="addSlide()">Add Slide</button>
-              <button type="button" class="btn btn-info" ng-click="randomize()">Randomize slides</button>
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" ng-model="noWrapSlides">
-                  Disable Slide Looping
-                </label>
-              </div>
-            </div>
-            <div class="col-xs-5 col-md-4 col-xs-offset-1 col-md-offset-1" style="padding:15px">
-              Interval, in milliseconds: <input type="number" class="form-control" ng-model="myInterval">
-              <br />Enter a negative number or 0 to stop the interval.
+        </div>
+        <div class="row">
+          <div class="col-xs-5 col-md-4 col-xs-offset-1 col-md-offset-1" style="padding:15px;font-size:150%;">
+            <button type="button" class="btn btn-info" ng-click="addSlide()">Add Slide</button>
+            <button type="button" class="btn btn-info" ng-click="randomize()">Randomize slides</button>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" ng-model="noWrapSlides">
+                Disable Slide Looping
+              </label>
             </div>
           </div>
+          <div class="col-xs-5 col-md-4 col-xs-offset-1 col-md-offset-1" style="padding:15px">
+            Interval, in milliseconds: <input type="number" class="form-control" ng-model="myInterval">
+            <br />Enter a negative number or 0 to stop the interval.
+          </div>
+        </div>
         
-    </div>
-    
+    </div>    
     <ng-include src="'part_footer.html'">
     </ng-include>
 </div>
