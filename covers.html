@@ -17,15 +17,14 @@
         <ng-include src="'part_menu.html'">
         </ng-include>
         <br>
-    <div class="maintext">Nordic Master github page</div>
-    <div class="justtext">
-        Covers ever played by Nordic Master
-    </div>
-    <div ng-controller="gtpController"> 
+        <div class="maintext">Nordic Master github page</div>
+        <div class="justtext">
+            Covers ever played by Nordic Master
+        </div>
+        <div ng-controller="gtpController"> 
+            <div ng-hide="coversJson">Loading...</div>
 
-        <div ng-hide="coversJson">Loading...</div>
-
-           <div ng-repeat="item in coversJson" class="justrow">
+            <div ng-repeat="item in coversJson" class="justrow">
                  <div class="itempart1" style="width:44%;">
                      <b>{{item.author}}</b> - {{item.name}}
                  </div>
@@ -40,10 +39,9 @@
                         </details>
                      </span>                     
                  </div>
-           </div>
-           <p>Total covers played: {{totalplayed}} </p>
-           <p>Total covers recorded: {{totalrecorded}} </p>
-
+            </div>
+            <p>Total covers played: {{totalplayed}} </p>
+            <p>Total covers recorded: {{totalrecorded}} </p>
         </div><!-- controller-->
         <ng-include src="'part_footer.html'">
         </ng-include>
