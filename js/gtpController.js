@@ -14,10 +14,6 @@ myApp.controller('gtpController', function($scope) {
     $scope.totalrecorded=0
     $scope.textJson=[]
     $scope.coversJson=[];
-        /*text: '',
-        author: 'NM',
-        date: '20/10/2019'        
-    };*/
     $scope.changeClass = function (e) {         
         $scope.gtp.text = 'newtab';
     }
@@ -112,14 +108,10 @@ myApp.controller('gtpController', function($scope) {
         xmlhttp.send();
     }
     $scope.fetchcoversJson = function () {
-        //$scope.textJson.text = JSON.parse("https://nordicmaster.github.io/table_items.json");
-        //'<a href="https://nordicmaster.github.io/table_items.json">json</a>';
-        //console.log("fetchJson");
         var xmlhttp = new XMLHttpRequest();
         var myObj;
         xmlhttp.onreadystatechange = function() {
           if (this.readyState == 4 && this.status == 200) {
-            //console.log(this.responseText);
             myObj = JSON.parse(this.responseText);            
             $scope.coversJson=myObj;    
             $scope.coversJson.forEach(totalcovercount);
@@ -147,7 +139,7 @@ myApp.controller('gtpController', function($scope) {
          },
 
          pageSize:'A4',
-         pageOrientation:'portrait',//'landscape',//'portrait'
+         pageOrientation:'portrait',//'landscape'
          pageMargins:[50,50,30,60],
 
          header:function(currentPage,pageCount) {
