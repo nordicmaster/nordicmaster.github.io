@@ -1,2 +1,17 @@
-1. intro
-2. 
+1. riff 1
+2. verse 1
+3. intermedia riff
+4. verse 1
+5. refrain
+6. riff 1
+7. verse 2
+8. intermedia riff
+9. verse 2
+10. riff 2
+11. refrain
+12. riff 1
+13. solo
+14. intermedia riff
+15. verse 3
+16. refrain
+17. riff 1 acoustic outro
