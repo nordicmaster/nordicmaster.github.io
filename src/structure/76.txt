@@ -1,0 +1,16 @@
+1. riff 1
+2. riff 1 add guitar
+3. drum break
+4. riff 2
+5. verse 1
+6. verse 1 part 2
+7. riff 3
+8. refrain
+9. riff 1 add guitar
+10. verse 2
+11. verse 2 part 2
+12. solo
+13. acoustic
+14. acoustic + dist 
+15. refrain
+16. riff 1 add guitar
