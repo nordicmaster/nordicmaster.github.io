@@ -171,7 +171,7 @@
       "track_count": 5,
       "tacts": 113,
       "tempo": 130,
-      "tonality": "A major",
+      "tonality": "A major \ E major",
       "signature": "4/4 triplets",
       "text": "",
       "length": "=2 sec * Tacts count * 120 / Tempo",
