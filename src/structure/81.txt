@@ -1,18 +1,15 @@
 81
 
-1. a
-2. b
-3. c
-4. a
-5. d
-6. d2
-7. 
-8. e
-9. f
-10. c
-11. a2
-12. d
-13. 
-14. e
-15. f
-16. f2
+1. riff 1
+2. riff 2
+3. verse 1
+4. riff 1 (first 2 tacts)
+5. riff 3
+6. riff 4
+7. refrain
+8. verse 2
+9. riff 1 (add lead guitar)
+10. riff 3
+11. riff 4
+12. refrain (x2)
+13. refrain riff (ending)
