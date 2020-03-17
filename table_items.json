@@ -502,6 +502,42 @@
       "finished": false,
       "lyric_finished":false,
       "recorded":false 
+    },
+    {											
+      "ID":"b02",
+      "name": "b02",
+      "created_date": "21.02.2020",	
+      "last_modified_date": "21.02.2020",
+      "version": 1,
+      "instruments_count": 3,
+      "track_count": 3,
+      "tacts": 16,
+      "tempo": 130,
+      "tonality": "? major",
+      "signature": "4/4",
+      "text": "",
+      "length": "=2 sec * Tacts count * 120 / Tempo",
+      "finished": false,
+      "lyric_finished":false,
+      "recorded":false 
+    },
+    {											
+      "ID":"b03",
+      "name": "b03",
+      "created_date": "21.02.2020",	
+      "last_modified_date": "21.02.2020",
+      "version": 1,
+      "instruments_count": 3,
+      "track_count": 3,
+      "tacts": 16,
+      "tempo": 145,
+      "tonality": "? major",
+      "signature": "5/4",
+      "text": "",
+      "length": "=2 sec * Tacts count * 120 / Tempo",
+      "finished": false,
+      "lyric_finished":false,
+      "recorded":false 
     }
 ]
 
