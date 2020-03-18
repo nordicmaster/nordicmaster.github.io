@@ -252,6 +252,24 @@
       "recorded":true 
     },
     {											
+      "ID":"86",
+      "name": "low tempo track",
+      "created_date": "03.01.2013",	
+      "last_modified_date": "04.03.2013",
+      "version": 1,
+      "instruments_count": 5,
+      "track_count": 5,
+      "tacts": 60,
+      "tempo": 100,
+      "tonality": "A major",
+      "signature": "4/4 triplets",
+      "text": "",
+      "length": "=2 sec * Tacts count * 120 / Tempo",
+      "finished": false,
+      "lyric_finished":false,
+      "recorded":false 
+    },
+    {											
       "ID":"87",
       "name": "Beg. 3",
       "created_date": "03.01.2019",	
