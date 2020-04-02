@@ -43,7 +43,9 @@ button {
     width: 49%;
 }
 .itempart3 span {
-    font-size:80%;
+    font-size:75%;
+    border: solid 1px transparent;
+    border-radius: 3px;
 }
 .maintext {
     border-bottom: 1px solid #aaa; 
