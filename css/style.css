@@ -10,14 +10,14 @@ button {
   border-radius: 10px;
   font: inherit;
   color: #ffffff;
-  background-color: #778397;
+  background-color: #779177;
   cursor: pointer;
 }
 .sortsel {
   padding: 2px;
   margin: 2px;
   font: inherit;
-  background-color: #c1d8d5;
+  background-color: #f1d8d5;
 }
 .itempart1, .itempart2, .itempart3 {
     vertical-align: top;
