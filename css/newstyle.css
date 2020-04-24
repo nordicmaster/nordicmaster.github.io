@@ -71,13 +71,12 @@ select {
 .itempart1 {
     margin-left:1%;
     display:inline-block;
-    width: 24%;
+    width: 30%;
 }
 .itempart2 {
     margin-left:2%;
     display:inline-block;
-    max-width: 350px;
-    width: 24%;
+    width: 30%;
 }
 .itempart2 div button {
     width: 100%;
@@ -85,7 +84,7 @@ select {
 .itempart3 {
     margin-left:1%;
     display:inline-block;
-    width: 49%;
+    width: 40%;
 }
 .itempart3 span {
     font-size:80%;
