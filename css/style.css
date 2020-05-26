@@ -1,0 +1,140 @@
+.bodytype {
+    font-size:150%;
+    margin: 0;
+    line-height:1;
+}
+.button-like {
+	padding: 2px;
+	margin: 2px;
+	border: solid 1px transparent;
+	border-radius: 10px;
+	font: inherit;
+	color: #ffffff;  
+	cursor: pointer;
+}
+.bgcol0 {
+	background-color: #cfefe2;
+.bgcol1 {
+	background-color: #779177;
+}
+.bgcol2 {
+	background-color: #a1e2e5;
+}
+.bgcol3 {
+	background-color: #617365;
+}
+.col1 {
+	color: #124533;
+}
+.col2 {
+	color: #255956;
+}
+.vertical-align {
+	vertical-align: top;
+}
+.halfwidth {
+	width: 49%;
+}
+.fourthwidth {
+	width: 24%;
+}
+.fullwidth {
+	width: 100%;
+}
+.maxwidth {
+	max-width: 1070px; 
+}
+.block {
+	display:block;
+	word-wrap: break-word;
+}
+.inlineblock {
+	display:inline-block;
+	word-wrap: break-word;
+}
+.marginleft {
+    margin-left:1%;    
+}
+.smalltext {
+	font-size:75%;
+}
+.align-center {
+	text-align: center;
+}
+.align-left {
+	text-align: left;
+}
+.bigtext {
+	font-size: 120%;
+}
+.borderbottom {
+	border-bottom: 1px solid #aaa; 
+}
+.marginbottom {
+	margin-bottom: 10px;
+}
+.margintop {
+	margin-top: 10px;
+}
+		.linktext a:hover {
+    color: #451339;
+    background-color: #d2d4a3;
+}
+		.linktext a:visited {
+    color: #652986;
+}
+.solid {
+    border-style: solid;
+}
+.border-black {
+    border-width: 1px;
+    border-color: #000000;
+}
+.padding {
+	padding: 10px;
+}
+.marginauto {
+	margin: auto;
+}
+.font { 
+    font-family: "Times New Roman", Times, serif;
+}
+.lineheight {
+    line-height:1;
+}
+		.gtpmenu nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+		.gtpmenu nav ul li {
+  float: left;
+  margin: 0;
+}
+		.gtpmenu nav ul li a, .gtpmenu nav ul li p {
+  display: block;
+  padding: 7px;
+  color: white;
+  margin: 0;
+  text-align: center;
+  text-decoration: underline;
+  background-color: #657063;
+}
+		.gtpmenu nav ul li a:hover, .gtpmenu nav ul li p:hover {
+  background-color: #111;
+}
+details summary::-webkit-details-marker {
+  display:none;
+}
+
+@media screen and (max-width: 1090px) {
+  body {
+    background-color: lightblue;
+    font-size:210%;
+  }
+  .bodycenter { 
+    width: device-width;
+  }
+}
