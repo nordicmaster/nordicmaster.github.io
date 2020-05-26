@@ -56,9 +56,9 @@
                         download="{{item.ID}} ({{item.name}})">{{item.ID}}</a>&nbsp;{{item.name}}
                  </div>
                  <div class="itempart2">
-                     <div><details>
+                     <div><details class="inline-block">
                          <summary ng-click='renew(item)'>Show text</summary>                     
-                         <div ng-hide="item.text">Loading...</div><p>{{item.text}}</p>
+                         <div ng-hide="item.text">Loading...</div><p class="smalltext">{{item.text}}</p>
                         </details>
                      </div>
                      <div><button ng-click='pdfeah(item)'>Download text</button></div>
