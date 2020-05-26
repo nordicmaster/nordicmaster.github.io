@@ -32,7 +32,7 @@
             <!-- ORDER BY-->
             <br>
             Sort by:
-            <select class="button-like bgcol2" ng-model="sortparam">
+            <select class="button-like bgcol2 col1" ng-model="sortparam">
               <option value="ID">ID</option>
               <option value="name">name</option>
               <option value="created_date">created_date</option>
@@ -50,7 +50,7 @@
             </select>
             <br><br>
 
-           <div ng-repeat="item in textJson | orderBy:sortparam" class="justrow">
+           <div ng-repeat="item in textJson | orderBy:sortparam" class="solid border-black">
                  <div class="itempart1">
                      <a href="https://raw.githubusercontent.com/nordicmaster/guitarpros/master/{{item.ID}}.gp5" 
                         download="{{item.ID}} ({{item.name}})">{{item.ID}}</a>&nbsp;{{item.name}}
