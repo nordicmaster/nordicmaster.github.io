@@ -12,19 +12,19 @@
 <script src="https://nordicmaster.github.io/js/gtpController.js?ax=65"></script>
 <script src="https://nordicmaster.github.io/js/pdfmake.js"></script>
 <script src="https://nordicmaster.github.io/js/pdffonts.js"></script>
-<body>
-    <div class="bodycenter">
+<body class="bodytype">
+    <div class="font fullwidth align-left padding bgcol0 maxwidth marginauto">
         <ng-include src="'part_menu.html'">
         </ng-include>
         <br>
-        <div class="maintext">Nordic Master github page</div>
-        <div class="justtext">
+        <div class="align-center bigtext maintext borderbottom marginbottom">Nordic Master github page</div>
+        <div class="margintop col1">
             Covers ever played by Nordic Master
         </div>
         <div ng-controller="gtpController"> 
             <div ng-hide="coversJson">Loading...</div>
 
-            <div ng-repeat="item in coversJson" class="justrow">
+            <div ng-repeat="item in coversJson" class="solid border-black">
                  <div class="itempart1" style="width:44%;">
                      <b>{{item.author}}</b> - {{item.name}}
                  </div>
