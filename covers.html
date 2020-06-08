@@ -25,17 +25,20 @@
             <div ng-hide="coversJson">Loading...</div>
 
             <div ng-repeat="item in coversJson" class="solid border-black">
-                 <div class="itempart1" style="width:44%;">
+                 <div class="inlineblock vertical-align halfwidth marginleft" style="width:44%;">
                      <b>{{item.author}}</b> - {{item.name}}
                  </div>
-                 <div class="itempart2" style="width:19%;">
+                 <div class="inlineblock vertical-align fourthwidth marginleft" style="width:19%;">
                      <span style="font-size:80%;">Recorded:&nbsp;{{item.recorded}}</span>
                  </div>
-                 <div class="itempart3" style="width:33%;">
-                     <span style="vertical-align:top;"><button ng-click='pdfeah(item)'>Download text</button></span>
-                     <span><details>
-                         <summary ng-click='renew(item)'>Show text</summary>                     
-                         <div ng-hide="item.text">Loading...</div><p>{{item.text}}</p>
+                 <div class="inlineblock vertical-align fourthwidth marginleft" style="width:33%;">
+                     <span style="vertical-align:top;">
+                         <button class="button-like bgcol1" ng-click='pdfeah(item)'>Download text</button>
+                     </span>
+                     <span>
+                        <details class="inlineblock">
+                         <summary class="button-like align-center bgcol3" ng-click='renew(item)'>Show text</summary>                     
+                         <div ng-hide="item.text">Loading...</div><p class="smalltext">{{item.text}}</p>
                         </details>
                      </span>                     
                  </div>
