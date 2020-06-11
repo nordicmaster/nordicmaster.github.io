@@ -445,7 +445,7 @@
       "signature": "4/4",
       "text": "",
       "length": "=2 sec * Tacts count * 120 / Tempo",
-      "finished": false,
+      "finished": true,
       "lyric_finished":false,
       "recorded":false 
     },
