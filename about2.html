@@ -35,14 +35,6 @@ var caruselApp = angular.module('caruselApp', []);
         Возможность изменять файлы и описания к ним есть у всех пользователей github. Но только после Pull request
         </p>
         
-        <form>
-          First name:<br>
-          <input type="text"  id="addtofile" >
-          <br>
-          <input type="submit" value="Submit" onclick="addd()">
-        </form> 
-        <p id="demo"></p>
-        
         <div ng-hide="linkJson">Загрузка...</div>        
     </div>
     <ng-include src="'part_footer.html'">
@@ -84,9 +76,4 @@ var caruselApp = angular.module('caruselApp', []);
 </div>
 </div>
 </body>
-<script type="text/javascript">
-function addd() {
-  document.getElementById("demo").innerHTML = document.getElementById("addtofile").value;
-}
-</script>
 </html>
