@@ -53,13 +53,12 @@
                         download="{{item.ID}} ({{item.name}})">{{item.ID}}</a>&nbsp;{{item.name}}
                  </div>
                  <div class="inlineblock vertical-align marginleft fourthwidth">
-                     <div><details class="inline-block">
+                     <details class="inline-block">
                          <summary class="button-like align-center bgcol1" ng-click='renew(item)'>Show text</summary>                     
                          <div ng-hide="item.text">Loading...</div><p class="smalltext">{{item.text}}</p>
-                        </details>
-                     </div>
+                     </details>                     
                      <div><button class="button-like bgcol1 fullwidth" ng-click='pdfeah(item)'>Download text</button></div>
-                     <div class="button-like bgcol1 fullwidth"><a class="fullwidth align-center" href="src/structure/{{item.ID}}.txt" 
+                     <div class="button-like bgcol1 fullwidth align-center"><a class="fullwidth align-center" href="src/structure/{{item.ID}}.txt" 
                         download="{{item.ID}} ({{item.name}})">Structure</a></div>
                  </div>
                  <div class="inlineblock vertical-align marginleft halfwidth smalltext">
