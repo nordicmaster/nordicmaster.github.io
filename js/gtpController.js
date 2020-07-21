@@ -194,6 +194,7 @@ myApp.controller('gtpController', function($scope) {
         $scope.fetchJson();
         $scope.fetchcoversJson();
         $scope.sortparam='ID';
+        $scope.getLastFm();
     }
     async function init2() {
         console.log("----fetch test----");
