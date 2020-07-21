@@ -77,6 +77,8 @@
         - Inform about nice cubase plugins (with downloadable links)<br>
         - Invite NM to some performances and festivals ♫♫
     </p>
+     <div ng-hide="lastfmJson">Loading...1</div>
+     <div ng-hide="lastfmJson.toptracks.track">Loading...2</div>
     <div ng-repeat="item in lastfmJson.toptracks.track" class="justrow"> 
       <div>{{item.name}}&nbsp;{{item.playcount}}</div>
     </div>
