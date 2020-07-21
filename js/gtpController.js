@@ -95,9 +95,9 @@ myApp.controller('gtpController', function($scope) {
     $scope.getLastFm = function () {
         ajax("https://ws.audioscrobbler.com/2.0/?method=artist.getTopTracks&artist=nordic+master&api_key=57ee3318536b23ee81d6b27e36997cde&format=json")
           .then(function(result) {
-            $scope.lastfmJson = JSON.parse(result);
+            var xres = JSON.parse(result);
+            $scope.lastfmJson = xres.toptracks.track;
             console.log($scope.lastfmJson);
-            console.log($scope.lastfmJson.toptracks.track);
           })
           .catch(function() {
             console.log("rerro2r-0lastfm");
