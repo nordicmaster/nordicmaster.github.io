@@ -98,7 +98,7 @@ myApp.controller('gtpController', function($scope) {
                 console.log(this.responseText);
             }
         };
-        xhr.open('POST', "http://ws.audioscrobbler.com/2.0/?method=artist.getTopTracks&artist=nordic+master&api_key=57ee3318536b23ee81d6b27e36997cde&format=json");
+        xhr.open('POST', "https://ws.audioscrobbler.com/2.0/?method=artist.getTopTracks&artist=nordic+master&api_key=57ee3318536b23ee81d6b27e36997cde&format=json");
         xhr.send();
     }
 
