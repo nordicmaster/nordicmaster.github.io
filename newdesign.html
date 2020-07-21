@@ -61,7 +61,7 @@
         </div>
     </div>
   </div>
-  <div id="whiteside" class="whiteside" onclick='whiteit()'>
+  <div id="whiteside" class="whiteside" ng-controller="gtpController" onclick='whiteit()'>
     <span style="font-size: 3em">Master</span><br>
     <button id="back2" class="back" onclick="restore(event)">back</button>
       <br>
@@ -77,6 +77,9 @@
         - Inform about nice cubase plugins (with downloadable links)<br>
         - Invite NM to some performances and festivals ♫♫
     </p>
+    <div ng-repeat="item in lastfmJson.toptracks.track" class="justrow"> 
+      <div>{{item.name}}&nbsp;{{item.playcount}}</div>
+    </div>
     <p>
       <a href="https://soundcloud.com/user-912533495-638345693/">Soundcloud</a><br>
       <iframe width="100%" height="300" scrolling="no" frameborder="no" 
