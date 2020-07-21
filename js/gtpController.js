@@ -14,6 +14,7 @@ myApp.controller('gtpController', function($scope) {
     $scope.totalrecorded=0
     $scope.textJson=[]
     $scope.coversJson=[];
+    $scope.lastfmJson=[];
     $scope.changeClass = function (e) {         
         $scope.gtp.text = 'newtab';
     }
@@ -94,19 +95,11 @@ myApp.controller('gtpController', function($scope) {
     $scope.getLastFm = function () {
         ajax("https://ws.audioscrobbler.com/2.0/?method=artist.getTopTracks&artist=nordic+master&api_key=57ee3318536b23ee81d6b27e36997cde&format=json")
           .then(function(result) {
-            console.log(result);
+            $scope.lastfmJson = JSON.parse(result);
           })
           .catch(function() {
             console.log("rerro2r-0lastfm");
           });
-        /*var xhr = new XMLHttpRequest();
-        xhr.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-                console.log(this.responseText);
-            }
-        };
-        xhr.open('POST', "https://ws.audioscrobbler.com/2.0/?method=artist.getTopTracks&artist=nordic+master&api_key=57ee3318536b23ee81d6b27e36997cde&format=json");
-        xhr.send();*/
     }
 
     $scope.fetchJson = function () {
