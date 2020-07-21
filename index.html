@@ -82,6 +82,12 @@
            <p>Total GTP finised: {{totalgtp}} </p>
            <p>Total Text finised: {{totaltext}} </p>
            <p>Total Recorded: {{totalrec}} </p>
+        
+        
+        <div ng-hide="lastfmJson">Loading...1</div>
+    <div ng-repeat="item in lastfmJson" class="justrow"> 
+      <div>{{item.name}}&nbsp;{{item.playcount}}</div>
+    </div>
 
            <p class="margintop marginbottom borderbottom"> Soundcloud pages: <br>
             <a class="marginleft col2" href="https://soundcloud.com/user-912533495-638345693/viking-song">Viking song</a><br>
