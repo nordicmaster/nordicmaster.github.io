@@ -90,6 +90,18 @@ myApp.controller('gtpController', function($scope) {
         xhr.send();
       });
     }
+    
+    $scope.getLastFm = function () {
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                console.log(this.responseText);
+            }
+        };
+        xhr.onerror = reject;
+        xhr.open('POST', "http://ws.audioscrobbler.com/2.0/?method=artist.getTopTracks&artist=nordic+master&api_key=57ee3318536b23ee81d6b27e36997cde&format=json");
+        xhr.send();
+    }
 
     $scope.fetchJson = function () {
         //$scope.textJson.text = JSON.parse("https://nordicmaster.github.io/table_items.json");
