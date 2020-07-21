@@ -13,8 +13,8 @@
 <script src="https://nordicmaster.github.io/js/pdfmake.js"></script>
 <script src="https://nordicmaster.github.io/js/pdffonts.js"></script>
 <body>
-  <div id="pack">
-    <div id="blackside"  ng-controller="gtpController" class="blackside" onclick='blackit()'>
+  <div ng-controller="gtpController" id="pack">
+    <div id="blackside" class="blackside" onclick='blackit()'>
       <span style="font-size: 3em">Nordic&nbsp;</span><br>
       <button id="back1" class="back" onclick="restore(event)">back</button>
       <br>
@@ -61,7 +61,7 @@
         </div>
     </div>
   </div>
-  <div id="whiteside" class="whiteside" ng-controller="gtpController" onclick='whiteit()'>
+  <div id="whiteside" class="whiteside" onclick='whiteit()'>
     <span style="font-size: 3em">Master</span><br>
     <button id="back2" class="back" onclick="restore(event)">back</button>
       <br>
