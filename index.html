@@ -86,7 +86,7 @@
         
         <div ng-hide="lastfmJson">Loading...1</div>
         <p>{{lastfmJson.length}}</p>
-    <div ng-repeat="x in lastfmJson" class="justrow"> 
+    <div ng-repeat="x in lastfmJson | orderBy:playcount" class="justrow"> 
       <div>{{x.name}}&nbsp;{{x.playcount}}</div>
     </div>
 
