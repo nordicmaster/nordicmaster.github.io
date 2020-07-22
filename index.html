@@ -97,9 +97,9 @@
         </div><!-- controller-->
         <div ng-controller="lastfmController"> 
                 <div ng-hide="lastfmJson">Loading...1</div>
-                <p>{{lastfmJson.length}}</p>
-            <div ng-repeat="x in lastfmJson | orderBy:playcount" class="justrow"> 
-              <div>{{x.name}}&nbsp;{{x.playcount}}</div>
+                <p>{{lastfmJson.length}} songs are scrobbled on Last.fm:</p>
+            <div ng-repeat="x in lastfmJson | orderBy:'playcount'" class="justrow inlineblock vertical-align marginleft fullwidth">
+              <div>{{x.name}}&nbsp; - {{x.playcount}} times</div>
             </div>
         </div><!-- controller-->
         <ng-include src="'part_footer.html'">
