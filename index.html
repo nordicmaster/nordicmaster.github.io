@@ -100,7 +100,7 @@
                 <p>{{lastfmJson.length}} songs are scrobbled on Last.fm:</p>
             <div ng-repeat="x in lastfmJson | orderBy:'-playcount'" class="justrow inlineblock vertical-align marginleft fullwidth">
               <span class="halfwidth">{{x.name}}</span>
-              <span class="halfwidth>&nbsp; - {{x.playcount}} times</span>
+              <span class="halfwidth">&nbsp; - {{x.playcount}} times</span>
             </div>
         </div><!-- controller-->
         <ng-include src="'part_footer.html'">
