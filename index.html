@@ -12,6 +12,7 @@
     var myApp = angular.module('myApp', []);
 </script>
 <script src="https://nordicmaster.github.io/js/gtpController.js?ax=65"></script>
+<script src="https://nordicmaster.github.io/js/lastfmController.js"></script>
 <script src="https://nordicmaster.github.io/js/pdfmake.js"></script>
 <script src="https://nordicmaster.github.io/js/pdffonts.js"></script>
 <body class="bodytype">
@@ -81,14 +82,8 @@
            </div>
            <p>Total GTP finised: {{totalgtp}} </p>
            <p>Total Text finised: {{totaltext}} </p>
-           <p>Total Recorded: {{totalrec}} </p>
-        
-        
-        <div ng-hide="lastfmJson">Loading...1</div>
-        <p>{{lastfmJson.length}}</p>
-    <div ng-repeat="x in lastfmJson | orderBy:playcount" class="justrow"> 
-      <div>{{x.name}}&nbsp;{{x.playcount}}</div>
-    </div>
+           <p>Total Recorded: {{totalrec}} </p>       
+
 
            <p class="margintop marginbottom borderbottom"> Soundcloud pages: <br>
             <a class="marginleft col2" href="https://soundcloud.com/user-912533495-638345693/viking-song">Viking song</a><br>
@@ -99,6 +94,13 @@
             <a class="marginleft col2" href="https://nordicmaster.bandcamp.com/track/unexpected-rescue">Unexpected Rescue</a><br>
             <a class="marginleft col2" href="https://nordicmaster.bandcamp.com/track/dark-land-dwellers">Dark Land Dwellers</a><br>
           </p>
+        </div><!-- controller-->
+        <div ng-controller="lastfmController"> 
+                <div ng-hide="lastfmJson">Loading...1</div>
+                <p>{{lastfmJson.length}}</p>
+            <div ng-repeat="x in lastfmJson | orderBy:playcount" class="justrow"> 
+              <div>{{x.name}}&nbsp;{{x.playcount}}</div>
+            </div>
         </div><!-- controller-->
         <ng-include src="'part_footer.html'">
         </ng-include>
