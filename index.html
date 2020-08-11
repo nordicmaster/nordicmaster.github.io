@@ -58,9 +58,14 @@
                          <summary class="button-like align-center bgcol1" ng-click='renew(item)'>Show text</summary>                     
                          <div ng-hide="item.text">Loading...</div><p class="smalltext">{{item.text}}</p>
                      </details>                     
-                     <div class="inlineblock fullwidth"><button class="button-like bgcol1 fullwidth" ng-click='pdfeah(item)'>Download text</button></div>
-                     <div class="inlineblock button-like bgcol1 fullwidth align-center"><a class="fullwidth align-center" href="src/structure/{{item.ID}}.txt" 
-                        download="{{item.ID}} ({{item.name}})">Structure</a></div>
+                     <div class="inlineblock fullwidth">
+                         <button class="button-like bgcol1 fullwidth" ng-click='pdfeah(item)'>Download text</button>
+                     </div>
+                     <div class="inlineblock  fullwidth">
+                         <div class="button-like bgcol1 align-center">
+                            <a class="fullwidth align-center" href="src/structure/{{item.ID}}.txt" download="{{item.ID}} ({{item.name}})">Structure</a>
+                         </div>
+                     </div>
                  </div>
                  <div class="inlineblock vertical-align marginleft halfwidth smalltext">
                      Info: 
@@ -80,9 +85,11 @@
                      <span>Recorded:&nbsp;{{item.recorded}};</span>
                  </div>
            </div>
-           <p>Total GTP finised: {{totalgtp}} </p>
-           <p>Total Text finised: {{totaltext}} </p>
-           <p>Total Recorded: {{totalrec}} </p>       
+           <p>
+               <div class="inlineblock vertical-align marginleft fourthwidth">Total GTP finised: {{totalgtp}} </div>
+               <div class="inlineblock vertical-align marginleft fourthwidth">Total Text finised: {{totaltext}} </div>
+               <div class="inlineblock vertical-align marginleft fourthwidth">Total Recorded: {{totalrec}} </div>
+           </p>       
 
 
            <p class="margintop marginbottom borderbottom"> Soundcloud pages: <br>
@@ -95,9 +102,10 @@
             <a class="marginleft col2" href="https://nordicmaster.bandcamp.com/track/dark-land-dwellers">Dark Land Dwellers</a><br>
           </p>
         </div><!-- controller-->
+        
         <div ng-controller="lastfmController"> 
-                <div ng-hide="lastfmJson">Loading...1</div>
-                <p>{{lastfmJson.length}} songs are scrobbled on Last.fm:</p>
+            <div ng-hide="lastfmJson">Loading...1</div>
+            <p>{{lastfmJson.length}} songs are scrobbled on Last.fm:</p>
             <div ng-repeat="x in lastfmJson | orderBy:'-playcount'" class="justrow inlineblock vertical-align marginleft fullwidth">
               <span class="halfwidth">{{x.name}}</span>
               <span class="halfwidth">&nbsp; - {{x.playcount}} times</span>
@@ -105,6 +113,7 @@
             <p> Listeners - {{listeners}}</p>
             <p> Total scrobbles - {{totalscrobbles}}</p>
         </div><!-- controller-->
+        
         <ng-include src="'part_footer.html'">
         </ng-include>
     </div><!--bodycenter-->
