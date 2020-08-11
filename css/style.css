@@ -4,8 +4,8 @@
     line-height:1;
 }
 .button-like {
-	padding: 2px;
-	margin: 2px;
+	padding: 2px 0px 2px 0px;
+	margin: 2px 0px 2px 0px;
 	border: solid 1px transparent;
 	border-radius: 10px;
 	font: inherit;
