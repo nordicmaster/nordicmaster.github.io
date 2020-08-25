@@ -20,10 +20,12 @@ var myApp = angular.module('myApp', []);
     <ng-include src="'part_menu.html'">
     </ng-include>
     <div ng-controller="linkController"> 
-        <p class="margintop col1">
+        <p class="margintop col1 bigtext">
 
-        GTP Storage - средство для отображения гитарпро файлов и их данных, находящихся в репозитории nordicmaster/guitarpros.
-        Возможность изменять файлы и описания к ним есть у всех пользователей github. Но только после Pull request
+        <!--GTP Storage - средство для отображения гитарпро файлов и их данных, находящихся в репозитории nordicmaster/guitarpros.
+        Возможность изменять файлы и описания к ним есть у всех пользователей github. Но только после Pull request-->
+        GTP Storage is a tool for storing gtp files with additional data that placed in nordicmaster/guitarpros repository.
+        One can edit files and descriptions to them via github account.
 
         </p>
         <div ng-hide="linkJson">Загрузка...</div>        
