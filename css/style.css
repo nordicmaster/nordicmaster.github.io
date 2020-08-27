@@ -13,22 +13,22 @@
 	cursor: pointer;
 }
 .bgcol0 {
-	background-color: #cfefe2;
+	background-color: #ffa96b;
 }
 .bgcol1 {
-	background-color: #779177;
+	background-color: #7a192f;
 }
 .bgcol2 {
-	background-color: #a1e2e5;
+	background-color: #d96f6f;
 }
 .bgcol3 {
-	background-color: #617365;
+	background-color: #a66219;
 }
 .col1 {
-	color: #124533;
+	color: #076263;
 }
 .col2 {
-	color: #255956;
+	color: #0c4a6e;
 }
 .vertical-align {
 	vertical-align: top;
@@ -78,8 +78,8 @@
 	margin-top: 10px;
 }
 a:hover {
-    color: #451339;
-    background-color: #d2d4a3;
+    color: #d44402;
+    background-color: #f6ffb0;
 }
 .solid {
     border-style: solid;
@@ -118,7 +118,7 @@ a:hover {
   margin: 0;
   text-align: center;
   text-decoration: underline;
-  background-color: #657063;
+  background-color: #7a092f;
 }
 		.gtpmenu nav ul li a:hover, .gtpmenu nav ul li p:hover {
   background-color: #111;
