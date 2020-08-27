@@ -13,22 +13,26 @@
 	cursor: pointer;
 }
 .bgcol0 {
-	background-color: #ffa96b;
+	background-color: #caaffa;
 }
 .bgcol1 {
-	background-color: #7a192f;
+	background-color: #7e38fc;
 }
 .bgcol2 {
-	background-color: #d96f6f;
+	background-color: #c87ff5;
 }
 .bgcol3 {
-	background-color: #a66219;
+	background-color: #0aa3a1;
 }
 .col1 {
-	color: #076263;
+	color: #6a7d50;
 }
 .col2 {
-	color: #0c4a6e;
+	color: #657843;
+}
+.col2:hover {
+    color: #656579;
+    background-color: #e3d6b1;
 }
 .vertical-align {
 	vertical-align: top;
@@ -76,10 +80,6 @@
 }
 .margintop {
 	margin-top: 10px;
-}
-a:hover {
-    color: #d44402;
-    background-color: #f6ffb0;
 }
 .solid {
     border-style: solid;
