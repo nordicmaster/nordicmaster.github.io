@@ -13,26 +13,26 @@
 	cursor: pointer;
 }
 .bgcol0 {
-	background-color: #caaffa;
+	background-color: #ddcdfa;
 }
 .bgcol1 {
-	background-color: #7e38fc;
+	background-color: #673bb8;
 }
 .bgcol2 {
 	background-color: #c87ff5;
 }
 .bgcol3 {
-	background-color: #0aa3a1;
+	background-color: #0a61a3;
 }
 .col1 {
-	color: #6a7d50;
+	color: #3d4d29;
 }
 .col2 {
-	color: #657843;
+	color: #535e3d;
 }
 .col2:hover {
-    color: #656579;
-    background-color: #e3d6b1;
+    color: #5a5e3d;
+    background-color: #7e5ae8;
 }
 .vertical-align {
 	vertical-align: top;
