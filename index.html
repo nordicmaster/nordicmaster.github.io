@@ -50,7 +50,7 @@
 
            <div ng-repeat="item in textJson | orderBy:sortparam" class="solid border-black">
                  <div class="inlineblock vertical-align marginleft fourthwidth">
-                     <a href="https://raw.githubusercontent.com/nordicmaster/guitarpros/master/{{item.ID}}.gp5" 
+                     <a class="col2" href="https://raw.githubusercontent.com/nordicmaster/guitarpros/master/{{item.ID}}.gp5" 
                         download="{{item.ID}} ({{item.name}})">{{item.ID}}</a>&nbsp;{{item.name}}
                  </div>
                  <div class="inlineblock vertical-align marginleft fourthwidth">
@@ -63,7 +63,7 @@
                      </div>
                      <div class="inlineblock  fullwidth">
                          <div class="button-like bgcol1 align-center">
-                            <a class="fullwidth align-center" href="src/structure/{{item.ID}}.txt" download="{{item.ID}} ({{item.name}})">Structure</a>
+                            <a class="fullwidth align-center col2" href="src/structure/{{item.ID}}.txt" download="{{item.ID}} ({{item.name}})">Structure</a>
                          </div>
                      </div>
                  </div>
