@@ -574,6 +574,24 @@
       "finished": false,
       "lyric_finished":false,
       "recorded":false 
+    },
+    {											
+      "ID":"b05",
+      "name": "b05",
+      "created_date": "21.08.2020",	
+      "last_modified_date": "21.08.2020",
+      "version": 1,
+      "instruments_count": 2,
+      "track_count": 2,
+      "tacts": 5,
+      "tempo": 180,
+      "tonality": "? major",
+      "signature": "4/4",
+      "text": "",
+      "length": "=2 sec * Tacts count * 120 / Tempo",
+      "finished": false,
+      "lyric_finished":false,
+      "recorded":false 
     }
 ]
 
