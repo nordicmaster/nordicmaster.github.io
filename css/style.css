@@ -13,13 +13,13 @@
 	cursor: pointer;
 }
 .bgcol0 {
-	background-color: #ddcdfa;
+	background-color: #dcd3ed;
 }
 .bgcol1 {
-	background-color: #673bb8;
+	background-color: #8748cf;
 }
 .bgcol2 {
-	background-color: #c87ff5;
+	background-color: #c879e8;
 }
 .bgcol3 {
 	background-color: #0a61a3;
@@ -121,10 +121,10 @@ a {
   margin: 0;
   text-align: center;
   text-decoration: underline;
-  background-color: #7a092f;
+  background-color: #7a0956;
 }
 		.gtpmenu nav ul li a:hover, .gtpmenu nav ul li p:hover {
-  background-color: #111;
+  background-color: #222;
 }
 details summary::-webkit-details-marker {
   display:none;
