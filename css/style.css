@@ -13,26 +13,26 @@
 	cursor: pointer;
 }
 .bgcol0 {
-	background-color: #dcd3ed;
+	background-color: #C29DDB;
 }
 .bgcol1 {
-	background-color: #8748cf;
+	background-color: #AD5FE1;
 }
 .bgcol2 {
-	background-color: #c879e8;
+	background-color: #9579A8;
 }
 .bgcol3 {
-	background-color: #0a61a3;
+	background-color: #A06Fb7;
 }
 .col1 {
-	color: #3d4d29;
+	color: #47275C;
 }
 .col2 {
-	color: #535e3d;
+	color: #444a38;
 }
 .col2:hover {
-    color: #ded4a9;
-    background-color: #7461f2;
+    color: #ede1f7;
+    background-color: #52425C;
 }
 a {
 	color: #fff;
@@ -121,7 +121,7 @@ a {
   margin: 0;
   text-align: center;
   text-decoration: underline;
-  background-color: #7a0956;
+  background-color: #52425C;
 }
 		.gtpmenu nav ul li a:hover, .gtpmenu nav ul li p:hover {
   background-color: #222;
