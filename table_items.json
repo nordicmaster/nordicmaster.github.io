@@ -216,6 +216,24 @@
       "recorded":true 
     },
     {											
+      "ID":"94",
+      "name": "Anthem to Weakness",
+      "created_date": "03.01.2015",	
+      "last_modified_date": "04.11.2020",
+      "version": 1,
+      "instruments_count": 3,
+      "track_count": 4,
+      "tacts": 38,
+      "tempo": 120,
+      "tonality": "E major",
+      "signature": "4/4",
+      "text": "",
+      "length": "=2 sec * Tacts count * 120 / Tempo",
+      "finished": false,
+      "lyric_finished":false,
+      "recorded":false 
+    },
+    {											
       "ID":"96",
       "name": "Dream of Better Life",
       "created_date": "03.01.2019",	
