@@ -1,5 +1,5 @@
 {
   "scripts": {
-    "lint": "npm run eslint && npm run npmpackagejsonlint"
+    "lint": "eslint "**/*.js""
   }
 }
