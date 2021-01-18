@@ -165,13 +165,13 @@ myApp.controller('gtpController', function($scope) {
         $scope.fetchcoversJson();
         $scope.sortparam='ID';
     }
-    async function init2() {
+    /*async function init2() {
         console.log("----fetch test----");
         const response = await fetch('https://nordicmaster.github.io/table_items.json');
         const myJson = await response.json();
         console.log(JSON.stringify(myJson));
         console.log("---fetch test end---");
-    }
+    }*/
     init();
     //init2();
 });
