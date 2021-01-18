@@ -3,4 +3,4 @@ node_js:
   - 7
 script:
   - npm install eslint --save-dev
-  - eslint "**/*.js"
+  - eslint "js/*.js"
