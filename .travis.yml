@@ -2,4 +2,5 @@ language: node_js
 node_js:
   - 7
 script:
-  - lint
+  - npm install eslint --save-dev
+  - eslint . --ext .js
