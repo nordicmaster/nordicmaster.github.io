@@ -2,5 +2,5 @@
   "scripts": {
     "lint": "eslint . --ext .js"
   },
-  "license": "pass"
+  "license": "MIT"
 }
