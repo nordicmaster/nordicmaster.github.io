@@ -1,8 +1,9 @@
 body {
-    font-size:150%;
-    margin: 0;
-    line-height:1;
+  font-size: 150%;
+  margin: 0;
+  line-height: 1;
 }
+
 button {
   padding: 2px;
   margin: 2px;
@@ -13,117 +14,135 @@ button {
   background-color: #779177;
   cursor: pointer;
 }
+
 .sortsel {
   padding: 2px;
   margin: 2px;
   font: inherit;
   background-color: #a1e2e5;
 }
-.itempart1, .itempart2, .itempart3 {
-    vertical-align: top;
-    margin-left:1%;
-    display:inline-block;
-    word-wrap: break-word;
-}
-.itempart1 {    
-    width: 24%;
-}
-.itempart2 {
-    max-width: 170px;
-    width:24%;
-}
-.itempart2 div button {
-    width: 100%;
-}
-.itempart2 details {
-    width: 100%;
-    display: block;
-}
+.itempart1,
+.itempart2,
 .itempart3 {
-    width: 49%;
+  vertical-align: top;
+  margin-left: 1%;
+  display: inline-block;
+  word-wrap: break-word;
 }
+
+.itempart1 {    
+  width: 24%;
+}
+
+.itempart2 {
+  max-width: 170px;
+  width: 24%;
+}
+
+.itempart2 div button {
+  width: 100%;
+}
+
+.itempart2 details {
+  width: 100%;
+  display: block;
+}
+
+.itempart3 {
+  width: 49%;
+}
+
 .itempart3 span {
-    font-size:75%;
-    border: solid 1px transparent;
-    border-radius: 3px;
+  font-size: 75%;
+  border: solid 1px transparent;
+  border-radius: 3px;
 }
+
 .maintext {
-    border-bottom: 1px solid #aaa; 
-    margin-bottom: 10px; 
-    text-align: center;
-    font-size: 120%;
+  border-bottom: 1px solid #aaa; 
+  margin-bottom: 10px; 
+  text-align: center;
+  font-size: 120%;
 }
+
 .justtext {
-    margin-top: 10px;
-    color: #124533;
+  margin-top: 10px;
+  color: #124533;
 }
 .linktext {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    border-bottom: 1px solid #666;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #666;
 }
+
 .linktext a {
-    margin-left: 10px;
-    border-bottom: 1px solid #bbb;
-    color: #255956;
+  margin-left: 10px;
+  border-bottom: 1px solid #bbb;
+  color: #255956;
 }
+
 .linktext a:hover {
-    margin-left: 10px;
-    color: #451339;
-    border-bottom: 1px solid #fff;
-    background-color: #d2d4a3;
+  margin-left: 10px;
+  color: #451339;
+  border-bottom: 1px solid #fff;
+  background-color: #d2d4a3;
 }
+
 .linktext a:visited {
-    color: #652986;
+  color: #652986;
 }
+
 .justtable {
-    text-align: center;
-    align: center;
-    border-collapse: collapse;
-    border-style: groove;
-    border-width: 1px;
-    border-color: #000000;
-    margin: auto;
+  text-align: center;
+  align: center;
+  border-collapse: collapse;
+  border-style: groove;
+  border-width: 1px;
+  border-color: #000000;
+  margin: auto;
 }
+
 .justheadertable {
-    background-color: #758073;
-    color: #330032;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
+  background-color: #758073;
+  color: #330032;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 .justrow {
-    border-style: solid;
-    border-width: 1px;
-    border-color: #000000;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #000;
 }
 .justrow td {
-    border-style: solid;
-    border-width: 1px;
-    border-color: #201008;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #201008;
 }
 .justheadertable th {
-    border-style: solid;
-    border-width: 2px;
-    border-color: #002200;
-    /*position: -webkit-sticky;
-    position: sticky;
-    top: 0;*/
+  border-style: solid;
+  border-width: 2px;
+  border-color: #002200;
+
+  /*position: -webkit-sticky;
+  position: sticky;
+  top: 0;*/
 }
 
 .bodycenter { 
-    font-family: "Times New Roman", Times, serif;
-    max-width: 1070px; 
-    width: 100%;
-    margin: auto;
-    text-align: left;
-    background-color: #cfefe2;
-    padding: 10px;
+  font-family: "Times New Roman", Times, serif;
+  max-width: 1070px; 
+  width: 100%;
+  margin: auto;
+  text-align: left;
+  background-color: #cfefe2;
+  padding: 10px;
 }
 
 .gtpmenu {
-    line-height:1;
+  line-height:1;
 }
+
 .gtpmenu nav ul {
   list-style-type: none;
   margin: 0;
@@ -135,7 +154,9 @@ button {
   float: left;
   margin: 0;
 }
-.gtpmenu nav ul li a, .gtpmenu nav ul li p {
+
+.gtpmenu nav ul li a,
+.gtpmenu nav ul li p {
   display: block;
   padding: 7px;
   color: white;
@@ -144,15 +165,19 @@ button {
   text-decoration: underline;
   background-color: #657063;
 }
+
 .gtpmenu nav ul li a:hover, .gtpmenu nav ul li p:hover {
   background-color: #111;
 }
+
 details {
-    display:inline-block;
+  display:inline-block;
 }
+
 details summary::-webkit-details-marker {
   display:none;
 }
+
 details summary {
   padding: 2px;
   margin: 2px;
@@ -164,6 +189,7 @@ details summary {
   background-color: #617365;
   cursor: pointer;
 }
+
 details p {
   font-size:80%;
 }
