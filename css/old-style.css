@@ -83,17 +83,6 @@ button {
   color: #255956;
 }
 
-.linktext a:hover {
-  margin-left: 10px;
-  color: #451339;
-  border-bottom: 1px solid #fff;
-  background-color: #d2d4a3;
-}
-
-.linktext a:visited {
-  color: #652986;
-}
-
 .justtable {
   text-align: center;
   border-collapse: collapse;
@@ -154,6 +143,7 @@ button {
   overflow: hidden;
   background-color: #333;
 }
+
 .gtpmenu nav ul li {
   float: left;
   margin: 0;
@@ -170,13 +160,20 @@ button {
   background-color: #657063;
 }
 
+.linktext a:hover {
+  margin-left: 10px;
+  color: #451339;
+  border-bottom: 1px solid #fff;
+  background-color: #d2d4a3;
+}
+
+.linktext a:visited {
+  color: #652986;
+}
+
 .gtpmenu nav ul li a:hover,
 .gtpmenu nav ul li p:hover {
   background-color: #111;
-}
-
-details {
-  display: inline-block;
 }
 
 details summary::-webkit-details-marker {
@@ -199,11 +196,16 @@ details p {
   font-size: 80%;
 }
 
+details {
+  display: inline-block;
+}
+
 @media screen and (max-width: 1090px) {
   body {
     background-color: lightblue;
     font-size: 210%;
   }
+  
   .bodycenter {
     width: device-width;
   }
