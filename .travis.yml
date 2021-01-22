@@ -3,4 +3,6 @@ node_js:
   - 14
 script:
   - npm install eslint --save-dev
+  - npm install --save-dev stylelint stylelint-config-standard
   - eslint "js/*.js" --ignore-pattern node_modules/
+  - npx stylelint "css/*.css"
