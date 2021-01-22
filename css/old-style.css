@@ -44,11 +44,6 @@ button {
   width: 100%;
 }
 
-.itempart2 details {
-  width: 100%;
-  display: block;
-}
-
 .itempart3 {
   width: 49%;
 }
@@ -198,6 +193,11 @@ details summary::-webkit-details-marker {
 
 details {
   display: inline-block;
+}
+
+.itempart2 details {
+  width: 100%;
+  display: block;
 }
 
 @media screen and (max-width: 1090px) {
