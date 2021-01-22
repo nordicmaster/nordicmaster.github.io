@@ -10,7 +10,7 @@ button {
   border: solid 1px transparent;
   border-radius: 10px;
   font: inherit;
-  color: #ffffff;
+  color: #fff;
   background-color: #779177;
   cursor: pointer;
 }
@@ -21,6 +21,7 @@ button {
   font: inherit;
   background-color: #a1e2e5;
 }
+
 .itempart1,
 .itempart2,
 .itempart3 {
@@ -30,7 +31,7 @@ button {
   word-wrap: break-word;
 }
 
-.itempart1 {    
+.itempart1 {
   width: 24%;
 }
 
@@ -59,8 +60,8 @@ button {
 }
 
 .maintext {
-  border-bottom: 1px solid #aaa; 
-  margin-bottom: 10px; 
+  border-bottom: 1px solid #aaa;
+  margin-bottom: 10px;
   text-align: center;
   font-size: 120%;
 }
@@ -69,6 +70,7 @@ button {
   margin-top: 10px;
   color: #124533;
 }
+
 .linktext {
   margin-top: 5px;
   margin-bottom: 5px;
@@ -94,11 +96,10 @@ button {
 
 .justtable {
   text-align: center;
-  align: center;
   border-collapse: collapse;
   border-style: groove;
   border-width: 1px;
-  border-color: #000000;
+  border-color: #000;
   margin: auto;
 }
 
@@ -109,29 +110,32 @@ button {
   position: sticky;
   top: 0;
 }
+
 .justrow {
   border-style: solid;
   border-width: 1px;
   border-color: #000;
 }
+
 .justrow td {
   border-style: solid;
   border-width: 1px;
   border-color: #201008;
 }
+
 .justheadertable th {
   border-style: solid;
   border-width: 2px;
-  border-color: #002200;
+  border-color: #020;
 
-  /*position: -webkit-sticky;
+  /* position: -webkit-sticky;
   position: sticky;
-  top: 0;*/
+  top: 0; */
 }
 
-.bodycenter { 
+.bodycenter {
   font-family: "Times New Roman", Times, serif;
-  max-width: 1070px; 
+  max-width: 1070px;
   width: 100%;
   margin: auto;
   text-align: left;
@@ -140,7 +144,7 @@ button {
 }
 
 .gtpmenu {
-  line-height:1;
+  line-height: 1;
 }
 
 .gtpmenu nav ul {
@@ -166,16 +170,17 @@ button {
   background-color: #657063;
 }
 
-.gtpmenu nav ul li a:hover, .gtpmenu nav ul li p:hover {
+.gtpmenu nav ul li a:hover,
+.gtpmenu nav ul li p:hover {
   background-color: #111;
 }
 
 details {
-  display:inline-block;
+  display: inline-block;
 }
 
 details summary::-webkit-details-marker {
-  display:none;
+  display: none;
 }
 
 details summary {
@@ -185,21 +190,21 @@ details summary {
   border-radius: 10px;
   font: inherit;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
   background-color: #617365;
   cursor: pointer;
 }
 
 details p {
-  font-size:80%;
+  font-size: 80%;
 }
 
 @media screen and (max-width: 1090px) {
   body {
     background-color: lightblue;
-    font-size:210%;
+    font-size: 210%;
   }
-  .bodycenter { 
+  .bodycenter {
     width: device-width;
   }
 }
