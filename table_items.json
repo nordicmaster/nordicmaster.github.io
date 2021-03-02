@@ -154,7 +154,7 @@
       "tacts": 215,
       "tempo": 130,
       "tonality": "A major / G major",
-      "signature": "4/4 triplets",
+      "signature": "4/4",
       "text": "IDI STROY",
       "length": "=2 sec * Tacts count * 120 / Tempo",
       "finished": true,
