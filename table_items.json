@@ -477,7 +477,7 @@
       "track_count": 2,
       "tacts": 48,
       "tempo": 145,
-      "tonality": "D major",
+      "tonality": "D major / C major",
       "signature": "4/4 triplets",
       "text": "",
       "length": "=2 sec * Tacts count * 120 / Tempo",
