@@ -550,7 +550,7 @@
       "tacts": 56,
       "tempo": 120,
       "tonality": "D major",
-      "signature": "3/4",
+      "signature": "3/4 triplets",
       "text": "",
       "length": "=2 sec * Tacts count * 120 / Tempo",
       "finished": false,
