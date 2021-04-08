@@ -13,7 +13,7 @@ myApp.controller('statsController', function($scope) {
         $scope.textJson = obj;
         sumtempos = 0;
         $scope.textJson.forEach(totalcount);
-        $scope.avgtempo = sumtempos / $scope.textJson.length;
+        $scope.avgtempo = Math.round(sumtempos / $scope.textJson.length);
     }
     function totalcount(item,index) {
         if (item.finished==true)
