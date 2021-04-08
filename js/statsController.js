@@ -11,7 +11,6 @@ myApp.controller('statsController', function($scope) {
 
     function assignJson(obj) {
         $scope.textJson = obj;
-        $scope.textJson.forEach(addtext);
         $scope.textJson.forEach(totalcount);
     }
     function totalcount(item,index) {
