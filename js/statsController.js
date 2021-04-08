@@ -1,17 +1,19 @@
-//AngularJS
 var myApp=angular.module('myApp');
 myApp.controller('statsController', function($scope) {
-    $scope.totalgtp=0
-    $scope.totaltext=0
-    $scope.totalrec=0
-    $scope.totalplayed=0
-    $scope.totalrecorded=0
-    $scope.textJson=[]
-    $scope.coversJson=[];
+    $scope.totalgtp=0;
+    $scope.totaltext=0;
+    $scope.totalrec=0;
+    $scope.mintempo=999;
+    $scope.maxtempo=0;
+    $scope.avgtempo=0;
+    $scope.textJson=[];
+    var sumtempos;
 
     function assignJson(obj) {
         $scope.textJson = obj;
+        sumtempos = 0;
         $scope.textJson.forEach(totalcount);
+        $scope.avgtempo = sumtempos / $scope.textJson.length;
     }
     function totalcount(item,index) {
         if (item.finished==true)
@@ -20,17 +22,18 @@ myApp.controller('statsController', function($scope) {
             $scope.totaltext++;
         if (item.recorded==true)
             $scope.totalrec++;
-    }
-    function totalcovercount(item,index) {
-        $scope.totalplayed++;
-        if (item.recorded==true)
-            $scope.totalrecorded++;
+        if (item.tempo > $scope.maxtempo)
+            $scope.maxtempo = item.tempo;
+        if (item.tempo < $scope.mintempo)
+            $scope.mintempo = item.tempo;
+        sumtempos+=item.tempo;
     }
     
-    async function init2() {
+    async function init() {
         const response = await fetch('https://nordicmaster.github.io/table_items.json');
         const myJson = await response.json();
         assignJson(myJson);
     }
-    init2();
+    
+    init();
 });
