@@ -6,14 +6,18 @@ myApp.controller('statsController', function($scope) {
     $scope.mintempo=999;
     $scope.maxtempo=0;
     $scope.avgtempo=0;
+    $scope.avgtacts=0;
     $scope.textJson=[];
     var sumtempos;
+    var sumtacts;
 
     function assignJson(obj) {
         $scope.textJson = obj;
         sumtempos = 0;
+        sumtacts = 0;
         $scope.textJson.forEach(totalcount);
         $scope.avgtempo = Math.round(sumtempos / $scope.textJson.length);
+        $scope.avgtacts = Math.round(sumtacts / $scope.totalgtp);
     }
     function totalcount(item,index) {
         if (item.finished==true)
@@ -27,6 +31,8 @@ myApp.controller('statsController', function($scope) {
         if (item.tempo < $scope.mintempo)
             $scope.mintempo = item.tempo;
         sumtempos+=item.tempo;
+        if (item.finished==true)
+            sumtacts+=item.tacts;
     }
     
     async function init() {
