@@ -17,15 +17,18 @@
         <ng-include src="'part_menu.html'">
         </ng-include>
         <br>
+        <div class="align-center bigtext maintext borderbottom marginbottom">Some gtp statistics</div>
     <div ng-controller="statsController"> 
 
            <p>
                <div class="inlineblock vertical-align marginleft fourthwidth">Total GTP finised: {{totalgtp}} </div>
                <div class="inlineblock vertical-align marginleft fourthwidth">Total Text finised: {{totaltext}} </div>
                <div class="inlineblock vertical-align marginleft fourthwidth">Total Recorded: {{totalrec}} </div>
+               <br>
                <div class="inlineblock vertical-align marginleft fourthwidth">Min tempo: {{mintempo}} </div>
                <div class="inlineblock vertical-align marginleft fourthwidth">Max tempo: {{maxtempo}} </div>
                <div class="inlineblock vertical-align marginleft fourthwidth">Avg tempo: {{avgtempo}} </div>
+               <br>
                <div class="inlineblock vertical-align marginleft fourthwidth">Avg tacts among finished: {{avgtacts}} </div>
            </p>       
 
