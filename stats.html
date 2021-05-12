@@ -32,7 +32,7 @@
                <div class="inlineblock vertical-align marginleft fourthwidth">Avg tacts among finished: {{avgtacts}} </div>
                <br>
                Some Popular tonalities:<br>
-               <div ng-repeat="item in tonalities | orderBy:'times'">
+               <div ng-repeat="item in tonalities | orderBy:'-times'">
                    <div>{{item.tonality}} - {{item.times}}</div>
                </div>
            </p>       
