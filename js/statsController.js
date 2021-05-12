@@ -8,6 +8,7 @@ myApp.controller('statsController', function($scope) {
     $scope.avgtempo=0;
     $scope.avgtacts=0;
     $scope.textJson=[];
+    $scope.tonalities=[];
     var sumtempos;
     var sumtacts;
 
@@ -33,6 +34,13 @@ myApp.controller('statsController', function($scope) {
         sumtempos+=item.tempo;
         if (item.finished==true)
             sumtacts+=item.tacts;
+        if ($scope.tonalities.find(x => x['tonality']===item.tonality))
+        {
+            var tonality = $scope.tonalities.find(x => x['tonality']===item.tonality);
+            tonality['times'] += 1;
+        }
+        else
+            $scope.tonalities.push({tonality: item.tonality, times: 1});
     }
     
     async function init() {
