@@ -34,13 +34,13 @@ myApp.controller('statsController', function($scope) {
         sumtempos+=item.tempo;
         if (item.finished==true)
             sumtacts+=item.tacts;
-        if ($scope.tonalities.find(x => x['tonality']===item.tonality))
+        if ($scope.tonalities.find(x => x['tonality']===item.tonality.toLowerCase()))
         {
-            var tonality = $scope.tonalities.find(x => x['tonality']===item.tonality);
+            var tonality = $scope.tonalities.find(x => x['tonality']===item.tonality.toLowerCase());
             tonality['times'] += 1;
         }
         else
-            $scope.tonalities.push({tonality: item.tonality, times: 1});
+            $scope.tonalities.push({tonality: item.tonality.toLowerCase(), times: 1});
     }
     
     async function init() {
