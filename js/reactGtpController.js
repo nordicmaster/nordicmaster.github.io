@@ -1,6 +1,10 @@
 class Hello extends React.Component {
 	constructor(props) {
 	  super(props);
+	  this.state = { data: [] };
+	}
+	
+	componentDidMount() {
 		fetch('https://nordicmaster.github.io/table_items.json')
       		.then(res => res.json())
       		.then(json => this.setState({ data: json }));	
