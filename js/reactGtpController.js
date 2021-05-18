@@ -1,3 +1,29 @@
+class Sorter extends React.Component {
+	constructor(props) {
+	  super(props);
+	  this.state = { param: 'ID', data: [] };
+	}
+	
+	componentDidMount() {
+		const values = ['ID', 'name', 'created_date']
+		this.setState({ data: values });	
+	}
+
+        render() {
+            return 
+		<div>Sort by:
+            	<select class="button-like bgcol2 col1">
+		
+		    {this.state.data.map(el => (
+			<option value="{el}">
+			{el}
+			</option>
+		    ))}
+		</select>
+		</div>
+        }
+    }
+
 class Hello extends React.Component {
 	constructor(props) {
 	  super(props);
@@ -23,8 +49,8 @@ class Hello extends React.Component {
 
 ReactDOM.render(
         <div>
-		<h3>Hello React ea</h3>
 		<p>Время генерации данных: {new Date().toLocaleTimeString()}</p>
+		<Sorter />
 		<Hello />
 	</div>,
         document.getElementById("gtpController")
