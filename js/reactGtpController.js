@@ -1,13 +1,19 @@
 class Hello extends React.Component {
 	constructor(props) {
 	  super(props);
-		const response = fetch('https://nordicmaster.github.io/table_items.json');
-		const valuesArray = JSON.parse(response);
-	  this.state = { valuesArray: valuesArray };			
+		fetch('https://nordicmaster.github.io/table_items.json')
+      		.then(res => res.json())
+      		.then(json => this.setState({ data: json }));	
 	}
 
         render() {
-            return <h1>{{valuesArray}}</h1>;
+            return <ul>
+		    {this.state.data.map(el => (
+            		<li>
+              		{el.ID}: {el.name}
+            		</li>
+          	    ))}
+	  </ul>;
         }
     }
 
