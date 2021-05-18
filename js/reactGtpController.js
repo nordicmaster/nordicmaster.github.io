@@ -16,7 +16,7 @@ class Sorter extends React.Component {
         render() {
             return <div>
 		Sort by:
-            	<select class="button-like bgcol2 col1" onChange="setParam(document.getElementById('sel1').value)" id="sel1">
+            	<select class="button-like bgcol2 col1" onChange=setParam(document.getElementById('sel1').value) id="sel1">
 		
 		    {this.state.data.map(el => (
 			<option value="{el}">
