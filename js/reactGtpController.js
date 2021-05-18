@@ -1,6 +1,9 @@
 class Hello extends React.Component {
+	const response = await fetch('https://nordicmaster.github.io/table_items.json');
+        const myJson = await response.json();
+	const valuesArray = JSON.parse(myJson);
         render() {
-            return <h1>Hello, React</h1>;
+            return <h1>{{valuesArray}}</h1>;
         }
     }
 
