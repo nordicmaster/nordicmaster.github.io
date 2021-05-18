@@ -8,11 +8,15 @@ class Sorter extends React.Component {
 		const values = ['ID', 'name', 'created_date']
 		this.setState({ data: values });	
 	}
+	
+	setParam(p) {
+		this.setState({ param: p });	
+	}
 
         render() {
             return <div>
 		Sort by:
-            	<select class="button-like bgcol2 col1">
+            	<select class="button-like bgcol2 col1" onChange="setParam(document.getElementById('sel1').value)" id="sel1">
 		
 		    {this.state.data.map(el => (
 			<option value="{el}">
@@ -20,6 +24,7 @@ class Sorter extends React.Component {
 			</option>
 		    ))}
 		</select>
+		<p>{this.state.param}</p>
 		</div>;
         }
     }
