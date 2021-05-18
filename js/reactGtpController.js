@@ -9,14 +9,10 @@ class Sorter extends React.Component {
 		this.setState({ data: values });	
 	}
 	
-	setParam(event) {
-		this.setState({ param: event.currentTarget.value });	
-	}
-
         render() {
             return <div>
 		Sort by:
-            	<select class="button-like bgcol2 col1" onChange={this.setParam} value={this.state.param}>
+            	<select class="button-like bgcol2 col1" onChange={()=>{this.setState({ param: event.currentTarget.value });}} value={this.state.param}>
 		
 		    {this.state.data.map(el => (
 			<option value="{el}">
