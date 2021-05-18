@@ -20,7 +20,7 @@ class Sorter extends React.Component {
 			</option>
 		    ))}
 		</select>
-		</div>
+		</div>;
         }
     }
 
