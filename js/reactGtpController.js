@@ -5,8 +5,11 @@ class Hello extends React.Component {
     }
 
 ReactDOM.render(
-        <div><h3>Hello React ea</h3>
-	<p>Время генерации данных: {new Date().toLocaleTimeString()}</p></div><Hello />,
+        <div>
+		<h3>Hello React ea</h3>
+		<p>Время генерации данных: {new Date().toLocaleTimeString()}</p>
+		<Hello />
+	</div>,
         document.getElementById("gtpController")
     );
 console.log("11");
