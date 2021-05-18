@@ -16,7 +16,7 @@ class Sorter extends React.Component {
         render() {
             return <div>
 		Sort by:
-            	<select class="button-like bgcol2 col1" onChange={this.setParam}>
+            	<select class="button-like bgcol2 col1" onChange={this.setParam} value={this.state.param}>
 		
 		    {this.state.data.map(el => (
 			<option value="{el}">
@@ -54,7 +54,6 @@ class Hello extends React.Component {
 
 ReactDOM.render(
         <div>
-		<p>Время генерации данных: {new Date().toLocaleTimeString()}</p>
 		<Sorter />
 		<Hello />
 	</div>,
