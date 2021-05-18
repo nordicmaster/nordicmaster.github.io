@@ -10,8 +10,8 @@ class Sorter extends React.Component {
 	}
 
         render() {
-            return 
-		<div>Sort by:
+            return <div>
+		Sort by:
             	<select class="button-like bgcol2 col1">
 		
 		    {this.state.data.map(el => (
