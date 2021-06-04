@@ -4,5 +4,6 @@ node_js:
 script:
   - npm install eslint --save-dev
   - npm install --save-dev stylelint stylelint-config-standard
+  - npm install --save-dev @babel/eslint-parser @babel/eslint-plugin
   - eslint "js/*.js" --ignore-pattern node_modules/
   - npx stylelint "css/*.css"
