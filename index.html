@@ -103,18 +103,7 @@
             <a class="marginleft col2" href="https://nordicmaster.bandcamp.com/track/dark-land-dwellers">Dark Land Dwellers</a><br>
           </p>
         </div><!-- controller-->
-        
-        <div ng-controller="lastfmController"> 
-            <div ng-hide="lastfmJson">Loading...1</div>
-            <p>{{lastfmJson.length}} songs are scrobbled on Last.fm:</p>
-            <div ng-repeat="x in lastfmJson | orderBy:'-playcount'" class="justrow inlineblock vertical-align marginleft fullwidth">
-              <span class="halfwidth">{{x.name}}</span>
-              <span class="halfwidth">&nbsp; - {{x.playcount}} times</span>
-            </div>
-            <p> Listeners - {{listeners}}</p>
-            <p> Total scrobbles - {{totalscrobbles}}</p>
-        </div><!-- controller-->
-        
+                
         <ng-include src="'part_footer.html'">
         </ng-include>
     </div><!--bodycenter-->
