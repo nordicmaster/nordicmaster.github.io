@@ -77,10 +77,12 @@
                      <span>Tracks:&nbsp;{{item.track_count}};</span>
                      <span>Tacts:&nbsp;{{item.tacts}};</span>
                      <span>Tempo:&nbsp;{{item.tempo}};</span>
+                     <br>
                      <span>Tonality:&nbsp;{{item.tonality}};</span>
                      <span>Signature:&nbsp;{{item.signature}};</span>
                      <span>Length:&nbsp;<span ng-if="!(isNaN(item.tacts) || isNaN(item.tempo))">{{2 * item.tacts * 120 / item.tempo | number : 2}}&nbsp;sec</span>
                      </span>
+                     <br>
                      <span>GTP finished:&nbsp;{{item.finished}};</span>
                      <span>Text finished:&nbsp;{{item.lyric_finished}};</span>
                      <span>Recorded:&nbsp;{{item.recorded}};</span>
