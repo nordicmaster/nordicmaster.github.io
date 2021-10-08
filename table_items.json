@@ -201,7 +201,7 @@
       "ID":"91",
       "name": "Acoustic Thing",
       "created_date": "03.06.2013",	
-      "last_modified_date": "04.08.2013",
+      "last_modified_date": "07.10.2021",
       "version": 1,
       "instruments_count": 2,
       "track_count": 2,
@@ -211,7 +211,7 @@
       "signature": "4/4 triplets",
       "text": "",
       "length": "=2 sec * Tacts count * 120 / Tempo",
-      "finished": false,
+      "finished": true,
       "lyric_finished":false,
       "recorded":false 
     },
