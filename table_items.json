@@ -601,7 +601,7 @@
       "version": 1,
       "instruments_count": 2,
       "track_count": 2,
-      "tacts": 16,
+      "tacts": 32,
       "tempo": 165,
       "tonality": "A major / E major",
       "signature": "4/4",
