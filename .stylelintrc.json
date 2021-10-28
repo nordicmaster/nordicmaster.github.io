@@ -1,4 +1,6 @@
 {
   "extends": "stylelint-config-standard",
-  "string": "modern"|"legacy"
+  "rules": {
+    "color-function-notation": "legacy"
+  }
 }
