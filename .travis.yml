@@ -7,4 +7,4 @@ script:
   # deprecated but working
   - npm install eslint@4.x babel-eslint@8 --save-dev
   - eslint "js/*.js" --ignore-pattern node_modules/
-  - npx stylelint "css/*.css"
+  - npx stylelint "css/*.css" --fix
