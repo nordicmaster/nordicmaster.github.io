@@ -1,8 +1,6 @@
- import React from 'react';
-
 class PartMenu extends React.Component {
 	render(){
-		return (
+		return 
 		  <div class="gtpmenu lineheight">
 		    <nav>
 		      <ul>
@@ -13,12 +11,8 @@ class PartMenu extends React.Component {
 			<li><a href="newdesign.html">NM Design</a></li>
 		      </ul>
 		    </nav>
-		  </div>
-		)
+		  </div>;		
 	}
 }
 
- ReactDOM.render(
-		  <PartMenu />,
-    document.getElementById("part_menu")
-);
+ ReactDOM.render(<PartMenu />, document.getElementById("part_menu"));
