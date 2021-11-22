@@ -1,7 +1,6 @@
 class PartMenu extends React.Component {
 	render(){
-		return 
-		  <div class="gtpmenu lineheight">
+		return <div class="gtpmenu lineheight">
 		    <nav>
 		      <ul>
 			<li><a href="index.html">Main</a></li>
