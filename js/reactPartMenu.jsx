@@ -15,3 +15,8 @@
   </div>
 )
 }
+
+ ReactDOM.render(
+		  <PartMenu />,
+    document.getElementById("part_menu")
+);
