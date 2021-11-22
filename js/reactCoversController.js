@@ -2,13 +2,13 @@
 class Hello extends React.Component {
 	constructor(props) {
 	  super(props);
-	  this.state = { data: [], totalplayed: 0, totalrecorded: 0};
+	  this.state = { data: [] };
 	}
 	
 	componentDidMount() {
 		fetch('https://nordicmaster.github.io/covers.json')
       		.then(res => res.json())
-      		.then(json => this.setState({ data: json, totalplayed: 22, totalrecorded: 4}));	
+      		.then(json => this.setState({ data: json }));	
 	}
 
         render() {
@@ -20,17 +20,18 @@ class Hello extends React.Component {
 				</li>
 			    ))}
 			</ul>
-			<p>
-			<div class="inlineblock fourthwidth marginleft">Total covers played: {totalplayed} </div>
-			<div class="inlineblock fourthwidth marginleft">Total covers recorded: {totalrecorded} </div>
-			</p>
+
 		</div>;
         }
     }
 
 ReactDOM.render(
     <div>
-		  <Hello />
+		<Hello />
+		<p>
+			<div class="inlineblock fourthwidth marginleft">Total covers played: {totalplayed} </div>
+			<div class="inlineblock fourthwidth marginleft">Total covers recorded: {totalrecorded} </div>
+		</p>
 	  </div>,
     document.getElementById("CoversController")
 );
