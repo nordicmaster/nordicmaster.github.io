@@ -20,18 +20,12 @@ class Hello extends React.Component {
 				</li>
 			    ))}
 			</ul>
-
+			<p>
+				<div class="inlineblock fourthwidth marginleft">Total covers played: {this.state.data.length} </div>
+				<div class="inlineblock fourthwidth marginleft">Total covers recorded: {this.state.data.filter(x => x.recorded).length} </div>
+			</p>
 		</div>;
         }
     }
 
-ReactDOM.render(
-    <div>
-		<Hello />
-		<p>
-			<div class="inlineblock fourthwidth marginleft">Total covers played: {totalplayed} </div>
-			<div class="inlineblock fourthwidth marginleft">Total covers recorded: {totalrecorded} </div>
-		</p>
-	  </div>,
-    document.getElementById("CoversController")
-);
+ReactDOM.render(<Hello />,document.getElementById("CoversController"));
