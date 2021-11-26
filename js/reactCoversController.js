@@ -13,14 +13,16 @@ class Hello extends React.Component {
 
         render() {
 		this.state.data.sort((a, b) => a.author.localeCompare(b.author));
+		const w44style = { width: '44%' };
+		const w18style = { width: '18%' };
             return <div>
 			<ul>
 			    {this.state.data.map(el => (
 			     <div>
-				<div class="inlineblock marginleft" style={{width:'44%'}}>
+				<div class="inlineblock marginleft" style={w44style}>
 					<b>{el.author}</b>: {el.name} - 
 				</div>
-				<div class="inlineblock marginleft" style={{width:'18%'}}>
+				<div class="inlineblock marginleft" style={w18style}>
                      			<span style="font-size:80%;">Recorded:&nbsp;{el.recorded}</span>
                  		</div>
 			    </div>	
