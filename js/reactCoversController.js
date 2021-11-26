@@ -14,18 +14,16 @@ class Hello extends React.Component {
         render() {
 		this.state.data.sort((a, b) => a.author.localeCompare(b.author));
             return <div>
-			<ul>
-			    {this.state.data.map(el => (
+		        {this.state.data.map(el => (
 			     <div>
-				<div class="inlineblock marginleft">
+				<div>
 					<b>{el.author}</b>: {el.name} - 
 				</div>
-				<div class="inlineblock marginleft">
+				<div>
                      			<span style="font-size:80%;">Recorded:&nbsp;{el.recorded}</span>
                  		</div>
 			    </div>	
-			    ))}
-			</ul>
+			))}
 			<p>
 				<div class="inlineblock fourthwidth marginleft">Total covers played: {this.state.data.length} </div>
 				<div class="inlineblock fourthwidth marginleft">Total covers recorded: {this.state.data.filter(x => x.recorded).length} </div>
