@@ -16,12 +16,10 @@ class Hello extends React.Component {
             return <div>
 		        {this.state.data.map(el => (
 			     <div>
-				<div class="inlineblock marginleft" style={{width:'44%'}}>
-					<b>{el.author}</b>: {el.name}
+				<div class="inlineblock marginleft" style={{width:'60%'}}>
+					<b>{el.author}</b>: {el.name} {el.recorded == true && <img src='../src/rec.png' />}
 				</div>
-				<div class="inlineblock marginleft" style={{width:'18%'}}>
-                     			<span style={{fontSize:'80%'}}>Recorded: {el.recorded == true && <img src='../src/rec.png' />}</span>
-                 		</div>
+				<hr>
 			    </div>	
 			))}
 			<p>
