@@ -20,7 +20,7 @@ class Hello extends React.Component {
 					<b>{el.author}</b>: {el.name}
 				</div>
 				<div class="inlineblock marginleft" style={{width:'18%'}}>
-                     			<span style={{fontSize:'80%'}}>Recorded: {el.recorded}</span>
+                     			<span style={{fontSize:'80%'}}>Recorded: {el.recorded == true && "true"}</span>
                  		</div>
 			    </div>	
 			))}
