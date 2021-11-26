@@ -13,8 +13,8 @@ class Hello extends React.Component {
 
         render() {
 		this.state.data.sort((a, b) => a.author.localeCompare(b.author));
-		const w44style = { width: '44%' };
-		const w18style = { width: '18%' };
+		const w44style = { width: 44% };
+		const w18style = { width: 18% };
             return <div>
 			<ul>
 			    {this.state.data.map(el => (
