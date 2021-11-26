@@ -12,6 +12,7 @@ class Hello extends React.Component {
 	}
 
         render() {
+		this.state.data.sort((a, b) => a.author.localeCompare(b.author));
             return <div>
 			<ul>
 			    {this.state.data.map(el => (
