@@ -19,7 +19,7 @@ class Hello extends React.Component {
 				<div class="inlineblock marginleft" style={{width:'60%'}}>
 					<b>{el.author}</b>: {el.name} {el.recorded == true && <img src='../src/rec.png' />}
 				</div>
-				<hr>
+				<hr/>
 			    </div>	
 			))}
 			<p>
