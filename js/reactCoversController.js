@@ -20,7 +20,7 @@ class Hello extends React.Component {
 			<ul>
 			    {this.state.data.map(el => (
 			     <div>
-				<div className="inlineblock marginleft" style={{fontSize: '50px'}}>
+				<div className="inlineblock marginleft">
 					<b>{el.author}</b>: {el.name} - 
 				</div>
 				<div className="inlineblock marginleft">
