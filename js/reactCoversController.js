@@ -23,7 +23,7 @@ class Hello extends React.Component {
 				<div className="inlineblock marginleft" style={{fontSize: '50px'}}>
 					<b>{el.author}</b>: {el.name} - 
 				</div>
-				<div className="inlineblock marginleft" style={w18style}>
+				<div className="inlineblock marginleft">
                      			<span style="font-size:80%;">Recorded:&nbsp;{el.recorded}</span>
                  		</div>
 			    </div>	
