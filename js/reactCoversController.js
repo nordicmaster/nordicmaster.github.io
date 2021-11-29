@@ -22,7 +22,7 @@ class Hello extends React.Component {
 			for (var i = 0; i < kwargs.length; i++)
 			{
 			    console.log(kwargs[i]);
-			    await kwargs[i].json().then(data => json1[i].text = data);
+			    await kwargs[i].then(data => json1[i].text = data);
 			}
 			
 			console.log("3");
