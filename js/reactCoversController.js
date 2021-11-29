@@ -8,7 +8,8 @@ class Hello extends React.Component {
 	componentDidMount() {
 		fetch('https://nordicmaster.github.io/covers.json')
       		.then(res => res.json())
-		.then(jsoncovers => {
+		.then(json1 => {
+			jsoncovers = JSON.parse(json1);
 			for (let jcover in jsoncovers)
 			{
 			    fetch('https://nordicmaster.github.io/src/txt/'+ jcover.name+ '.txt')
