@@ -11,15 +11,20 @@ class Hello extends React.Component {
 		.then(json1 => {
 			console.log(json1);
 			console.log(typeof json1);
-			jsoncovers = JSON.parse(json1);
-			for (let jcover in jsoncovers)
+			for (let jcover in json1)
 			{
 			    fetch('https://nordicmaster.github.io/src/txt/'+ jcover.name+ '.txt')
 				.then(txt => jcover.text = JSON.stringify(txt).trim().replace(/\\n+/g,"\n"));
 			}
-			return jsoncovers;
+			return json1;
 		})
-      		.then(json => this.setState({ data: json }));	
+      		.then(json => {
+			console.log("2");
+			console.log(json);
+			console.log(typeof json);
+			this.setState({ data: json });
+			}
+		);	
 	}
 
         render() {
