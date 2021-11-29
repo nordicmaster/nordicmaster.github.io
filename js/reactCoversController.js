@@ -30,7 +30,7 @@ class Hello extends React.Component {
 			return json1;
 		})
 		.then(json => console.log(json))
-		.then(json => this.setState({ data: json1 }));	
+		.then(json => this.setState({ data: json }));	
 	}
 
         render() {
