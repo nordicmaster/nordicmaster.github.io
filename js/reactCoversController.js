@@ -21,10 +21,15 @@ class Hello extends React.Component {
 				console.log("2");
 				console.log(kwargs);
 				console.log(typeof kwargs);
-				//this.setState({ data: json1 });
-			}
-			);
-		});	
+				for (var i = 0; i < kwargs.length; i++)
+				{
+				    console.log(kwargs[i]);
+				    kwargs[i].then(data => json1[i].text = data);
+				}
+			});
+		})
+		.then(json => console.log(json))
+		.then(json => this.setState({ data: json1 }));	
 	}
 
         render() {
