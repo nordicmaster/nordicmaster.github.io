@@ -18,14 +18,11 @@ class Hello extends React.Component {
 			    await fetch('https://nordicmaster.github.io/src/txt/'+ jcover.name+ '.txt')
 				.then(txt => jcover.text = JSON.stringify(txt).trim().replace(/\\n+/g,"\n"));
 			}
-		})
-      		.then(json => {
 			console.log("2");
-			console.log(json);
-			console.log(typeof json);
-			this.setState({ data: json });
-			}
-		);	
+			console.log(json1);
+			console.log(typeof json1);
+			this.setState({ data: json1 });
+		});	
 	}
 
         render() {
