@@ -8,15 +8,14 @@ class Hello extends React.Component {
 	componentDidMount() {
 		fetch('https://nordicmaster.github.io/covers.json')
       		.then(res => res.json())
-		.then(json1 => {
+		.then(async function adtext(json1) {
 			console.log(json1);
 			console.log(typeof json1);
 			for (let jcover in json1)
 			{
-			    fetch('https://nordicmaster.github.io/src/txt/'+ jcover.name+ '.txt')
+			    await fetch('https://nordicmaster.github.io/src/txt/'+ jcover.name+ '.txt')
 				.then(txt => jcover.text = JSON.stringify(txt).trim().replace(/\\n+/g,"\n"));
 			}
-			return json1;
 		})
       		.then(json => {
 			console.log("2");
