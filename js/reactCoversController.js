@@ -17,9 +17,10 @@ class Hello extends React.Component {
 			    console.log(jcover.name);
 			    promises_arr.push(fetch('https://nordicmaster.github.io/src/txt/'+ jcover.name+ '.txt'));
 			}
-			await Promise.all(promises_arr).then([...kwargs] => {
+			await Promise.all(promises_arr).then(kwargs => {
 				console.log("2");
 				console.log(kwargs);
+				console.log(typeof kwargs);
 				//this.setState({ data: json1 });
 			}
 			);
