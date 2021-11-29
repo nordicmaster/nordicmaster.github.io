@@ -9,12 +9,9 @@ class Hello extends React.Component {
 		fetch('https://nordicmaster.github.io/covers.json')
       		.then(res => res.json())
 		.then(async function adtext(json1) {
-			console.log(json1);
-			console.log(typeof json1);
 			var promises_arr = [];
 			for (let jcover of json1)
 			{
-			    console.log(jcover.name);
 			    promises_arr.push(fetch('https://nordicmaster.github.io/src/txt/'+ jcover.name+ '.txt'));
 			}
 			var kwargs = await Promise.all(promises_arr);
@@ -25,7 +22,7 @@ class Hello extends React.Component {
 			for (var i = 0; i < kwargs.length; i++)
 			{
 			    console.log(kwargs[i]);
-			    kwargs[i].json().then(data => json1[i].text = data);
+			    await kwargs[i].json().then(data => json1[i].text = data);
 			}
 			
 			console.log("3");
