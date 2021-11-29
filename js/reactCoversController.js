@@ -5,13 +5,6 @@ class Hello extends React.Component {
 	  this.state = { data: [] };
 	}
 	
-	componentDidMount() {
-		fetch('https://nordicmaster.github.io/covers.json')
-      		.then(res => res.json())
-		.then(json => addtextforcovers(json))
-      		.then(json => this.setState({ data: json }));	
-	}
-	
 	addtextforcovers = (jsoncovers)  => {
 		for (let jcover in jsoncovers)
 		{
@@ -19,6 +12,13 @@ class Hello extends React.Component {
 			.then(txt => jcover.text = JSON.stringify(txt).trim().replace(/\\n+/g,"\n"));
 		}
 		return jsoncovers;
+	}
+	
+	componentDidMount() {
+		fetch('https://nordicmaster.github.io/covers.json')
+      		.then(res => res.json())
+		.then(json => addtextforcovers(json))
+      		.then(json => this.setState({ data: json }));	
 	}
 
         render() {
