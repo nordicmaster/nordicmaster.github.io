@@ -5,19 +5,17 @@ class Hello extends React.Component {
 	  this.state = { data: [] };
 	}
 	
-	addtextforcovers = (jsoncovers)  => {
-		for (let jcover in jsoncovers)
-		{
-		    fetch('https://nordicmaster.github.io/src/txt/'+ jcover.name+ '.txt')
-			.then(txt => jcover.text = JSON.stringify(txt).trim().replace(/\\n+/g,"\n"));
-		}
-		return jsoncovers;
-	}
-	
 	componentDidMount() {
 		fetch('https://nordicmaster.github.io/covers.json')
       		.then(res => res.json())
-		.then(json => addtextforcovers(json))
+		.then(jsoncovers => {
+			for (let jcover in jsoncovers)
+			{
+			    fetch('https://nordicmaster.github.io/src/txt/'+ jcover.name+ '.txt')
+				.then(txt => jcover.text = JSON.stringify(txt).trim().replace(/\\n+/g,"\n"));
+			}
+			return jsoncovers;
+		})
       		.then(json => this.setState({ data: json }));	
 	}
 
