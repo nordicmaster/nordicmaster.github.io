@@ -12,7 +12,7 @@ class Hello extends React.Component {
       		.then(json => this.setState({ data: json }));	
 	}
 	
-	addtextforcovers(jsoncovers) {
+	function addtextforcovers(jsoncovers) {
 		for (let jcover in jsoncovers)
 		{
 		    fetch('https://nordicmaster.github.io/src/txt/'+ jcover.name+ '.txt')
