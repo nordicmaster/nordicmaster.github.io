@@ -11,17 +11,18 @@ class Hello extends React.Component {
 		.then(async function adtext(json1) {
 			console.log(json1);
 			console.log(typeof json1);
+			promises_arr = [];
 			for (let jcover of json1)
 			{
-			    console.log(jcover);
 			    console.log(jcover.name);
-			    await fetch('https://nordicmaster.github.io/src/txt/'+ jcover.name+ '.txt')
-				.then(txt => jcover.text = JSON.stringify(txt).trim().replace(/\\n+/g,"\n"));
+			    promises_arr.push(fetch('https://nordicmaster.github.io/src/txt/'+ jcover.name+ '.txt'));
 			}
-			console.log("2");
-			console.log(json1);
-			console.log(typeof json1);
-			this.setState({ data: json1 });
+			await Promise.all(promises_arr).then([...kwargs] => {
+				console.log("2");
+				console.log(kwargs);
+				//this.setState({ data: json1 });
+			}
+			);
 		});	
 	}
 
