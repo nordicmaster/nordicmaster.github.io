@@ -17,16 +17,19 @@ class Hello extends React.Component {
 			    console.log(jcover.name);
 			    promises_arr.push(fetch('https://nordicmaster.github.io/src/txt/'+ jcover.name+ '.txt'));
 			}
-			await Promise.all(promises_arr).then(kwargs => {
-				console.log("2");
-				console.log(kwargs);
-				console.log(typeof kwargs);
-				for (var i = 0; i < kwargs.length; i++)
-				{
-				    console.log(kwargs[i]);
-				    kwargs[i].json().then(data => json1[i].text = data);
-				}
-			});
+			var kwargs = await Promise.all(promises_arr);
+			
+			console.log("2");
+			console.log(kwargs);
+			console.log(typeof kwargs);
+			for (var i = 0; i < kwargs.length; i++)
+			{
+			    console.log(kwargs[i]);
+			    kwargs[i].json().then(data => json1[i].text = data);
+			}
+			
+			console.log("3");
+			console.log(json1);
 			return json1;
 		})
 		.then(json => console.log(json))
