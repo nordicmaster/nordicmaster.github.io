@@ -9,6 +9,8 @@ class Hello extends React.Component {
 		fetch('https://nordicmaster.github.io/covers.json')
       		.then(res => res.json())
 		.then(json1 => {
+			console.log(json1);
+			console.log(typeof json1);
 			jsoncovers = JSON.parse(json1);
 			for (let jcover in jsoncovers)
 			{
