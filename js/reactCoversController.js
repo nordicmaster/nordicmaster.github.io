@@ -13,6 +13,7 @@ class Hello extends React.Component {
 			console.log(typeof json1);
 			for (let jcover in json1)
 			{
+			    console.log(jcover.name);
 			    await fetch('https://nordicmaster.github.io/src/txt/'+ jcover.name+ '.txt')
 				.then(txt => jcover.text = JSON.stringify(txt).trim().replace(/\\n+/g,"\n"));
 			}
