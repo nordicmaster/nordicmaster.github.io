@@ -29,7 +29,6 @@ class Hello extends React.Component {
 			console.log(json1);
 			return json1;
 		})
-		.then(json => console.log(json))
 		.then(json => this.setState({ data: json }));	
 	}
 
