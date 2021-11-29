@@ -11,7 +11,7 @@ class Hello extends React.Component {
 		.then(async function adtext(json1) {
 			console.log(json1);
 			console.log(typeof json1);
-			promises_arr = [];
+			var promises_arr = [];
 			for (let jcover of json1)
 			{
 			    console.log(jcover.name);
