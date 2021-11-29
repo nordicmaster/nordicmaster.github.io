@@ -27,6 +27,7 @@ class Hello extends React.Component {
 				    kwargs[i].json().then(data => json1[i].text = data);
 				}
 			});
+			return json1;
 		})
 		.then(json => console.log(json))
 		.then(json => this.setState({ data: json1 }));	
