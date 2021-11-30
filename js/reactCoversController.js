@@ -9,7 +9,7 @@ class Hello extends React.Component {
 	componentDidMount() {
 		fetch('https://nordicmaster.github.io/covers.json')
       		.then(res => res.json())
-		.then(async function adtext(json1) {
+		/*.then(async function adtext(json1) {
 			var promises_arr = [];
 			for (let jcover of json1)
 			{
@@ -29,7 +29,7 @@ class Hello extends React.Component {
 			console.log("3");
 			console.log(json1);
 			return json1;
-		})
+		})*/
 		.then(json => this.setState({ data: json }));	
 	}
 
