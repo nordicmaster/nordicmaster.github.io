@@ -7,11 +7,7 @@ class TextSummaryCover extends React.Component {
 	componentDidMount() {
 		fetch('https://nordicmaster.github.io/src/txt/' + this.props.name + '.txt')
       		.then(res => res.text())		
-		.then(json => {
-			console.log(json);
-			console.log( typeof json);
-			this.setState({ data: json });
-			      })
+		.then(json => this.setState({ data: json }))
 		.catch(console.log);	
 	}
 	
