@@ -1,3 +1,4 @@
+import TextSummaryCover from './textSummaryCover';
 
 class Hello extends React.Component {
 	constructor(props) {
@@ -42,6 +43,9 @@ class Hello extends React.Component {
 				</div>
 				<div class="inlineblock marginleft" style={{width:'40%'}}>
 					<i>{el.text}</i>
+				</div>
+				<div>
+					<TextSummaryCover name={el.name} />
 				</div>
 				<hr/>
 			    </div>	
