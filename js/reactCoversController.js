@@ -1,5 +1,3 @@
-import TextSummaryCover from './textSummaryCover';
-
 class Hello extends React.Component {
 	constructor(props) {
 	  super(props);
