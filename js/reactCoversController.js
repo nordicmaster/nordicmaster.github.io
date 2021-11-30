@@ -18,9 +18,6 @@ class Hello extends React.Component {
 				<div class="inlineblock marginleft" style={{width:'60%'}}>
 					<b>{el.author}</b>: {el.name} {el.recorded == true && <img src='../src/rec.png' />}
 				</div>
-				<div class="inlineblock marginleft" style={{width:'40%'}}>
-					<i>{el.text}</i>
-				</div>
 				<TextSummaryCover name={el.name} />
 				<hr/>
 			    </div>	
