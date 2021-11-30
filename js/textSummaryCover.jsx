@@ -1,5 +1,15 @@
-class TextSummaryCover extends React.Component {
-  
+class TextSummaryCover extends React.Component {  
+	constructor(props) {
+	  super(props);
+	  this.state = { data: "data" };
+	}
+	
+	componentDidMount() {
+		fetch('https://nordicmaster.github.io/src/txt/' + this.props.name + '.txt')
+      		.then(res => res.json())		
+		.then(json => this.setState({ data: json }));	
+	}
+	
 	/*.then(async function adtext(json1) {
 			var promises_arr = [];
 			for (let jcover of json1)
@@ -30,7 +40,7 @@ class TextSummaryCover extends React.Component {
                      <span>
                         <details class="inlineblock">
                          <summary class="button-like align-center bgcol3">Show text</summary>                     
-                          <p class="smalltext">{this.props.name}</p>
+                          <p class="smalltext">{this.state.data}</p>
                         </details>
                      </span>                     
                  </div>;		
