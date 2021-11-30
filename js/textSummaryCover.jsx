@@ -8,7 +8,7 @@ class TextSummaryCover extends React.Component {
                      <span>
                         <details class="inlineblock">
                          <summary class="button-like align-center bgcol3">Show text</summary>                     
-                          <p class="smalltext">{this.props.greeting}</p>
+                          <p class="smalltext">{this.props.name}</p>
                         </details>
                      </span>                     
                  </div>;		
