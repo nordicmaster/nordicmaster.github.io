@@ -2,7 +2,7 @@ class TextSummaryCover extends React.Component {
   
 	render(){
 		return <div class="inlineblock fourthwidth marginleft" style={{width:'35%'}}>
-                     <span style="vertical-align:top;">
+                     <span>
                          <button class="button-like bgcol1">Download text</button>
                      </span>
                      <span>
