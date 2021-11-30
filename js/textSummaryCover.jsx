@@ -14,5 +14,3 @@ class TextSummaryCover extends React.Component {
                  </div>;		
 	}
 }
-
-export default TextSummaryCover;
