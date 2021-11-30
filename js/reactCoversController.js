@@ -21,9 +21,7 @@ class Hello extends React.Component {
 				<div class="inlineblock marginleft" style={{width:'40%'}}>
 					<i>{el.text}</i>
 				</div>
-				<div>
-					<TextSummaryCover name={el.name} />
-				</div>
+				<TextSummaryCover name={el.name} />
 				<hr/>
 			    </div>	
 			))}
