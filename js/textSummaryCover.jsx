@@ -52,7 +52,7 @@ class TextSummaryCover extends React.Component {
 					//pageBreak:'after'
 				},
 				{
-					text:text.substring(1,textlen-1),
+					text:text.substring(0, textlen-1),
 					fontSize:16,
 					margin:[20,40, 20,40]
 					//pageBreak:'after'
