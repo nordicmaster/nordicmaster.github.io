@@ -63,7 +63,7 @@ class TextSummaryCover extends React.Component {
 	render(){
 		return <div class="inlineblock marginleft" style={{width:'35%'}}>
                      <span style={{verticalAlign: 'top'}}>
-                         <button class="button-like bgcol1" onclick='pdfeah(this.props.name, this.state.data)'>Download text</button>
+                         <button class="button-like bgcol1" onClick={pdfeah(this.props.name, this.state.data)}>Download text</button>
                      </span>
                      <span>
                         <details class="inlineblock">
