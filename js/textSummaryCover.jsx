@@ -11,7 +11,9 @@ class TextSummaryCover extends React.Component {
 			.catch(console.log);	
 	}
 	
-	function pdfeah(name, text) {
+	pdfeah(name, text) {
+		console.log('name is:', name);
+		console.log('text is:', text);
 		var textlen = text.length;
 		var docInfo = { 
 			info: {
@@ -62,7 +64,7 @@ class TextSummaryCover extends React.Component {
 	render(){
 		return <div class="inlineblock marginleft" style={{width:'35%'}}>
                      <span style={{verticalAlign: 'top'}}>
-                         <button class="button-like bgcol1" onClick={pdfeah(this.props.name, this.state.data)}>Download text</button>
+                         <button class="button-like bgcol1" onClick={() => pdfeah(this.props.name, this.state.data)}>Download text</button>
                      </span>
                      <span>
                         <details class="inlineblock">
