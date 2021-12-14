@@ -1,4 +1,4 @@
-pdfeah=function(name, text) {
+function pdfeah(name, text) {
 	var textlen = text.length;
 	var docInfo = { 
 		info: {
