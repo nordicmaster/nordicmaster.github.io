@@ -1,50 +1,38 @@
 <!doctype html>
 <title>GTP StoRAGE</title>
-<html >
+<html>
 <head>
 <meta charset="utf-8">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
-    
-<script type="text/javascript">
-var myApp = angular.module('myApp', []);
-    
-</script>
-<script src="https://nordicmaster.github.io/js/gtpController.js"></script>    
-    <link rel="stylesheet" href="https://nordicmaster.github.io/css/style.css" />
-</head>
+<script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script type="text/babel" src="https://nordicmaster.github.io/js/textSummaryCover.jsx"></script>
+<script type="text/babel" src="https://nordicmaster.github.io/js/reactPartMenu.jsx"></script>
+<script type="text/babel" src="https://nordicmaster.github.io/js/reactPartFooter.jsx"></script>
+<link rel="stylesheet" href="https://nordicmaster.github.io/css/style.css" />
+</head>    
 
-    
-
-<body class="bodytype" ng-app='myApp'>
+<body class="bodytype">
 <div class="font fullwidth align-left padding bgcol0 maxwidth marginauto">
-    <ng-include src="'part_menu.html'">
-    </ng-include>
-    <div ng-controller="linkController"> 
-        <p class="margintop col1 bigtext">
-
-        GTP Storage is a tool for storing gtp files with additional data that placed in nordicmaster/guitarpros repository.
-        One can edit files and descriptions to them via github account.
-
-        </p>
-        <div ng-hide="linkJson">Загрузка...</div>        
-         <p class="margintop col1 bigtext">
+    <div id="part_menu"></div>
+    <p class="margintop col1 bigtext">
+    GTP Storage is a tool for storing gtp files with additional data that placed in nordicmaster/guitarpros repository.
+    One can edit files and descriptions to them via github account.
+    </p> 
+    <p class="margintop col1 bigtext">
             To support Nordic Master you can: <br>
             - Donate for new recordings<br>
             - Inform about nice vst plugins (with downloadable links)<br>
             - Invite NM to some performances and festivals ♫♫
-        </p>
-        <p class="margintop marginbottom borderbottom">
+    </p>
+    <p class="margintop marginbottom borderbottom">
             Also, subscibe to 
             <a href="https://www.youtube.com/channel/UCqNjPvkYI3BqNstzePzeUMA" class="marginleft col2">Youtube channel</a>
             and
             <a href="https://vk.com/club12899135" class="marginleft col2">VK group</a>
-        </p>
-    </div>
-    <ng-include src="'part_footer.html'">
-    </ng-include>
-    
-</div>
-    
+    </p>
+    <div id="part_footer"></div>    
+</div>    
 </body>
 </html>
 
