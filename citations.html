@@ -3,18 +3,18 @@
 <html >
 <head>
 <meta charset="utf-8">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>    
-<script type="text/javascript">
-var myApp = angular.module('myApp', []);  
-</script>
-<script src="https://nordicmaster.github.io/js/gtpController.js"></script>    
-    <link rel="stylesheet" href="https://nordicmaster.github.io/css/style.css" />
+<script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script type="text/babel" src="https://nordicmaster.github.io/js/reactPartMenu.jsx"></script>
+<script type="text/babel" src="https://nordicmaster.github.io/js/reactPartFooter.jsx"></script>
+<link rel="stylesheet" href="https://nordicmaster.github.io/css/style.css" />
+<link rel="icon" href="https://nordicmaster.github.io/favicon.ico" type="image/x-icon">
 </head>
 
-<body class="bodytype" ng-app='myApp'>
+<body class="bodytype">
 <div class="font fullwidth align-left padding bgcol0 maxwidth marginauto">
-    <ng-include src="'part_menu.html'">
-    </ng-include>
+    <div id="part_menu"></div>
     <div ng-controller="linkController"> 
         <p class="margintop col1">
 Мы викинги. У нас есть лодка. Тор, Один сан. Мы играем триольки. Кто мы?
@@ -105,9 +105,7 @@ I dream of theater. Theater of dreams. Its actors are stars.The sun is director,
             I`m the screenplayer, the player of screens, eternal actor ...
         </p>       
     </div>
-    <ng-include src="'part_footer.html'">
-    </ng-include>
-    
+    <div id="part_footer"></div>    
 </div>
     
 </body>
