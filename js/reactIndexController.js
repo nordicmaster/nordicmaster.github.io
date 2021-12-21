@@ -11,7 +11,7 @@ class Indexx extends React.Component {
 	}
 
         render() {
-		this.state.data.sort((a, b) => a.author.localeCompare(b.author));
+		this.state.data.sort((a, b) => a.ID.localeCompare(b.ID));
             return <div>
 		        {this.state.data.map(el => (
 			     <div>
