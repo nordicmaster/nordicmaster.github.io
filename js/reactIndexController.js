@@ -16,15 +16,16 @@ class Indexx extends React.Component {
 		        {this.state.data.map(el => (
 			     <div>
 				<div class="inlineblock marginleft" style={{width:'60%'}}>
-					<b>{el.author}</b>: {el.name} {el.recorded == true && <img src='../src/rec.png' />}
+					<b>{el.ID}</b>: {el.name} {el.recorded == true && <img src='../src/rec.png' />}
 				</div>
 				<TextSummaryCover name={el.name} />
 				<hr/>
 			    </div>	
 			))}
 			<p>
-				<div class="inlineblock fourthwidth marginleft">Total covers played: {this.state.data.length} </div>
-				<div class="inlineblock fourthwidth marginleft">Total covers recorded: {this.state.data.filter(x => x.recorded).length} </div>
+				<div class="inlineblock fourthwidth marginleft">Total GTP finished: {this.state.data.filter(x => x.finished).length} </div>
+				<div class="inlineblock fourthwidth marginleft">Total Text finished: {this.state.data.filter(x => x.lyric_finished).length} </div>
+				<div class="inlineblock fourthwidth marginleft">Total Recorded: {this.state.data.filter(x => x.recorded).length} </div>
 			</p>
 		</div>;
         }
