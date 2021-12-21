@@ -18,7 +18,7 @@ class Indexx extends React.Component {
 				<div class="inlineblock marginleft" style={{width:'60%'}}>
 					<b>{el.ID}</b>: {el.name} {el.recorded == true && <img src='../src/rec.png' />}
 				</div>
-				<TextGTPItem name={el.name} />
+				<TextGTPItem name={el.ID} />
 				<hr/>
 			    </div>	
 			))}
