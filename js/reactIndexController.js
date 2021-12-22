@@ -21,7 +21,7 @@ class Indexx extends React.Component {
 					{el.lyric_finished == true && <img src='../src/txt.png' />}
 					{el.recorded == true && <img src='../src/rec.png' />}
 				</div>
-				<TextGTPItem name={el.ID} />
+				<TextGTPItem id={el.ID} name={el.name} />
 				<hr/>
 			    </div>	
 			))}
