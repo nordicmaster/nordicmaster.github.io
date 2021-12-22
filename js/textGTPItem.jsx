@@ -6,7 +6,7 @@ class TextGTPItem extends React.Component {
 	}
 	
 	componentDidMount() {
-		fetch('https://nordicmaster.github.io/src/' + this.props.name + '.txt')
+		fetch('https://nordicmaster.github.io/src/' + this.props.id + '.txt')
 			.then(res => res.text())		
 			.then(json => this.setState({ data: json }))
 			.catch(console.log);	
