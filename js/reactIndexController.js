@@ -30,6 +30,8 @@ class Indexx extends React.Component {
 				<div class="inlineblock fourthwidth marginleft">Total Text finished: {this.state.data.filter(x => x.lyric_finished).length} </div>
 				<div class="inlineblock fourthwidth marginleft">Total Recorded: {this.state.data.filter(x => x.recorded).length} </div>
 			</p>
+			<a href="https://soundcloud.com/user-912533495-638345693"><img src='../src/soundcloud.png' /></a>
+            		<a href="https://nordicmaster.bandcamp.com/"><img src='../src/bandcamp.png' /></a><br>
 		</div>;
         }
     }
