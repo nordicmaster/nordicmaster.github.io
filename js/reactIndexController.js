@@ -16,7 +16,10 @@ class Indexx extends React.Component {
 		        {this.state.data.map(el => (
 			     <div>
 				<div class="inlineblock marginleft" style={{width:'60%'}}>
-					<b>{el.ID}</b>: {el.name} {el.recorded == true && <img src='../src/rec.png' />}
+					<b>{el.ID}</b>: {el.name} 
+					{el.finished == true && <img src='../src/gtp.png' />}
+					{el.lyric_finished == true && <img src='../src/txt.png' />}
+					{el.recorded == true && <img src='../src/rec.png' />}
 				</div>
 				<TextGTPItem name={el.ID} />
 				<hr/>
