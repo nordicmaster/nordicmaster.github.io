@@ -16,7 +16,9 @@ class Indexx extends React.Component {
 		        {this.state.data.map(el => (
 			     <div>
 				<div class="inlineblock marginleft" style={{width:'40%'}}>
-					<b>{el.ID}</b>: {el.name} 
+					<a class="col2" href="https://raw.githubusercontent.com/nordicmaster/guitarpros/master/{el.ID}.gp5" 
+                        		download="{el.ID} ({el.name})">{el.ID}</a>
+					: {el.name} 
 					{el.finished == true && <img src='../src/gtp.png' />}
 					{el.lyric_finished == true && <img src='../src/txt.png' />}
 					{el.recorded == true && <img src='../src/rec.png' />}
