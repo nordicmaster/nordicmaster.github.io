@@ -74,7 +74,7 @@ class TextGTPItem extends React.Component {
                         </details>
 			 <div class="inlineblock">
                            <div class="button-like bgcol1 align-center">
-                            <a class="fullwidth align-center" href={"src/structure/" + el.ID +".txt"} download={item.ID+" "+item.name}>Structure</a>
+                            <a class="fullwidth align-center" href={"src/structure/" + this.props.id +".txt"} download={this.props.id+" "+this.props.name}>Structure</a>
                            </div>
                          </div>
                      </span>     
