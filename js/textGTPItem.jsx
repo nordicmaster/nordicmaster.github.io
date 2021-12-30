@@ -72,7 +72,13 @@ class TextGTPItem extends React.Component {
                          <summary class="button-like align-center bgcol3">Show text</summary>                     
                           <p class="smalltext">{this.state.data}</p>
                         </details>
-                     </span>                     
+			 <div class="inlineblock">
+                           <div class="button-like bgcol1 align-center">
+                            <a class="fullwidth align-center" href={"src/structure/" + el.ID +".txt"} download={item.ID+" "+item.name}>Structure</a>
+                           </div>
+                         </div>
+                     </span>     
+
                  </div>;		
 	}
 }
