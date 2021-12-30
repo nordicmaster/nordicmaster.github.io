@@ -66,8 +66,7 @@ class TextGTPItem extends React.Component {
 		return <div class="inlineblock marginleft" style={{width:'45%'}}>
                      <span style={{verticalAlign: 'top'}}>
                          <button class="button-like bgcol1" onClick={this.pdfeah.bind(this, this.props.name, this.state.data)}>Download text</button>
-                     </span>
-                     <span>
+
                         <details class="inlineblock">
                          <summary class="button-like align-center bgcol3">Show text</summary>                     
                           <p class="smalltext">{this.state.data}</p>
