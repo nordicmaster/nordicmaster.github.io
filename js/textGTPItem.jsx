@@ -67,11 +67,11 @@ class TextGTPItem extends React.Component {
                      <span style={{verticalAlign: 'top'}}>
                          <button class="button-like bgcol1" onClick={this.pdfeah.bind(this, this.props.name, this.state.data)}>Download text</button>
 
-                        <details class="inlineblock">
+                        <details class="block">
                          <summary class="button-like align-center bgcol3">Show text</summary>                     
                           <p class="smalltext">{this.state.data}</p>
                         </details>
-			 <div class="inlineblock">
+			 <div class="block">
                            <div class="button-like bgcol1 align-center">
                             <a class="fullwidth align-center" href={"src/structure/" + this.props.id +".txt"} download={this.props.id+" "+this.props.name}>Structure</a>
                            </div>
