@@ -134,6 +134,10 @@ a {
   line-height: 1;
 }
 
+.floatright {
+  float: right;
+}
+
 .gtpmenu nav ul {
   list-style-type: none;
   margin: 0;
