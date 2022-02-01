@@ -1,6 +1,10 @@
 Text test file 6530 6530130
 
 (1\16) ---
+Story overgoing further
+Leading me to travel
+
+/*
 Uu Uu Uu (Uu)
 Uu Uu Uu
 Uu Uu Uu (Uu)
@@ -9,6 +13,7 @@ Uu Uu Uu (Uu)
 Uu Uu Uu
 Uu Uu Uu (Uu)
 Uu Uu Uu
+*/
 
 (триольки) ---
 Now I see
