@@ -74,10 +74,8 @@ class TextGTPItem extends React.Component {
                         <details class="block">
                          <summary class="button-like align-center bgcol3">Show text</summary>                     
                           <p class="smalltext">{this.state.data}</p>
-                        </details>
-			 
-                     </span>     
-
+                        </details>			 
+                     </span>
                  </div>;		
 	}
 }
