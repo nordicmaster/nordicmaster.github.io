@@ -87,7 +87,7 @@
       "length": "=2 sec * Tacts count * 120 / Tempo",
       "finished": true,
       "lyric_finished":true,
-      "recorded":false 
+      "recorded":true 
     },
     {											
       "ID":"77",
