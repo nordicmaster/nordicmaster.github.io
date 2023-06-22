@@ -1,24 +1,3 @@
-66 text (3 куплета)
-
-Fury is our heritage
-Every time it holding strength
-.. .. .. .
-.. .. .. () .
-
-.. .. .. .
-.. .. .. () .
-.. .. .. .
-.. .. .. () .
-
-.. .. .. .
-.. .. .. () .
-.. .. .. .
-.. .. .. () .
-
-
-//ai generated
-
-
 Fury is our heritage
 Every time it holding strength
 From the fire in our souls
@@ -28,6 +7,7 @@ We were born to fight
 To rise against the tide
 With the fury in our hearts
 And the passion in our eyes
+
 
 We won't back down
 We won't give in
@@ -39,3 +19,13 @@ And this is our land
 With fury as our heritage
 We'll show them where we stand.
 
+
+Fury is our heritage
+Every time it holding strength
+From the fire in our souls
+To the storm in our breath
+
+We were born to fight
+To rise against the tide
+With the fury in our hearts
+And the passion in our eyes
